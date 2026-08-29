@@ -1,0 +1,902 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#business",
+        "name": "Nick Mayer Buick GMC of Dickson",
+        "legalName": "Nick Mayer Buick GMC of Dickson",
+        "description": "Premier vehicle dealership in Dickson, TN offering new vehicles, pre-owned cars, financing, and auto service.",
+        "url": "https://www.nickmayerbuickgmcofdickson.com",
+        "telephone": "+1-615-639-0282",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "hasMap": "https://maps.google.com/?cid=3911378585953872889",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Dickson"},
+          {"@type": "City", "name": "Charlotte"},
+          {"@type": "City", "name": "Burns"},
+          {"@type": "City", "name": "White Bluff"},
+          {"@type": "City", "name": "Clarksville"},
+          {"@type": "City", "name": "Kingston Springs"},
+          {"@type": "City", "name": "Waverly"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#organization",
+        "name": "Nick Mayer Buick GMC of Dickson",
+        "url": "https://www.nickmayerbuickgmcofdickson.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nickmayerbuickgmcofdickson.com/images/logo.png",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-615-639-0282",
+          "areaServed": "TN",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Nick Mayer Auto Group",
+          "url": "https://www.nickmayer.com/"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#buick-enclave-avenir",
+        "name": "2026 Buick Enclave Avenir",
+        "description": "The 2026 Buick Enclave Avenir is a three-row SUV built for passenger space and everyday utility. Nick Mayer Buick GMC of Dickson helps drivers in Dickson and the surrounding Dickson County area evaluate the Enclave Avenir.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Buick"
+        },
+        "model": "Enclave Avenir",
+        "modelDate": "2026",
+        "bodyType": "SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Buick"
+        },
+        "driveWheelConfiguration": ["Front-Wheel Drive", "All-Wheel Drive"],
+        "vehicleTransmission": ["8-speed automatic"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "2.5L Turbocharged 4-cylinder",
+            "engineDisplacement": {
+              "@type": "QuantitativeValue",
+              "value": "2.5",
+              "unitCode": "LTR"
+            },
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "328",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "326",
+               "unitCode": "FOT"
+            }
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 7,
+        "fuelType": "Gasoline",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#enclave-avenir-inventory",
+        "name": "New 2026 Buick Enclave Avenir Models",
+        "description": "Explore the full selection of new 2026 Buick Enclave Avenir models at Nick Mayer Buick GMC of Dickson.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Buick"
+        },
+        "image": [
+          "https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920"
+        ],
+        "category": "New Vehicles",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nickmayerbuickgmcofdickson.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.nickmayerbuickgmcofdickson.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Buick",
+            "item": "https://www.nickmayerbuickgmcofdickson.com/searchnew.aspx?Make=Buick"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2026 Buick Enclave Avenir",
+            "item": "https://www.nickmayerbuickgmcofdickson.com/searchnew.aspx?Make=Buick&ModelAndTrim=Enclave+Avenir"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#hero-image",
+        "name": "2026 Buick Enclave Avenir at Nick Mayer Buick GMC of Dickson",
+        "description": "The 2026 Buick Enclave Avenir displayed at Nick Mayer Buick GMC of Dickson, Tennessee.",
+        "url": "https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920",
+        "contentUrl": "https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920",
+        "encodingFormat": "image/png",
+        "representativeOfPage": true,
+        "creditText": "Buick",
+        "creator": {
+          "@type": "Organization",
+          "name": "Nick Mayer Buick GMC of Dickson",
+          "url": "https://www.nickmayerbuickgmcofdickson.com"
+        },
+        "license": "https://www.nickmayerbuickgmcofdickson.com",
+        "copyrightNotice": "© Nick Mayer Buick GMC of Dickson"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: AggregateRating + Reviews
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "@id": "https://www.nickmayerbuickgmcofdickson.com/#reviews",
+        "name": "Nick Mayer Buick GMC of Dickson",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much horsepower does the 2026 Buick Enclave Avenir have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Buick Enclave Avenir produces 328 horsepower from its 2.5L Turbo four-cylinder engine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much torque does the 2026 Buick Enclave Avenir produce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Buick Enclave Avenir's 2.5L Turbo engine produces 326 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2026 Buick Enclave Avenir have all-wheel drive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The 2026 Buick Enclave Avenir comes standard with front-wheel drive, and all-wheel drive is available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many passengers can the 2026 Buick Enclave Avenir carry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Buick Enclave Avenir seats up to seven passengers across three rows. Nick Mayer Buick GMC of Dickson can help drivers compare seating configurations in person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can the 2026 Buick Enclave Avenir tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Buick Enclave Avenir can tow up to 5,000 pounds with the standard Trailering Package. Nick Mayer Buick GMC of Dickson can confirm current Enclave Avenir towing equipment on in-stock models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technology is available in the 2026 Buick Enclave Avenir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Buick Enclave Avenir includes a 30-inch diagonal ultrawide display, Google built-in, wireless Apple CarPlay, HD Surround Vision, and a Bose Performance 16-speaker audio system. Available Super Cruise provides hands-free driver assistance on compatible roads. Nick Mayer Buick GMC of Dickson can walk drivers through these features on the lot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can drivers explore the 2026 Buick Enclave Avenir in Dickson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nick Mayer Buick GMC of Dickson is located at 2211 Highway 46 South in Dickson, TN 37055. Drivers can call 615-639-0282 or visit in person to inquire about available Buick Enclave Avenir models and current inventory."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        #nm-seo-page {
+            --brand-primary: #000000;
+            --brand-secondary: #7B868C;
+            --btn-bg: #0066cc;
+            --btn-hover: #004c99;
+            --text-main: #000000;
+            --text-light: #333333;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--brand-primary);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        /* Updated Image CSS to fix cutting off on smaller screens */
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; /* Changed from 350px to auto */
+            max-height: 400px; /* Optional: limit maximum height */
+            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 400px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/gallery-previews/2026-enclave-gallery-preview-02.png?imwidth=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 500px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: var(--white);
+            border-color: var(--btn-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+        }
+
+        @media (min-width: 992px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        /* FIXED TRIM IMAGE CSS: Auto height and contain to prevent clipping */
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+         #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+
+        #nm-seo-page .trim-content {
+            padding: 20px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--brand-primary);
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0;
+            padding: 32px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--brand-primary);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--brand-primary);
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--btn-bg);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Buick Enclave Avenir for Sale in <br> Dickson, TN</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerbuickgmcofdickson.com/searchnew.aspx?Make=Buick&ModelAndTrim=Enclave+Avenir" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerbuickgmcofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Buick Enclave Avenir is a three-row SUV built for passenger space and everyday utility. The Enclave Avenir uses a 2.5L Turbo four-cylinder engine producing 328 horsepower and 326 lb-ft of torque, paired with an eight-speed automatic transmission. The Enclave Avenir comes standard with front-wheel drive, and all-wheel drive is available. The Enclave Avenir seats up to seven passengers across three rows and can tow up to 5,000 pounds when properly equipped.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Nick Mayer Buick GMC of Dickson helps drivers in Dickson and the surrounding Dickson County area evaluate the Enclave Avenir based on passenger capacity, powertrain, technology, comfort features, cargo needs, and available towing equipment. Nick Mayer Buick GMC of Dickson is located at 2211 Highway 46 South in Dickson, TN 37055, off Highway 46 near I-40. Call 615-639-0282 to speak with the sales team.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Key Facts About the 2026 Buick Enclave Avenir</h2>
+            <ul class="key-facts-list">
+                <li>The 2.5L Turbo four-cylinder produces 328 horsepower and 326 lb-ft of torque.</li>
+                <li>An eight-speed automatic transmission is standard.</li>
+                <li>Front-wheel drive is standard, with available all-wheel drive.</li>
+                <li>Seating for up to seven passengers is available.</li>
+                <li>22-inch Avenir Pearl Nickel-finish alloy wheels are included.</li>
+                <li>A panoramic power sunroof comes standard.</li>
+                <li>The 30-inch diagonal ultrawide display anchors the cabin.</li>
+                <li>The Enclave Avenir can tow up to 5,000 pounds with the standard Trailering Package.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Buick Enclave Avenir Pairs Turbo Power With an Eight-Speed Automatic</h2>
+                <p>The 2026 Buick Enclave Avenir uses Buick's 2.5L Turbo engine, producing 328 horsepower and 326 lb-ft of torque. The Enclave Avenir comes standard with an eight-speed automatic transmission, and buyers can choose between front-wheel drive and available all-wheel drive. Nick Mayer Buick GMC of Dickson stocks the Enclave Avenir with this powertrain at 2211 Highway 46 South in Dickson.</p>
+                <p>The Enclave Avenir can tow up to 5,000 pounds with the standard Trailering Package. The powertrain gives the three-row SUV a straightforward towing rating and a clear drivetrain choice for highway travel and family transportation.</p>
+            </div>
+            <div>
+                <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Performance" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Buick Enclave Avenir Provides Three Rows of Seating</h2>
+                <p>The Enclave Avenir seats up to seven occupants across three rows. The Enclave Avenir includes power-adjustable, heated, and standard massaging front seats, along with heated second-row outboard seats. Nick Mayer Buick GMC of Dickson shows drivers the Enclave Avenir's seating layout and comfort features in person at the Dickson store.</p>
+                <p>Additional interior highlights include premium quilted and perforated leather-appointed seating, ventilated front seats, a heated steering wheel, tri-zone automatic climate control, and a panoramic power sunroof. The three-row layout gives families flexibility when transporting passengers while retaining the cargo space expected from a midsize SUV.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/interior/2026-enclave-interior-04.png?imwidth=1920" alt="2026 Buick Enclave Avenir Interior Space" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Buick Enclave Avenir Technology Features</h2>
+                <p>The Enclave Avenir features a 30-inch diagonal ultrawide display with Google built-in. The Enclave Avenir offers wireless Apple CarPlay® and wireless phone charging. The Enclave Avenir includes a Bose® Performance 16-speaker audio system. Nick Mayer Buick GMC of Dickson can walk drivers through the Enclave Avenir's technology suite, including available Super Cruise®, on the lot in Dickson.</p>
+                <p>Additional technology includes HD Surround Vision, an interior camera, Adaptive Cruise Control, and available Super Cruise hands-free driver assistance.</p>
+            </div>
+            <div>
+                <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/technology/2026-enclave-technology-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>What Do Independent Reviewers Say About the 2026 Buick Enclave Avenir?</h2>
+            <p>Cars.com's coverage of the 2026 Enclave notes that the Avenir trim rides on 22-inch wheels with adaptive dampers, along with a color-matched lower body, a panoramic moonroof, and a unique grille (Cars.com, 2026 Buick Enclave review). Nick Mayer Buick GMC of Dickson points drivers toward independent coverage like this when they are comparing the Enclave Avenir against other three-row SUVs.</p>
+            <blockquote>
+                Autoblog's review of the 2026 Enclave points to the vehicle's cabin space, the 30-inch display with Google built-in, standard Bose audio, and its driver-assistance suite as the model's core strengths, alongside a settled highway ride.
+                <cite>Source: Autoblog, 2026 Buick Enclave review</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">How Does the 2026 Buick Enclave Avenir Perform in Real-World Testing?</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The EPA rates the 2026 Enclave Avenir at an estimated 20 mpg city, 25 mpg highway, and 22 mpg combined with front-wheel drive, and 20 mpg city, 24 mpg highway, and 21 mpg combined with all-wheel drive (Buick, 2026 Enclave EPA fuel economy estimates). An independent road test of an all-wheel-drive Enclave Avenir reported a 28 mpg average during testing. That figure is one outlet's real-world result, not an official rating (EV Rider, 2026 Buick Enclave Avenir AWD road test). Nick Mayer Buick GMC of Dickson can walk drivers through what real-world fuel economy looks like for the Enclave Avenir before they buy.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Buick Enclave Avenir Uses Avenir-Specific Exterior Equipment</h2>
+                <p>The Enclave Avenir uses Avenir-specific exterior equipment, including 22-inch alloy wheels with a Pearl Nickel finish and an Avenir-specific grille. The Enclave Avenir also includes a panoramic power sunroof as standard equipment.</p>
+                <p>The Enclave Avenir includes an AutoSense power liftgate and power-folding exterior mirrors. Nick Mayer Buick GMC of Dickson carries Enclave Avenir inventory with this Avenir-specific equipment at the Dickson store.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/capability/2026-enclave-capability-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Exterior" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 32px;">2026 Buick Enclave Avenir Highlights at a Glance</h2>
+            <ul class="trims-list">
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/design/2026-enclave-design-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Powertrain" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Powertrain</strong>
+                        <p>2.5L Turbo four-cylinder producing 328 horsepower and 326 lb-ft of torque with an eight-speed automatic transmission.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/interior/2026-enclave-interior-04.png?imwidth=1920" alt="2026 Buick Enclave Avenir Seating" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Seating</strong>
+                        <p>Three-row seating for up to seven with heated, ventilated, and massaging front seats.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/technology/2026-enclave-technology-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Technology" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Technology</strong>
+                        <p>30-inch diagonal ultrawide display, Bose Performance audio, and available Super Cruise.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.buick.com/content/dam/buick/na/us/english/index/vehicles/2026/enclave/01-images/capability/2026-enclave-capability-01.png?imwidth=1920" alt="2026 Buick Enclave Avenir Exterior" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Exterior</strong>
+                        <p>22-inch Avenir Pearl Nickel-finish wheels, panoramic sunroof, and AutoSense power liftgate.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Why the 2026 Buick Enclave Avenir Fits Dickson-Area Drivers</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Buick Enclave Avenir combines three-row seating, turbocharged performance, available all-wheel drive, premium technology, and 5,000-pound towing capability. For drivers in Dickson, Charlotte, Burns, White Bluff, Clarksville, Kingston Springs, Waverly, and nearby Middle Tennessee communities, the Enclave Avenir can serve as a family SUV, commuter vehicle, and comfortable road-trip companion.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much horsepower does the 2026 Buick Enclave Avenir have?</summary>
+                    <div class="faq-answer"><p>The 2026 Buick Enclave Avenir produces 328 horsepower from its 2.5L Turbo four-cylinder engine.</p></div>
+                </details>
+                <details>
+                    <summary>How much torque does the 2026 Buick Enclave Avenir produce?</summary>
+                    <div class="faq-answer"><p>The 2026 Buick Enclave Avenir's 2.5L Turbo engine produces 326 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2026 Buick Enclave Avenir have all-wheel drive?</summary>
+                    <div class="faq-answer"><p>Yes. The 2026 Buick Enclave Avenir comes standard with front-wheel drive, and all-wheel drive is available.</p></div>
+                </details>
+                <details>
+                    <summary>How many passengers can the 2026 Buick Enclave Avenir carry?</summary>
+                    <div class="faq-answer"><p>The 2026 Buick Enclave Avenir seats up to seven passengers across three rows. Nick Mayer Buick GMC of Dickson can help drivers compare seating configurations in person.</p></div>
+                </details>
+                <details>
+                    <summary>How much can the 2026 Buick Enclave Avenir tow?</summary>
+                    <div class="faq-answer"><p>The 2026 Buick Enclave Avenir can tow up to 5,000 pounds with the standard Trailering Package. Nick Mayer Buick GMC of Dickson can confirm current Enclave Avenir towing equipment on in-stock models.</p></div>
+                </details>
+                <details>
+                    <summary>What technology is available in the 2026 Buick Enclave Avenir?</summary>
+                    <div class="faq-answer"><p>The 2026 Buick Enclave Avenir includes a 30-inch diagonal ultrawide display, Google built-in, wireless Apple CarPlay, HD Surround Vision, and a Bose Performance 16-speaker audio system. Available Super Cruise provides hands-free driver assistance on compatible roads. Nick Mayer Buick GMC of Dickson can walk drivers through these features on the lot.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can drivers explore the 2026 Buick Enclave Avenir in Dickson?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Buick GMC of Dickson is located at 2211 Highway 46 South in Dickson, TN 37055. Drivers can call 615-639-0282 or visit in person to inquire about available Buick Enclave Avenir models and current inventory.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2>Nick Mayer Buick GMC of Dickson Helps Drivers Explore the Enclave Avenir</h2>
+            <p style="max-width: 800px; margin-left: auto; margin-right: auto;">Nick Mayer Buick GMC of Dickson helps drivers compare the 2026 Buick Enclave Avenir according to how they expect to use their SUV. Nick Mayer Buick GMC of Dickson can discuss available drivetrain configurations, passenger requirements, technology, towing equipment, and comfort features. Nick Mayer Buick GMC of Dickson serves Dickson and the surrounding Dickson County area from 2211 Highway 46 South in Dickson, TN 37055, near Highway 46 and I-40. Call 615-639-0282 to get started.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerbuickgmcofdickson.com/searchnew.aspx?Make=Buick&ModelAndTrim=Enclave+Avenir" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerbuickgmcofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+</article>

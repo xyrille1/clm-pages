@@ -1,0 +1,896 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#business",
+        "name": "Nick Mayer Chevrolet of Lewisburg",
+        "legalName": "Nick Mayer Chevrolet of Lewisburg",
+        "description": "Premier vehicle dealership in Lewisburg, TN offering new vehicles, pre-owned cars, financing, and auto service.",
+        "url": "https://www.nickmayerchevroletgmcoflewisburg.com",
+        "telephone": "+1-931-259-4067",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/design/2026-traverse-design-01.png?imwidth=1920",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "861 N Ellington Pkwy",
+          "addressLocality": "Lewisburg",
+          "addressRegion": "TN",
+          "postalCode": "37091",
+          "addressCountry": "US"
+        },
+        "hasMap": "https://maps.google.com/?cid=3911378585953872889",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Lewisburg"},
+          {"@type": "City", "name": "Columbia"},
+          {"@type": "City", "name": "Spring Hill"},
+          {"@type": "City", "name": "Franklin"},
+          {"@type": "City", "name": "Shelbyville"},
+          {"@type": "City", "name": "Chapel Hill"},
+          {"@type": "City", "name": "Cornersville"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#organization",
+        "name": "Nick Mayer Chevrolet of Lewisburg",
+        "url": "https://www.nickmayerchevroletgmcoflewisburg.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nickmayerchevroletgmcoflewisburg.com/images/logo.png",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-931-259-4067",
+          "areaServed": "TN",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "861 N Ellington Pkwy",
+          "addressLocality": "Lewisburg",
+          "addressRegion": "TN",
+          "postalCode": "37091",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Nick Mayer Auto Group",
+          "url": "https://www.nickmayer.com/"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#chevrolet-traverse",
+        "name": "2026 Chevrolet Traverse",
+        "description": "The 2026 Chevrolet Traverse is a spacious three-row SUV designed for families and drivers who need room for passengers, cargo, road trips, and everyday activities in Middle Tennessee.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "model": "Traverse",
+        "modelDate": "2026",
+        "bodyType": "SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Chevrolet"
+        },
+        "driveWheelConfiguration": ["Front-Wheel Drive", "All-Wheel Drive"],
+        "vehicleTransmission": ["8-speed automatic"],
+        "cargoVolume": {
+          "@type": "QuantitativeValue",
+          "value": "98",
+          "unitCode": "FTQ"
+        },
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "2.5L Turbocharged 4-cylinder",
+            "engineDisplacement": {
+              "@type": "QuantitativeValue",
+              "value": "2.5",
+              "unitCode": "LTR"
+            },
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "328",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "326",
+               "unitCode": "FOT"
+            }
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 8,
+        "fuelType": "Gasoline",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#traverse-inventory",
+        "name": "New 2026 Chevrolet Traverse Models",
+        "description": "Explore the full selection of new 2026 Chevrolet Traverse models, including the LT, Z71, High Country, and RS trims at Nick Mayer Chevrolet of Lewisburg.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "image": [
+          "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/design/2026-traverse-design-01.png?imwidth=1920"
+        ],
+        "category": "New Vehicles",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nickmayerchevroletgmcoflewisburg.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chevrolet",
+            "item": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?Make=Chevrolet"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2026 Chevrolet Traverse",
+            "item": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Traverse"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#hero-image",
+        "name": "2026 Chevrolet Traverse at Nick Mayer Chevrolet of Lewisburg",
+        "description": "The 2026 Chevrolet Traverse displayed at Nick Mayer Chevrolet of Lewisburg, Tennessee.",
+        "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/design/2026-traverse-design-01.png?imwidth=1920",
+        "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/design/2026-traverse-design-01.png?imwidth=1920",
+        "encodingFormat": "image/png",
+        "representativeOfPage": true,
+        "creditText": "Chevrolet",
+        "creator": {
+          "@type": "Organization",
+          "name": "Nick Mayer Chevrolet of Lewisburg",
+          "url": "https://www.nickmayerchevroletgmcoflewisburg.com"
+        },
+        "license": "https://www.nickmayerchevroletgmcoflewisburg.com",
+        "copyrightNotice": "Â© Nick Mayer Chevrolet of Lewisburg"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: AggregateRating + Reviews
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#reviews",
+        "name": "Nick Mayer Chevrolet of Lewisburg",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much horsepower does the 2026 Chevrolet Traverse have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The turbocharged 2.5L engine produces 328 horsepower and 326 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many passengers can the Traverse seat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Traverse seats up to eight passengers with the available second-row bench."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much cargo space does the 2026 Traverse offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum cargo capacity reaches 98 cubic feet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the 2026 Chevrolet Traverse tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Properly equipped models can tow up to 5,000 pounds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Traverse offer all-wheel drive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AWD is available on select trims, while the Z71 includes standard twin-clutch AWD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I test-drive a 2026 Chevrolet Traverse near Columbia or Spring Hill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nick Mayer Chevrolet of Lewisburg serves drivers from Lewisburg, Columbia, Spring Hill, Franklin, Shelbyville, and nearby Middle Tennessee communities."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        #nm-seo-page {
+            --brand-primary: #000000;
+            --brand-secondary: #7B868C;
+            --btn-bg: #0066cc;
+            --btn-hover: #004c99;
+            --text-main: #000000;
+            --text-light: #333333;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+            
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--brand-primary);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        /* Updated Image CSS to fix cutting off on smaller screens */
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; /* Changed from 350px to auto */
+            max-height: 400px; /* Optional: limit maximum height */
+            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 400px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/gallery-previews/2026-traverse-gallery-preview-02.png?imwidth=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 500px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: var(--white);
+            border-color: var(--btn-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+        }
+        
+        @media (min-width: 992px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        /* FIXED TRIM IMAGE CSS: Auto height and contain to prevent clipping */
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            height: auto; 
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+         #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto; 
+            max-height: 200px; 
+            object-fit: contain; 
+            display: block;
+        }
+
+
+        #nm-seo-page .trim-content {
+            padding: 20px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--brand-primary);
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0;
+            padding: 32px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--brand-primary);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--brand-primary);
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--btn-bg);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Chevrolet Traverse for Sale in <br> Lewisburg, TN</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Traverse" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletgmcoflewisburg.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Chevrolet Traverse is a spacious three-row SUV designed for families and drivers who need room for passengers, cargo, road trips, and everyday activities.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">With a turbocharged 2.5L engine, seating for up to eight, available all-wheel drive, and advanced technology, the Traverse fits commuting, school activities, shopping, travel, and outdoor recreation throughout Lewisburg, Columbia, Spring Hill, Franklin, Shelbyville, and surrounding Middle Tennessee communities. Nick Mayer Chevrolet of Lewisburg serves drivers searching for a 2026 Chevrolet Traverse for sale near Lewisburg, Columbia, and nearby communities.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Key Facts About the 2026 Chevrolet Traverse</h2>
+            <ul class="key-facts-list">
+                <li>The 2.5L turbocharged four-cylinder produces 328 horsepower and 326 lb-ft of torque.</li>
+                <li>An 8-speed automatic transmission is standard.</li>
+                <li>Front-wheel drive is standard, with available AWD on select trims.</li>
+                <li>The Z71 features standard twin-clutch AWD and off-road-focused equipment.</li>
+                <li>The Traverse seats up to eight passengers with the available second-row bench.</li>
+                <li>Maximum cargo capacity reaches 98 cubic feet.</li>
+                <li>Properly equipped models can tow up to 5,000 pounds.</li>
+                <li>The 17.7-inch touchscreen and 11-inch Driver Information Center are standard.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Chevrolet Traverse Performance Supports Middle Tennessee Travel</h2>
+                <p>The 2026 Chevrolet Traverse uses a turbocharged 2.5L engine to deliver 328 horsepower and 326 lb-ft of torque. Its 8-speed automatic transmission supports everyday driving through Lewisburg, Columbia, Spring Hill, and Franklin, while available all-wheel drive adds capability for changing road conditions and select outdoor activities.</p>
+                <p>With available trailering equipment, the Traverse can tow up to 5,000 pounds. That gives owners the ability to pull a small camper, utility trailer, or recreational equipment for trips beyond the city.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/retail/may-2026/phase-1/movs/traverse-mov-cw%20(1).png?imwidth=1920" alt="2026 Chevrolet Traverse Performance" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Chevrolet Traverse Interior Space Supports Families and Active Lifestyles</h2>
+                <p>The Traverse is built around passenger and cargo flexibility. It can seat up to eight with the available second-row bench, while the third row provides useful space for growing families and additional passengers. Folding the rear seating expands cargo capacity to as much as 98 cubic feet.</p>
+                <p>That space can support school activities in Lewisburg, shopping trips in Columbia, family travel toward, or outdoor weekends at places such as Henry Horton State Park and nearby Middle Tennessee recreation areas.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/interior/2026-traverse-interior-04.png?imwidth=1920" alt="2026 Chevrolet Traverse Interior Space" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Chevrolet Traverse Technology Connects Drivers Across Tennessee</h2>
+                <p>The 2026 Traverse places a 17.7-inch touchscreen and 11-inch Driver Information Center at the center of its technology experience. Google built-in compatibility supports features such as Google Maps and Google Play, while available Super CruiseÂ® provides hands-free driver assistance on more than 585,000 miles of compatible roads in the U.S. and Canada.</p>
+                <p>Available features can also include HD Surround Vision, wireless charging, OnStarÂ® services, and advanced trailering technology.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/technology/2026-traverse-technology-01.png?imwidth=1920" alt="2026 Chevrolet Traverse Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Traverse Owner Experience Highlights Space and Long-Distance Comfort</h2>
+            <p>A 2026 Chevrolet Traverse RS owner shared a positive experience after taking the SUV on a 3,000-mile trip, writing:</p>
+            <blockquote>
+                "We finally caved and bought a blacked out 2026 RS and absolutely adore it!! ... we just took it on a 3000 mile trip and we LOVE that feature."
+                <cite>Source: 2026 Chevrolet Traverse owner discussion on Reddit</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">2026 Chevrolet Traverse Earns Recognition for Space and Value</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">MotorTrend highlights its practical interior, technology, and value. Edmunds also identifies the Traverse's spacious passenger area and cargo capacity as key strengths, noting that adults can fit in all three rows and that the SUV provides substantial room for gear.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>Nick Mayer Chevrolet of Lewisburg Connects the Traverse to Local Life</h2>
+                <p>We see the 2026 Chevrolet Traverse as a practical fit for Middle Tennessee drivers who need one SUV for daily routines and weekend plans. Whether commuting between Lewisburg and Columbia, taking the family to Henry Horton State Park, or loading up for a longer road trip, the Traverse gives passengers and cargo plenty of room to travel comfortably.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/traverse/01-images/capability/2026-traverse-capability-zr1.png?imwidth=1920" alt="Dealership Experience in Lewisburg" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 32px;">2026 Chevrolet Traverse Trims Match Different SUV Needs</h2>
+            <ul class="trims-list">
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2026/suvs/traverse/2026-traverse-1lb56-2lt-gxp-trimselector.png?imwidth=1920" alt="2026 Chevrolet Traverse LT Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>LT</strong>
+                        <p>provides practical three-row space, standard technology, and strong everyday value.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2026/suvs/traverse/2026-traverse-1lc56-2z7-gxd-trimselector.png?imwidth=1920" alt="2026 Chevrolet Traverse Z71 Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Z71</strong>
+                        <p>adds standard twin-clutch AWD, Terrain Mode, Hill Descent Control, and off-road-oriented equipment.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2026/suvs/traverse/2026-traverse-1ld56-2lz-g4j-trimselector.png?imwidth=1920" alt="2026 Chevrolet Traverse High Country Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>High Country</strong>
+                        <p>adds premium comfort and advanced technology.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2026/suvs/traverse/2026-traverse-1ld56-2rs-gnt-trimselector.png?imwidth=1920" alt="2026 Chevrolet Traverse RS Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>RS</strong>
+                        <p>combines bold street styling with upscale features and available Super CruiseÂ®.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Why the 2026 Chevrolet Traverse Fits Lewisburg-Area Drivers</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Chevrolet Traverse combines three-row seating, substantial cargo space, turbocharged performance, available AWD, 5,000-pound towing capability, and advanced connectivity. For drivers in Lewisburg, Columbia, Spring Hill, Franklin, Shelbyville, Chapel Hill, Cornersville, and nearby Middle Tennessee communities, the Traverse can serve as a family SUV, commuter vehicle, road-trip companion, and practical everyday vehicle.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much horsepower does the 2026 Chevrolet Traverse have?</summary>
+                    <div class="faq-answer"><p>The turbocharged 2.5L engine produces 328 horsepower and 326 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>How many passengers can the Traverse seat?</summary>
+                    <div class="faq-answer"><p>The Traverse seats up to eight passengers with the available second-row bench.</p></div>
+                </details>
+                <details>
+                    <summary>How much cargo space does the 2026 Traverse offer?</summary>
+                    <div class="faq-answer"><p>Maximum cargo capacity reaches 98 cubic feet.</p></div>
+                </details>
+                <details>
+                    <summary>Can the 2026 Chevrolet Traverse tow?</summary>
+                    <div class="faq-answer"><p>Yes. Properly equipped models can tow up to 5,000 pounds.</p></div>
+                </details>
+                <details>
+                    <summary>Does the Traverse offer all-wheel drive?</summary>
+                    <div class="faq-answer"><p>Yes. AWD is available on select trims, while the Z71 includes standard twin-clutch AWD.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I test-drive a 2026 Chevrolet Traverse near Columbia or Spring Hill?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Chevrolet of Lewisburg serves drivers from Lewisburg, Columbia, Spring Hill, Franklin, Shelbyville, and nearby Middle Tennessee communities.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2>Explore the 2026 Chevrolet Traverse at Nick Mayer Chevrolet of Lewisburg</h2>
+            <p style="max-width: 800px; margin-left: auto; margin-right: auto;">Visit <a href="https://maps.app.goo.gl/JKUnxWxkiiZ3B6ys6" target="_blank" style="text-decoration: none; color: black"><strong>Nick Mayer Chevrolet of Lewisburg</strong></a> to explore the 2026 Chevrolet Traverse, compare LT, Z71, High Country, and RS models, review available configurations, and schedule a test drive. The dealership serves drivers throughout Lewisburg, Columbia, Spring Hill, Franklin, Shelbyville, Chapel Hill, Cornersville, and surrounding Middle Tennessee communities.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Traverse" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletgmcoflewisburg.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.7319918503244!2d-86.78682132377621!3d35.461428942016454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8863a3a0e0329283%3A0x36480219bdd9abf9!2sNick%20Mayer%20Chevrolet%20of%20Lewisburg!5e0!3m2!1sen!2sus!4v1784734153222!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
