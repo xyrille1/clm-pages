@@ -1,0 +1,917 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.nickmayerchevroletofdickson.com/#business",
+        "name": "Nick Mayer Chevrolet of Dickson",
+        "legalName": "Nick Mayer Chevrolet of Dickson",
+        "description": "Chevrolet dealership in Dickson, TN offering the new Chevrolet Bolt RS electric hatchback, pre-owned vehicles, financing, and auto service.",
+        "url": "https://www.nickmayerchevroletofdickson.com",
+        "telephone": "+1-615-570-4106",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-mh-01.png?imwidth=1920",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "hasMap": "https://maps.google.com/maps?daddr=2211+Highway+46+South,+Dickson,+TN+37055",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Dickson"},
+          {"@type": "City", "name": "Burns"},
+          {"@type": "City", "name": "White Bluff"},
+          {"@type": "City", "name": "Charlotte"},
+          {"@type": "City", "name": "Fairview"},
+          {"@type": "City", "name": "Kingston Springs"},
+          {"@type": "City", "name": "Pegram"},
+          {"@type": "City", "name": "Vanleer"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#organization",
+        "name": "Nick Mayer Chevrolet of Dickson",
+        "url": "https://www.nickmayerchevroletofdickson.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.dealer30407.dealeron.com/static/dealer-30407/logo.png",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-615-570-4106",
+          "areaServed": "TN",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Nick Mayer Auto Group",
+          "url": "https://www.nickmayer.com/"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#chevrolet-bolt-rs",
+        "name": "2027 Chevrolet Bolt RS",
+        "description": "The 2027 Chevrolet Bolt RS brings a sporty appearance, electric driving, and redesigned technology to the Bolt lineup. Nick Mayer Chevrolet of Dickson helps shoppers in Dickson and the surrounding area compare the Bolt RS's range, charging, and technology.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "model": "Bolt RS",
+        "modelDate": "2027",
+        "bodyType": "Hatchback",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Chevrolet"
+        },
+        "driveWheelConfiguration": ["Front-Wheel Drive"],
+        "vehicleTransmission": ["Single-speed reduction gear"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Electric",
+            "name": "Permanent-magnet electric motor",
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "210",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "169",
+               "unitCode": "FOT"
+            }
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 5,
+        "fuelType": "Electric"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#bolt-rs-inventory",
+        "name": "New 2027 Chevrolet Bolt RS Models",
+        "description": "Explore the full selection of new 2027 Chevrolet Bolt RS models at Nick Mayer Chevrolet of Dickson.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "image": [
+          "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-mh-01.png?imwidth=1920"
+        ],
+        "category": "New Vehicles"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nickmayerchevroletofdickson.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chevrolet",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2027 Chevrolet Bolt RS",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Bolt+RS"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#hero-image",
+        "name": "2027 Chevrolet Bolt RS at Nick Mayer Chevrolet of Dickson",
+        "description": "The 2027 Chevrolet Bolt RS displayed at Nick Mayer Chevrolet of Dickson, Tennessee.",
+        "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-mh-01.png?imwidth=1920",
+        "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-mh-01.png?imwidth=1920",
+        "encodingFormat": "image/jpeg",
+        "representativeOfPage": true,
+        "creditText": "Chevrolet",
+        "creator": {
+          "@type": "Organization",
+          "name": "Nick Mayer Chevrolet of Dickson",
+          "url": "https://www.nickmayerchevroletofdickson.com"
+        },
+        "license": "https://www.nickmayerchevroletofdickson.com",
+        "copyrightNotice": "© Nick Mayer Chevrolet of Dickson"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How far can the 2027 Chevrolet Bolt RS travel on a full charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2027 Bolt has an EPA-estimated range of 262 miles on a full charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How powerful is the 2027 Chevrolet Bolt RS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Bolt RS uses a 210-horsepower electric motor with 169 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2027 Bolt RS use a NACS charging port?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Chevrolet makes the NACS charge port standard on the 2027 Bolt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can the Bolt charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With compatible public DC fast charging, Chevrolet estimates a 10%-80% charge in approximately 25 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes the Bolt RS different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The RS adds a unique grille and badging, Gloss Black roof rails, 17-inch black wheels, Black Evotex seating with red stitching, and multicolor ambient lighting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2027 Bolt offer Super Cruise®?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Super Cruise® is available on the 2027 Bolt and provides hands-free driver assistance on compatible mapped roads when conditions allow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I explore the 2027 Chevrolet Bolt RS near Dickson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nick Mayer Chevrolet of Dickson is located at 2211 Highway 46 South, Dickson, TN 37055, and can be reached at 615-570-4106. The dealership serves drivers from Dickson and nearby communities including Burns, White Bluff, Charlotte, Fairview, Kingston Springs, Pegram, and Vanleer."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #nm-seo-page {
+            --brand-primary: #262626;
+            --brand-secondary: #777777;
+            --btn-bg: #006dc7;
+            --btn-hover: #0e4180;
+            --text-main: #262626;
+            --text-light: #333333;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+
+            font-family: 'Lato', sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--brand-primary);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        /* Updated Image CSS to fix cutting off on smaller screens */
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; /* Changed from 350px to auto */
+            max-height: 400px; /* Optional: limit maximum height */
+            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .nm-map-iframe {
+            display: block;
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: 0;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 550px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-mh-01.png?imwidth=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 650px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: var(--white);
+            border-color: var(--btn-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            #nm-seo-page .trims-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                max-width: calc(50% - 12px);
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(6, 1fr); /* 3 cards per row on desktop */
+            }
+
+            #nm-seo-page .trims-list li {
+                grid-column: span 2;
+            }
+
+            #nm-seo-page .trims-list li:nth-child(4) {
+                grid-column: 2 / 4;
+            }
+
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 4 / 6;
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        /* FIXED TRIM IMAGE CSS: Auto height and contain to prevent clipping */
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+         #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+
+        #nm-seo-page .trim-content {
+            padding: 20px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--brand-primary);
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0;
+            padding: 32px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--brand-primary);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote cite a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--btn-bg);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2027 Chevrolet Bolt RS for Sale in <br> Dickson, TN</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Bolt+RS" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2027 Chevrolet Bolt RS brings a sporty appearance, electric driving, and redesigned technology to the Bolt lineup. Chevrolet gives the Bolt RS a 210-horsepower electric motor, an EPA-estimated 262 miles of range, a standard NACS charge port, and DC fast-charging capability that can replenish the battery from 10% to 80% in about 25 minutes under GM's estimated conditions.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Nick Mayer Chevrolet of Dickson, drivers can explore the 2027 Bolt RS at 2211 Highway 46 South, Dickson, TN 37055, or reach the sales team at 615-570-4106, to compare electric driving with their daily commute, errands, and weekend travel around the Dickson area.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Chevrolet Bolt RS Key Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 2027 Chevrolet Bolt RS uses a 210-horsepower electric motor.</li>
+                <li>The 2027 Chevrolet Bolt RS carries an EPA-estimated range of 262 miles.</li>
+                <li>The 2027 Chevrolet Bolt RS includes a standard NACS charge port.</li>
+                <li>The 2027 Chevrolet Bolt RS supports up to 150 kW+ DC fast charging.</li>
+                <li>The 2027 Chevrolet Bolt RS can charge from 10% to 80% in about 25 minutes on a DC fast charger.</li>
+                <li>The 2027 Chevrolet Bolt RS features an 11.3-inch infotainment touchscreen.</li>
+                <li>The 2027 Chevrolet Bolt RS features an 11-inch Driver Information Center.</li>
+                <li>The 2027 Chevrolet Bolt RS includes more than 20 standard safety and driver-assistance features.</li>
+                <li>The 2027 Chevrolet Bolt RS offers available Super Cruise&reg;.</li>
+                <li>The 2027 Chevrolet Bolt RS wears RS-specific exterior and interior styling.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>Chevrolet Bolt RS Adds Sport-Inspired Design</h2>
+                <p>The 2027 Chevrolet Bolt RS gives the electric hatchback a distinct appearance with RS-specific exterior and interior equipment. Chevrolet adds a unique grille, RS badging, Gloss Black roof rails, 17-inch black wheels, and Black Evotex seating with red stitching. Multicolor ambient lighting also contributes to the RS cabin design.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/retail/september-2026/phase-1/movs/bolt-26-mov-cw.png?imwidth=1920" alt="2027 Chevrolet Bolt RS Exterior Design" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Chevrolet Bolt RS Design Features</h2>
+            <ul class="key-facts-list">
+                <li>The Bolt RS wears a unique RS grille and badging.</li>
+                <li>The Bolt RS includes Gloss Black roof rails.</li>
+                <li>The Bolt RS rides on 17-inch black wheels.</li>
+                <li>The Bolt RS features Black Evotex seating.</li>
+                <li>The Bolt RS adds red interior stitching.</li>
+                <li>The Bolt RS includes multicolor ambient lighting.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2027 Chevrolet Bolt RS Uses Electric Power for Daily Driving</h2>
+                <p>The Bolt RS uses a single permanent-magnet electric motor producing 210 horsepower and 169 lb-ft of torque, delivered to the front wheels through a single-speed reduction gear. Its 65-kWh lithium iron phosphate battery provides an EPA-estimated 262 miles of range on a full charge.</p>
+                <p>That range gives Dickson drivers an EV suited to regular commuting without requiring frequent charging stops. The Bolt RS can also support up to 11.5 kW AC charging at home and up to 150 kW+ DC fast charging at compatible public stations.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/ancillary/27-bolt-contentMH.png?imwidth=1200" alt="2027 Chevrolet Bolt RS Electric Powertrain" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2027 Chevrolet Bolt RS Connects Charging With Modern Technology</h2>
+                <p>Chevrolet redesigned the Bolt cabin around larger displays and connected features. The 11.3-inch infotainment screen works with Google built-in, while the 11-inch Driver Information Center provides vehicle information directly in front of the driver. Google Maps can also incorporate battery range and charging information into route planning.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-interior-03.png?imwidth=1920" alt="2027 Chevrolet Bolt RS Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>2027 Chevrolet Bolt RS Technology Features</h2>
+            <ul class="key-facts-list">
+                <li>The Bolt RS features an 11.3-inch infotainment display.</li>
+                <li>The Bolt RS features an 11-inch Driver Information Center.</li>
+                <li>The Bolt RS runs Google built-in.</li>
+                <li>The Bolt RS includes multiple USB-C ports.</li>
+                <li>The Bolt RS offers available wireless phone charging.</li>
+                <li>The Bolt RS offers available Super Cruise&reg;.</li>
+                <li>The Bolt RS integrates navigation and charging information.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2027 Chevrolet Bolt RS Provides Standard Driver Assistance</h2>
+                <p>Chevrolet equips the 2027 Bolt with more than 20 standard safety and driver-assistance features. Available systems include Super Cruise&reg;, while the standard technology package includes features such as Intersection Collision Mitigation, Rear Automatic Braking, and Rear Cross Traffic Alert with Braking.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/page-assets/2027-bolt-interior-02.png?imwidth=1920" alt="2027 Chevrolet Bolt RS Interior Safety Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>2027 Chevrolet Bolt RS Fits Dickson-Area Driving</h2>
+            <p>The Bolt RS gives local EV shoppers a practical option for daily trips along Highway 46, Highway 70, and Highway 47. Interstate 40 runs east from Dickson for longer trips, while Highway 96 connects the Dickson and Fairview areas. Montgomery Bell State Park is also accessible from I-40 Exit 182 using Highway 96 and Highway 70, giving the Bolt RS a useful setting for weekend recreation and outdoor trips.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Chevrolet Bolt RS Serves Different Daily Driving Needs</h2>
+            <p>The Bolt RS fits Dickson-area drivers who want electric power for daily commuting, up to 262 miles of EPA-estimated range, NACS charging compatibility, faster public DC charging, sport-inspired RS styling, large digital displays, available hands-free Super Cruise&reg;, and a compact vehicle suited to Dickson-area driving.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>What Do Automotive Experts Say About the 2027 Chevrolet Bolt RS?</h2>
+            <p>Edmunds conducted its official EV Range Test on the 2027 Chevrolet Bolt RS and recorded 290 miles of real-world range on a single charge, beating the EPA's 262-mile estimate, along with energy use of 26.2 kWh per 100 miles, more efficient than the EPA's 28-kWh estimate. Edmunds' review of the Bolt notes that despite modest outright pace, it's still surprisingly fun to drive.</p>
+            <blockquote>
+                "Despite modest outright pace, it's still surprisingly fun to drive."
+                <cite>Source: Edmunds, "Tested 2027 Chevy Bolt Almost Hits 300 Miles of Real-World Range" (published May 8, 2026, accessed August 29, 2026)</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>What Are 2027 Chevrolet Bolt RS Owners Saying?</h2>
+            <p>A verified 2027 Chevrolet Bolt RS owner reviewed the vehicle on Cars.com, noting it was their third Bolt and that this one drives and rides better than the previous two. The owner said the car could use more sound deadening due to road noise, but otherwise called it a great value and said they could not understand why Chevrolet was discontinuing it.</p>
+            <blockquote>
+                "It drives and rides better than the previous two. ... A great value."
+                <cite>Source: Cars.com: 2027 Chevrolet Bolt Consumer Reviews (published July 16, 2026, accessed August 29, 2026)</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>Why Buy the 2027 Chevrolet Bolt RS at Nick Mayer Chevrolet of Dickson?</h2>
+                <p>Nick Mayer Chevrolet of Dickson is a Chevrolet dealership located at 2211 Highway 46 South, Dickson, TN 37055. The dealership provides new and used Chevrolet vehicles along with Chevrolet service and parts support, and the sales team can be reached at 615-570-4106.</p>
+                <p>Nick Mayer Chevrolet of Dickson can help local shoppers see a Bolt RS in person and compare it against their daily driving needs, giving local shoppers an opportunity to explore an actual RS model rather than researching the trim only from specifications.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/electric/2027-bolt/gallery/2027-bolt-ext-gal-2.png?imwidth=1920" alt="Nick Mayer Chevrolet of Dickson Dealership" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions About the 2027 Chevrolet Bolt RS</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How far can the 2027 Chevrolet Bolt RS travel on a full charge?</summary>
+                    <div class="faq-answer"><p>The 2027 Bolt has an EPA-estimated range of 262 miles on a full charge.</p></div>
+                </details>
+                <details>
+                    <summary>How powerful is the 2027 Chevrolet Bolt RS?</summary>
+                    <div class="faq-answer"><p>The Bolt RS uses a 210-horsepower electric motor with 169 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2027 Bolt RS use a NACS charging port?</summary>
+                    <div class="faq-answer"><p>Yes. Chevrolet makes the NACS charge port standard on the 2027 Bolt.</p></div>
+                </details>
+                <details>
+                    <summary>How quickly can the Bolt charge?</summary>
+                    <div class="faq-answer"><p>With compatible public DC fast charging, Chevrolet estimates a 10%-80% charge in approximately 25 minutes.</p></div>
+                </details>
+                <details>
+                    <summary>What makes the Bolt RS different?</summary>
+                    <div class="faq-answer"><p>The RS adds a unique grille and badging, Gloss Black roof rails, 17-inch black wheels, Black Evotex seating with red stitching, and multicolor ambient lighting.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2027 Bolt offer Super Cruise&reg;?</summary>
+                    <div class="faq-answer"><p>Yes. Super Cruise&reg; is available on the 2027 Bolt and provides hands-free driver assistance on compatible mapped roads when conditions allow.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I explore the 2027 Chevrolet Bolt RS near Dickson?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Chevrolet of Dickson is located at 2211 Highway 46 South, Dickson, TN 37055, and can be reached at 615-570-4106. The dealership serves drivers from Dickson and nearby communities including Burns, White Bluff, Charlotte, Fairview, Kingston Springs, Pegram, and Vanleer.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2>Explore the 2027 Chevrolet Bolt RS at Nick Mayer Chevrolet of Dickson</h2>
+            <p style="max-width: 800px; margin-left: auto; margin-right: auto;">The 2027 Chevrolet Bolt RS combines 210-horsepower electric performance, 262 miles of EPA-estimated range, NACS charging, redesigned technology, and RS-specific styling in one compact EV. Nick Mayer Chevrolet of Dickson can help local drivers explore the Bolt RS, review charging options, and determine whether its electric range and features fit their daily routes around Dickson and the Dickson area.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Bolt+RS" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <iframe class="nm-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7844148882955!2d-87.34253978473171!3d36.02555758011545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864a4fd6eff06cd%3A0xbc06eaf7097dbb92!2s2211%20TN-46%2C%20Dickson%2C%20TN%2037055!5e0!3m2!1sen!2sus!4v1631539234280!5m2!1sen!2sus" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>

@@ -1,0 +1,946 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.nickmayerchevroletofdickson.com/#business",
+        "name": "Nick Mayer Chevrolet of Dickson",
+        "legalName": "Nick Mayer Chevrolet of Dickson",
+        "description": "Compact SUV dealership in Dickson, TN offering new Chevrolet Trax models, pre-owned vehicles, financing, and auto service.",
+        "url": "https://www.nickmayerchevroletofdickson.com",
+        "telephone": "+1-615-570-4106",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/02-images/2026-trax-masthead-02.jpg?imwidth=1920",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "hasMap": "https://maps.google.com/maps?daddr=2211+Highway+46+South,+Dickson,+TN+37055",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Dickson"},
+          {"@type": "City", "name": "Nashville"},
+          {"@type": "City", "name": "Bon Aqua"},
+          {"@type": "City", "name": "Tennessee City"},
+          {"@type": "City", "name": "White Bluff"},
+          {"@type": "City", "name": "Burns"},
+          {"@type": "City", "name": "Kingston Springs"},
+          {"@type": "City", "name": "Charlotte"},
+          {"@type": "City", "name": "Fairview"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#organization",
+        "name": "Nick Mayer Chevrolet of Dickson",
+        "url": "https://www.nickmayerchevroletofdickson.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.dealer30407.dealeron.com/static/dealer-30407/logo.png",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-615-570-4106",
+          "areaServed": "TN",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2211 Highway 46 South",
+          "addressLocality": "Dickson",
+          "addressRegion": "TN",
+          "postalCode": "37055",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Nick Mayer Auto Group",
+          "url": "https://www.nickmayer.com/"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#chevrolet-trax-lt",
+        "name": "2026 Chevrolet Trax LT",
+        "description": "The 2026 Chevrolet Trax LT is a five-passenger compact SUV that combines a turbocharged engine, front-wheel drive, flexible cargo space, and connected technology in a practical package. Nick Mayer Chevrolet of Dickson helps shoppers in Dickson and the surrounding Dickson County area compare the Trax LT's equipment, technology, and fuel economy.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "model": "Trax LT",
+        "modelDate": "2026",
+        "bodyType": "SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Chevrolet"
+        },
+        "driveWheelConfiguration": ["Front-Wheel Drive"],
+        "vehicleTransmission": ["6-speed automatic"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "1.2L Turbo three-cylinder (ECOTEC®)",
+            "engineDisplacement": {
+              "@type": "QuantitativeValue",
+              "value": "1.2",
+              "unitCode": "LTR"
+            },
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "137",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "162",
+               "unitCode": "FOT"
+            }
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 5,
+        "fuelType": "Gasoline"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#trax-lt-inventory",
+        "name": "New 2026 Chevrolet Trax LT Models",
+        "description": "Explore the full selection of new 2026 Chevrolet Trax LT models at Nick Mayer Chevrolet of Dickson.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chevrolet"
+        },
+        "image": [
+          "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/02-images/2026-trax-masthead-02.jpg?imwidth=1920"
+        ],
+        "category": "New Vehicles"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nickmayerchevroletofdickson.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chevrolet",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2026 Chevrolet Trax LT",
+            "item": "https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Trax+LT"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.nickmayerchevroletofdickson.com/#hero-image",
+        "name": "2026 Chevrolet Trax LT at Nick Mayer Chevrolet of Dickson",
+        "description": "The 2026 Chevrolet Trax LT displayed at Nick Mayer Chevrolet of Dickson, Tennessee.",
+        "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/02-images/2026-trax-masthead-02.jpg?imwidth=1920",
+        "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/02-images/2026-trax-masthead-02.jpg?imwidth=1920",
+        "encodingFormat": "image/jpeg",
+        "representativeOfPage": true,
+        "creditText": "Chevrolet",
+        "creator": {
+          "@type": "Organization",
+          "name": "Nick Mayer Chevrolet of Dickson",
+          "url": "https://www.nickmayerchevroletofdickson.com"
+        },
+        "license": "https://www.nickmayerchevroletofdickson.com",
+        "copyrightNotice": "© Nick Mayer Chevrolet of Dickson"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What engine does the 2026 Chevrolet Trax LT have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Trax LT uses a 1.2-liter Turbo three-cylinder engine producing 137 horsepower and 162 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2026 Chevrolet Trax LT have AWD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The 2026 Trax is available exclusively with front-wheel drive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much cargo space does the Trax have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Trax provides up to 54 cubic feet of maximum cargo space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many people can the Trax seat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Trax seats five passengers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technology comes with the Trax LT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The LT includes an 11-inch diagonal color touchscreen, an 8-inch Driver Information Center, wireless Apple CarPlay®, wireless Android Auto™, remote start, and automatic climate control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I test-drive the 2026 Chevrolet Trax LT near Dickson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nick Mayer Chevrolet of Dickson is located at 2211 Highway 46 South, Dickson, TN 37055 (615-570-4106), where local drivers can explore available Chevrolet Trax models."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #nm-seo-page {
+            --brand-primary: #262626;
+            --brand-secondary: #777777;
+            --btn-bg: #006dc7;
+            --btn-hover: #0e4180;
+            --text-main: #262626;
+            --text-light: #333333;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+
+            font-family: 'Lato', sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--brand-primary);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        /* Updated Image CSS to fix cutting off on smaller screens */
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; /* Changed from 350px to auto */
+            max-height: 400px; /* Optional: limit maximum height */
+            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .nm-map-iframe {
+            display: block;
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: 0;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 550px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/02-images/2026-trax-masthead-02.jpg?imwidth=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 650px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: var(--white);
+            border-color: var(--btn-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            #nm-seo-page .trims-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                max-width: calc(50% - 12px);
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(6, 1fr); /* 3 cards per row on desktop */
+            }
+
+            #nm-seo-page .trims-list li {
+                grid-column: span 2;
+            }
+
+            #nm-seo-page .trims-list li:nth-child(4) {
+                grid-column: 2 / 4;
+            }
+
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 4 / 6;
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        /* FIXED TRIM IMAGE CSS: Auto height and contain to prevent clipping */
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+         #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+
+        #nm-seo-page .trim-content {
+            padding: 20px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--brand-primary);
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0;
+            padding: 32px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--brand-primary);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote cite a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--btn-bg);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Chevrolet Trax LT for Sale in <br> Dickson, TN</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Trax+LT" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Chevrolet Trax LT is a five-passenger compact SUV that combines a turbocharged engine, front-wheel drive, flexible cargo space, and connected technology in a practical package. Its 1.2-liter Turbo three-cylinder produces 137 horsepower and 162 lb-ft of torque, while Chevrolet lists up to 30 MPG combined fuel economy. The Trax provides 54 cubic feet of maximum cargo capacity and a 60/40 split-folding rear seat.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Nick Mayer Chevrolet of Dickson, shoppers can compare the Trax LT's equipment, technology, interior space, fuel economy, and available safety features. The dealership is located at 2211 Highway 46 South, Dickson, TN 37055.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Trax LT Key Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 1.2L Turbo engine produces 137 horsepower and 162 lb-ft of torque.</li>
+                <li>A six-speed automatic transmission sends power to the front wheels.</li>
+                <li>The Trax seats five passengers.</li>
+                <li>Maximum cargo capacity reaches 54 cubic feet.</li>
+                <li>The LT includes 17-inch machined two-tone alloy wheels.</li>
+                <li>An 11-inch diagonal color touchscreen is standard on LT.</li>
+                <li>An 8-inch Driver Information Center provides vehicle information.</li>
+                <li>Remote start and automatic climate control are included on LT.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Chevrolet Trax LT Delivers Turbocharged Everyday Performance</h2>
+                <p>The Trax LT uses Chevrolet's ECOTEC® 1.2L Turbo three-cylinder engine with 137 horsepower and 162 lb-ft of torque. A six-speed automatic transmission manages the power delivery, while front-wheel drive is standard because the 2026 Trax is not offered with all-wheel drive.</p>
+                <p>The compact dimensions work well for everyday driving around Dickson, including trips along Highway 46, Highway 48, and Interstate 40. The Trax also fits practical local routines such as commuting, shopping, school activities, and weekend trips toward Montgomery Bell State Park.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/retail/september-2026/phase-1/movs/trax-26-mov-cw.png?imwidth=1920" alt="2026 Chevrolet Trax LT Performance" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Trax LT Performance Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 2026 Chevrolet Trax LT uses a 1.2L Turbo three-cylinder engine.</li>
+                <li>The 2026 Chevrolet Trax LT produces 137 horsepower.</li>
+                <li>The 2026 Chevrolet Trax LT produces 162 lb-ft of torque.</li>
+                <li>A six-speed automatic transmission is standard on the 2026 Chevrolet Trax LT.</li>
+                <li>The 2026 Chevrolet Trax LT comes exclusively with front-wheel drive.</li>
+                <li>The 2026 Chevrolet Trax LT delivers up to 30 MPG combined, per Chevrolet's published EPA estimates.</li>
+                <li>The 2026 Chevrolet Trax LT runs on regular 87-octane gasoline.</li>
+                <li>The 2026 Chevrolet Trax LT is also E85 compatible, per Chevrolet's official specifications.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Chevrolet Trax LT Gives Dickson Drivers Flexible Cargo Space</h2>
+                <p>Chevrolet designed the Trax around passenger and cargo flexibility. Five occupants can ride in the cabin, while the 60/40 split-folding rear seat expands the available cargo area when larger items need to be carried. Maximum cargo capacity reaches 54 cubic feet.</p>
+                <p>This layout gives Trax LT drivers useful space for groceries, sports equipment, luggage, work supplies, and everyday errands around Dickson County.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/01-images/2026-trax-capability-01.jpg?imwidth=1920" alt="2026 Chevrolet Trax LT Interior Cargo Space" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Trax LT Interior Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 2026 Chevrolet Trax LT seats five passengers.</li>
+                <li>The 2026 Chevrolet Trax LT includes a 60/40 split-folding rear seat.</li>
+                <li>The 2026 Chevrolet Trax LT provides up to 54 cubic feet of cargo space.</li>
+                <li>The 2026 Chevrolet Trax LT includes automatic climate control.</li>
+                <li>The 2026 Chevrolet Trax LT includes remote vehicle start.</li>
+                <li>The 2026 Chevrolet Trax LT offers available heated front seats.</li>
+                <li>The 2026 Chevrolet Trax LT offers an available heated steering wheel.</li>
+                <li>The 2026 Chevrolet Trax LT comes with standard Cloth/Evotex seating.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Chevrolet Trax LT Connects Drivers With Modern Technology</h2>
+                <p>The LT adds an 11-inch diagonal color touchscreen and an 8-inch diagonal Driver Information Center. Wireless Apple CarPlay® and wireless Android Auto™ provide smartphone connectivity, while available packages can add additional convenience and driver-assistance equipment.</p>
+            </div>
+            <div>
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/01-images/2026-trax-technology-02.jpg?imwidth=1920" alt="2026 Chevrolet Trax LT Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Trax LT Technology Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 2026 Chevrolet Trax LT features an 11-inch diagonal color touchscreen.</li>
+                <li>The 2026 Chevrolet Trax LT features an 8-inch Driver Information Center.</li>
+                <li>The 2026 Chevrolet Trax LT includes wireless Apple CarPlay®.</li>
+                <li>The 2026 Chevrolet Trax LT includes wireless Android Auto™.</li>
+                <li>The 2026 Chevrolet Trax LT includes Bluetooth® connectivity.</li>
+                <li>The 2026 Chevrolet Trax LT offers available adaptive cruise control.</li>
+                <li>The 2026 Chevrolet Trax LT offers available wireless phone charging.</li>
+                <li>The 2026 Chevrolet Trax LT offers additional available driver-assistance technology.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Chevrolet Trax LT Provides Standard Safety Technology</h2>
+                <p>Chevrolet Safety Assist comes standard on the 2026 Trax, with additional safety equipment available through packages. Side Blind Zone Alert, Rear Cross Traffic Alert, and Rear Park Assist are available through the Driver Confidence Package.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/gallery/01-images/2026-trax-gallery-preview-01.jpg?imwidth=1920" alt="2026 Chevrolet Trax LT Safety" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2026 Chevrolet Trax LT Safety Highlights</h2>
+            <ul class="key-facts-list">
+                <li>The 2026 Chevrolet Trax LT includes standard Automatic Emergency Braking.</li>
+                <li>The 2026 Chevrolet Trax LT includes standard Front Pedestrian Braking.</li>
+                <li>The 2026 Chevrolet Trax LT includes standard Lane Keep Assist with Lane Departure Warning.</li>
+                <li>The 2026 Chevrolet Trax LT includes a standard Following Distance Indicator.</li>
+                <li>The 2026 Chevrolet Trax LT includes standard Forward Collision Alert.</li>
+                <li>The 2026 Chevrolet Trax LT includes standard IntelliBeam® automatic high beams.</li>
+                <li>The 2026 Chevrolet Trax LT offers available Side Blind Zone Alert.</li>
+                <li>The 2026 Chevrolet Trax LT offers available Rear Cross Traffic Alert.</li>
+                <li>The 2026 Chevrolet Trax LT offers available Rear Park Assist.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>What Do Automotive Experts Say About the 2026 Chevrolet Trax?</h2>
+            <p>Car and Driver named the 2026 Trax to its 10Best Trucks and SUVs list for a third consecutive year, highlighting its ride quality, handling, cabin refinement, passenger room, and cargo capacity. Its testing also noted that the 137-horsepower engine can feel less responsive during harder acceleration.</p>
+            <blockquote>
+                "For a relatively small cash outlay, the Chevrolet Trax still delivers big value."
+                <cite>Source: Car and Driver, "10Best Trucks and SUVs for 2026" (January/February 2026 issue). Published December 16, 2025; accessed August 30, 2026.</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>What Are 2026 Chevrolet Trax Owners Saying?</h2>
+            <p>A verified 2026 Chevrolet Trax LT owner wrote in a Cars.com consumer review on May 14, 2026:</p>
+            <blockquote>
+                "Great car for the money! Better than expected fuel mileage. Very roomy in comparison to the older models."
+                <cite>Source: Cars.com: 2026 Chevrolet Trax Consumer Reviews. Review posted May 14, 2026; accessed August 30, 2026.</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 32px;">2026 Chevrolet Trax LT Features and Available Equipment</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; text-align: center;">The LT sits above the LS and 1RS in the 2026 Trax lineup and adds equipment focused on comfort, connectivity, and everyday convenience.</p>
+            <ul class="key-facts-list">
+                <li>LS: Provides the 1.2L Turbo engine, 8-inch Driver Information Center, and core Chevrolet Safety Assist technology.</li>
+                <li>1RS: Adds RS sport exterior styling, 18-inch two-tone machined wheels, and RS badging over the LS.</li>
+                <li>LT: Adds 17-inch machined two-tone wheels, an 11-inch touchscreen, automatic climate control, remote start, standard Cloth/Evotex seating, and additional convenience equipment.</li>
+                <li>2RS: Adds 19-inch machined two-tone wheels and RS exterior styling.</li>
+                <li>ACTIV: Adds its own exterior design and additional comfort-oriented equipment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>Nick Mayer Chevrolet of Dickson Serves Dickson-Area Trax Drivers</h2>
+                <p>Nick Mayer Chevrolet of Dickson serves shoppers from Dickson and surrounding Dickson County communities, including Burns, White Bluff, Kingston Springs, Charlotte, Fairview, and other nearby areas. The dealership is located at 2211 Highway 46 South, Dickson, TN 37055 (615-570-4106), providing convenient access for local shoppers comparing new Chevrolet SUVs.</p>
+                <p>The Trax LT can fit a range of local driving needs, from commuting along I-40 to shopping in Dickson, visiting Montgomery Bell State Park, or traveling between Dickson County communities. Contact Nick Mayer Chevrolet of Dickson at 615-570-4106 to schedule a Trax LT test drive.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/suvs/trax/mov/01-images/26Trax_Design_MidnightEdition-1.jpg?imwidth=1920" alt="Nick Mayer Chevrolet of Dickson Dealership" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions About the 2026 Chevrolet Trax LT</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>What engine does the 2026 Chevrolet Trax LT have?</summary>
+                    <div class="faq-answer"><p>The Trax LT uses a 1.2-liter Turbo three-cylinder engine producing 137 horsepower and 162 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2026 Chevrolet Trax LT have AWD?</summary>
+                    <div class="faq-answer"><p>No. The 2026 Trax is available exclusively with front-wheel drive.</p></div>
+                </details>
+                <details>
+                    <summary>How much cargo space does the Trax have?</summary>
+                    <div class="faq-answer"><p>The 2026 Trax provides up to 54 cubic feet of maximum cargo space.</p></div>
+                </details>
+                <details>
+                    <summary>How many people can the Trax seat?</summary>
+                    <div class="faq-answer"><p>The Trax seats five passengers.</p></div>
+                </details>
+                <details>
+                    <summary>What technology comes with the Trax LT?</summary>
+                    <div class="faq-answer"><p>The LT includes an 11-inch diagonal color touchscreen, an 8-inch Driver Information Center, wireless Apple CarPlay®, wireless Android Auto™, remote start, and automatic climate control.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I test-drive the 2026 Chevrolet Trax LT near Dickson?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Chevrolet of Dickson is located at 2211 Highway 46 South, Dickson, TN 37055 (615-570-4106), where local drivers can explore available Chevrolet Trax models.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2>Explore the 2026 Chevrolet Trax LT at Nick Mayer Chevrolet of Dickson</h2>
+            <p style="max-width: 800px; margin-left: auto; margin-right: auto;">Nick Mayer Chevrolet of Dickson is located at 2211 Highway 46 South, Dickson, TN 37055 (615-570-4106), where local drivers can explore available Chevrolet Trax models. Contact Nick Mayer Chevrolet of Dickson to schedule a Trax LT test drive.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerchevroletofdickson.com/searchnew.aspx?Make=Chevrolet&ModelAndTrim=Trax+LT" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerchevroletofdickson.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <iframe class="nm-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7844148882955!2d-87.34253978473171!3d36.02555758011545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864a4fd6eff06cd%3A0xbc06eaf7097dbb92!2s2211%20TN-46%2C%20Dickson%2C%20TN%2037055!5e0!3m2!1sen!2sus!4v1631539234280!5m2!1sen!2sus" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
