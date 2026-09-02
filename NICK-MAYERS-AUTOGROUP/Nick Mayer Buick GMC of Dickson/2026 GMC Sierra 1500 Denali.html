@@ -16,7 +16,7 @@
         "priceRange": "$$$",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Cash, Credit Card, Financing",
-        "image": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/masthead/my26-sierra-1500-denali-masthead-3000x1000-26PGSRLD99027.jpg?imwidth=1920",
+        "image": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-header-3000x1000-26PGSRLD99054.jpg?imwidth=1920",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "2211 Highway 46 South",
@@ -201,7 +201,7 @@
           "name": "GMC"
         },
         "image": [
-          "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/masthead/my26-sierra-1500-denali-masthead-3000x1000-26PGSRLD99027.jpg?imwidth=1920"
+          "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-header-3000x1000-26PGSRLD99054.jpg?imwidth=1920"
         ],
         "category": "New Vehicles"
       }
@@ -253,8 +253,8 @@
         "@id": "https://www.nickmayerchevybuickgmc.com/#hero-image",
         "name": "2026 GMC Sierra 1500 Denali at Nick Mayer Buick GMC of Dickson",
         "description": "The 2026 GMC Sierra 1500 Denali displayed at Nick Mayer Buick GMC of Dickson, Tennessee.",
-        "url": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/masthead/my26-sierra-1500-denali-masthead-3000x1000-26PGSRLD99027.jpg?imwidth=1920",
-        "contentUrl": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/masthead/my26-sierra-1500-denali-masthead-3000x1000-26PGSRLD99027.jpg?imwidth=1920",
+        "url": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-header-3000x1000-26PGSRLD99054.jpg?imwidth=1920",
+        "contentUrl": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-header-3000x1000-26PGSRLD99054.jpg?imwidth=1920",
         "encodingFormat": "image/jpeg",
         "representativeOfPage": true,
         "creditText": "GMC",
@@ -338,18 +338,18 @@
 
     <style>
         #nm-seo-page {
-            --brand-primary: #000000;
-            --brand-secondary: #7B868C;
-            --btn-bg: #0066cc;
-            --btn-hover: #004c99;
-            --text-main: #000000;
+            --brand-primary: #3f4443;
+            --brand-secondary: #777777;
+            --btn-bg: #1e1a34;
+            --btn-hover: #383065;
+            --text-main: #333333;
             --text-light: #333333;
             --bg-light: #F8F9FA;
             --white: #FFFFFF;
             --border: #E5E7EB;
             --max-width: 1200px;
 
-            font-family: inherit;
+            font-family: 'Lato', sans-serif;
             color: var(--text-main);
             line-height: 1.7;
             background-color: var(--white);
@@ -379,6 +379,12 @@
         }
 
         #nm-seo-page .bg-light-section {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            width: 100vw;
+            margin-left: -50vw;
+            margin-right: -50vw;
             background-color: var(--bg-light);
             border-bottom: none;
         }
@@ -416,7 +422,7 @@
             }
         }
 
-        #nm-seo-page h1 {
+        #nm-seo-page .hero-title-section h2 {
             font-size: clamp(36px, 5vw, 52px);
             color: var(--white);
             font-weight: 700;
@@ -440,22 +446,37 @@
             color: var(--text-light);
         }
 
-        /* Updated Image CSS to fix cutting off on smaller screens */
+        /* Standardized content image height across all section images (excludes header hero background) */
         #nm-seo-page .nm-img-fluid {
             width: 100%;
-            height: auto; /* Changed from 350px to auto */
-            max-height: 400px; /* Optional: limit maximum height */
-            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            height: 320px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             display: block;
         }
 
+        #nm-seo-page .nm-map-iframe {
+            display: block;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            width: 100vw;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            border: 0;
+        }
+
         #nm-seo-page .hero-title-section {
             position: relative;
+            left: 50%;
+            right: 50%;
+            width: 100vw;
+            margin-left: -50vw;
+            margin-right: -50vw;
             background-color: var(--brand-primary);
-            min-height: 400px;
-            padding: 100px 24px;
+            min-height: 480px;
+            padding: 120px 24px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -493,8 +514,8 @@
 
         @media (min-width: 992px) {
              #nm-seo-page .hero-title-section {
-                 min-height: 500px;
-                 padding: 140px 24px;
+                 min-height: 600px;
+                 padding: 160px 24px;
              }
         }
 
@@ -652,6 +673,11 @@
             color: var(--brand-primary);
         }
 
+        #nm-seo-page blockquote cite a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         #nm-seo-page .faq-container {
             margin-top: 32px;
             border-top: 1px solid var(--border);
@@ -705,7 +731,7 @@
 
     <header class="hero-title-section">
         <div class="container">
-            <h1>2026 GMC Sierra 1500 Denali for Sale in <br> Dickson, TN</h1>
+            <h2>2026 GMC Sierra 1500 Denali in <br> Dickson, TN</h2>
             <div class="hero-buttons">
                 <a href="https://www.nickmayerchevybuickgmc.com/searchnew.aspx?Make=GMC&ModelAndTrim=Sierra+1500+Denali" class="nm-btn">View Inventory</a>
                 <a href="https://www.nickmayerchevybuickgmc.com/contactus.aspx" class="nm-btn">Contact Us</a>
@@ -749,7 +775,7 @@
                 <p>Nick Mayer Buick GMC of Dickson can order the Sierra 1500 Denali with any of its three engine options for Dickson-area drivers who want to compare gasoline and diesel powertrains before deciding.</p>
             </div>
             <div>
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/capability/my26-sierra-1500-denali-capability-duramax-engine-1920x960-26PGSRLD99142.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Powertrain" class="nm-img-fluid" loading="lazy">
+                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-unique-1920x960-26PGSRLD99012.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Powertrain" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -780,7 +806,7 @@
                 <p>This allows shoppers to select a configuration around their driving environment and truck requirements rather than choosing a single fixed setup. Nick Mayer Buick GMC of Dickson can source multiple Sierra 1500 Denali drivetrain and bed configurations at its Dickson, TN location, just off Highway 46 near the I-40 interchange, so shoppers can compare options in person.</p>
             </div>
             <div style="order: 1;">
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-unique-1920x960-26PGSRLD99012.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Drivetrain Configurations" class="nm-img-fluid" loading="lazy">
+                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/masthead/my26-sierra-1500-denali-masthead-3000x1000-26PGSRLD99027.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Drivetrain Configurations" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -809,7 +835,7 @@
                 <p>Nick Mayer Buick GMC of Dickson shows the Denali's interior appointments in person at its Dickson showroom, so shoppers can compare materials before ordering.</p>
             </div>
             <div>
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/interior/new/my26-sierra-1500-denali-interior-spacious-crew-cab-1920x1440-26PGSRLD100731.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Interior" class="nm-img-fluid" loading="lazy">
+                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/interior/my26-sierra-1500-denali-interior-header-3000x1000-26PGSRLD100729.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Interior" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -836,7 +862,7 @@
                 <p>Nick Mayer Buick GMC of Dickson can walk Dickson-area shoppers through the Denali's infotainment and driver-assistance technology, including available Super Cruise™, during a test drive at the dealership.</p>
             </div>
             <div style="order: 1;">
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/technology/new/my26-sierra-1500-denali-technology-infotainment-1920x960-26PGSRLD100730.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Technology" class="nm-img-fluid" loading="lazy">
+                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/technology/new/my26-sierra-1500-denali-technology-header-3000x1000-26PGSRLD100724.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Technology" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -865,7 +891,7 @@
                 <p>For Dickson-area truck buyers, selecting the correct configuration is particularly important when the Sierra will regularly tow trailers, boats, equipment, or recreational vehicles. Nick Mayer Buick GMC of Dickson can help shoppers match a Sierra 1500 Denali configuration to their specific towing needs, whether that means a trip up I-40 or a haul across Dickson County.</p>
             </div>
             <div>
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/capability/my26-sierra-1500-denali-capability-hill-descent-control-1920x960-26PGSRLD99162.jpg?imwidth=1920" alt="2026 GMC Sierra 1500 Denali Towing Capability" class="nm-img-fluid" loading="lazy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Tde14kmboOIlLwgUNZpsuFm--Pdsd_h2lKIF_jHuHQ&s=10" alt="2026 GMC Sierra 1500 Denali Towing Capability" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -887,11 +913,10 @@
     <section>
         <div class="container">
             <h2>What Do Automotive Experts Say About the 2026 GMC Sierra 1500 Denali?</h2>
-            <p>Kelley Blue Book's 2026 road test of the Sierra 1500 Denali Ultimate, the top Denali trim, highlighted the truck's road presence and its position at the intersection of luxury, capability, and technology.</p>
-            <p>The reviewer described the Denali Ultimate's styling this way:</p>
+            <p>MotorTrend's 2026 evaluation identifies the Denali as the road-focused premium version of the Sierra 1500 and highlights its luxury-oriented equipment and available Super Cruise technology.</p>
             <blockquote>
-                "the nicest thing in the Home Depot parking lot"
-                <cite>Source: Kelley Blue Book, "Driving the 2026 GMC Sierra 1500 Denali Ultimate," published April 24, 2026 (https://www.kbb.com/car-news/driving-the-2026-gmc-sierra-1500-denali-ultimate/, accessed August 29, 2026)</cite>
+                "Think of the 2026 GMC Sierra 1500 Denali as the polar opposite of a stripped-down work truck."
+                <cite>Source: MotorTrend: 2026 GMC Sierra 1500 Denali Expert Review</cite>
             </blockquote>
             <p>Nick Mayer Buick GMC of Dickson can order the same luxury-focused Denali and Denali Ultimate equipment that reviewers highlight, for Dickson-area shoppers to see in person.</p>
         </div>
@@ -899,11 +924,11 @@
 
     <section class="bg-light-section">
         <div class="container">
-            <h2>What Are 2026 GMC Sierra 1500 Owners Saying?</h2>
-            <p>A Cars.com owner review of a 2026 GMC Sierra 1500 equipped with the 6.2L V8, the same engine available on the Denali, described the truck's ride, interior, and early ownership experience after three weeks and about 700 miles behind the wheel.</p>
+            <h2>What Are 2026 GMC Sierra 1500 Denali Owners Saying?</h2>
+            <p>A Cars.com owner reviewing a 2026 Sierra 1500 Denali discussed the truck's ride, interior, engine performance, and early ownership experience after driving it for several weeks.</p>
             <blockquote>
                 "A little expensive, but comfortable, quiet, smooth ride."
-                <cite>Source: Cars.com, 2026 GMC Sierra 1500 Consumer Reviews (https://www.cars.com/research/gmc-sierra_1500-2026/consumer-reviews/, accessed August 29, 2026)</cite>
+                <cite>Source: Cars.com: 2026 GMC Sierra 1500 Denali Owner Review</cite>
             </blockquote>
             <p>Nick Mayer Buick GMC of Dickson can arrange a Sierra 1500 Denali test drive so Dickson-area shoppers can evaluate ride quality directly.</p>
         </div>
@@ -917,7 +942,7 @@
                 <p>Nick Mayer Buick GMC of Dickson serves drivers throughout Dickson and the surrounding Dickson County area who need a full-size pickup for commuting, towing, hauling, work, and recreation. The dealership is located at 2211 Highway 46 South, Dickson, TN 37055, just off the Highway 46 and I-40 interchange, and can be reached at 615-639-0282.</p>
             </div>
             <div style="order: 1;">
-                <img src="https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/capability/my26-sierra-1500-denali-capability-header-3000x1000-26PGSRLD99057.jpg?imwidth=1920" alt="Dealership Experience in Dickson" class="nm-img-fluid" loading="lazy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawXNsOGL3LRU2RZg98V54X70DrTZgXHWc7gs1KehamQ&s=10" alt="Dealership Experience in Dickson" class="nm-img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -961,7 +986,7 @@
     <section class="bg-light-section">
         <div class="container" style="text-align: center;">
             <h2>Explore the 2026 GMC Sierra 1500 Denali at Nick Mayer Buick GMC of Dickson</h2>
-            <p style="max-width: 800px; margin-left: auto; margin-right: auto;"><a href="https://maps.google.com/maps?daddr=2211+Highway+46+South,+Dickson,+TN+37055" target="_blank" style="text-decoration: none; color: black"><strong>Nick Mayer Buick GMC of Dickson</strong></a>, located at 2211 Highway 46 South, Dickson, TN 37055 (615-639-0282), provides access to GMC Sierra 1500 models and can help local shoppers compare available Denali configurations according to their towing, hauling, passenger, and driving requirements.</p>
+            <p style="max-width: 800px; margin-left: auto; margin-right: auto;"><a href="https://maps.google.com/maps?daddr=2211+Highway+46+South,+Dickson,+TN+37055" target="_blank" style="text-decoration: none; color: #3f4443"><strong>Nick Mayer Buick GMC of Dickson</strong></a>, located at 2211 Highway 46 South, Dickson, TN 37055 (615-639-0282), provides access to GMC Sierra 1500 models and can help local shoppers compare available Denali configurations according to their towing, hauling, passenger, and driving requirements.</p>
             <div class="hero-buttons" style="margin-top: 32px;">
                 <a href="https://www.nickmayerchevybuickgmc.com/searchnew.aspx?Make=GMC&ModelAndTrim=Sierra+1500+Denali" class="nm-btn">View Inventory</a>
                 <a href="https://www.nickmayerchevybuickgmc.com/contactus.aspx" class="nm-btn">Contact Us</a>
@@ -969,6 +994,6 @@
         </div>
     </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7844148882955!2d-87.34253978473171!3d36.02555758011545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864a4fd6eff06cd%3A0xbc06eaf7097dbb92!2s2211%20TN-46%2C%20Dickson%2C%20TN%2037055!5e0!3m2!1sen!2sus!4v1631539234280!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe class="nm-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7844148882955!2d-87.34253978473171!3d36.02555758011545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864a4fd6eff06cd%3A0xbc06eaf7097dbb92!2s2211%20TN-46%2C%20Dickson%2C%20TN%2037055!5e0!3m2!1sen!2sus!4v1631539234280!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 </article>
