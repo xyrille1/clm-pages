@@ -1,0 +1,803 @@
+<article id="nm-seo-page">
+
+    <style>
+        @media (max-width: 767px) {
+            #sierra-denali-interior-img {
+                max-height: 180px;
+            }
+        }
+    </style>
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "{{DEALER_URL}}/#business",
+        "name": "Liberty Chrysler Dodge Jeep Ram",
+        "legalName": "Liberty Chrysler Dodge Jeep Ram",
+        "description": "The 2027 Ram 2500 brings serious towing strength, heavy-duty performance and upscale cabin options to drivers who need a truck for demanding work and everyday travel.",
+        "url": "{{DEALER_URL}}",
+        "telephone": "+1-847-362-5099",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "{{HERO_IMAGE_URL}}",
+        "logo": "{{LOGO_URL}}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1000 E Park Ave",
+          "addressLocality": "Libertyville",
+          "addressRegion": "IL",
+          "postalCode": "60048",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "{{LATITUDE}}",
+          "longitude": "{{LONGITUDE}}"
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Liberty+Chrysler+Dodge+Jeep+Ram+1000+E+Park+Ave+Libertyville+IL+60048",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "{{DAY}}",
+            "opens": "{{OPENS}}",
+            "closes": "{{CLOSES}}"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Libertyville"},
+          {"@type": "City", "name": "Mundelein"},
+          {"@type": "City", "name": "Vernon Hills"},
+          {"@type": "City", "name": "Gurnee"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "{{DEALER_URL}}/#organization",
+        "name": "Liberty Chrysler Dodge Jeep Ram",
+        "url": "{{DEALER_URL}}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{LOGO_URL}}",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-847-362-5099",
+          "areaServed": "IL",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1000 E Park Ave",
+          "addressLocality": "Libertyville",
+          "addressRegion": "IL",
+          "postalCode": "60048",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "{{DEALER_URL}}/#ram-2500",
+        "name": "2027 Ram 2500",
+        "description": "The 2027 Ram 2500 brings serious towing strength, heavy-duty performance and upscale cabin options to drivers who need a truck for demanding work and everyday travel. Its standard 6.4L HEMI® V8 produces 405 horsepower and 429 lb-ft of torque, while the available High-Output 6.7L Cummins® Turbo Diesel I6 delivers 430 horsepower and 1,075 lb-ft of torque.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ram"
+        },
+        "model": "2500",
+        "modelDate": "2027",
+        "bodyType": "Pickup Truck",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Ram"
+        },
+        "vehicleTransmission": ["Eight-speed automatic"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "name": "6.4L HEMI V8",
+            "engineDisplacement": {
+              "@type": "QuantitativeValue",
+              "value": "6.4",
+              "unitCode": "LTR"
+            },
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "405",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "429",
+               "unitCode": "FOT"
+            }
+          },
+          {
+            "@type": "EngineSpecification",
+            "name": "High-Output 6.7L Cummins Turbo Diesel I6",
+            "engineDisplacement": {
+              "@type": "QuantitativeValue",
+              "value": "6.7",
+              "unitCode": "LTR"
+            },
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "430",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "1075",
+               "unitCode": "FOT"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "{{HERO_IMAGE_URL}}#hero-image",
+        "name": "2027 Ram 2500 at Liberty Chrysler Dodge Jeep Ram",
+        "description": "The 2027 Ram 2500 displayed at Liberty Chrysler Dodge Jeep Ram in Libertyville, IL.",
+        "url": "{{HERO_IMAGE_URL}}",
+        "contentUrl": "{{HERO_IMAGE_URL}}",
+        "representativeOfPage": true,
+        "creator": {
+          "@type": "Organization",
+          "name": "Liberty Chrysler Dodge Jeep Ram",
+          "url": "{{DEALER_URL}}"
+        },
+        "license": "{{DEALER_URL}}",
+        "copyrightNotice": "© Liberty Chrysler Dodge Jeep Ram"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What engines are available in the 2027 Ram 2500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standard 6.4L HEMI V8 produces 405 horsepower and 429 lb-ft of torque. The available High-Output 6.7L Cummins Turbo Diesel produces 430 horsepower and 1,075 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can the 2027 Ram 2500 tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ram 2500 can tow up to 20,000 pounds when properly equipped with the available diesel powertrain. Actual capacity depends on configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum payload for the 2027 Ram 2500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select gasoline-powered configurations can carry up to 4,580 pounds when properly equipped."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technology is available in the 2027 Ram 2500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Available features include a 14.5-inch Uconnect 5 touchscreen, 12.3-inch digital instrument cluster, 10.25-inch passenger display, wireless smartphone integration and advanced towing technologies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I shop for the 2027 Ram 2500 near Libertyville, IL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Liberty Chrysler Dodge Jeep Ram is located at 1000 E Park Ave, Libertyville, IL 60048. Contact our team to ask about current inventory and available configurations."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+
+        #nm-seo-page {
+            --brand-primary: #1e1e2d;
+            --brand-secondary: #0d6efd;
+            --btn-bg: #ffc107;
+            --btn-hover: #e0a800;
+            --link-hover: #0a58ca;
+            --text-main: #1e1e2d;
+            --text-light: #6b7280;
+            --bg-light: #f5f5f5;
+            --white: #ffffff;
+            --border: #c9c9c9;
+            --max-width: 1200px;
+            --font-heading: SequelBlack, Inter, Arial, Helvetica, sans-serif;
+            --font-body: Inter, Arial, Helvetica, sans-serif;
+
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+        
+        #nm-seo-page body {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 50px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        @media (max-width: 991px) {
+             #nm-seo-page section {
+                 padding: 35px 0;
+             }
+        }
+        
+        @media (max-width: 767px) {
+             #nm-seo-page section {
+                 padding: 30px 0;
+             }
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section,
+        #nm-seo-page .hero-title-section,
+        #nm-seo-page > iframe {
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page .hero-title {
+            font-size: 36px;
+            color: var(--white);
+            font-weight: normal !important;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        
+        #nm-seo-page h1, #nm-seo-page h2, #nm-seo-page h3, #nm-seo-page h4, #nm-seo-page h5, #nm-seo-page h6 {
+            font-family: inherit;
+            font-weight: normal !important;
+        }
+
+        #nm-seo-page h2 {
+            font-size: 30px;
+            color: var(--brand-primary);
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 18px;
+            color: var(--text-light);
+            font-family: inherit;
+        }
+        
+        #nm-seo-page b, #nm-seo-page strong {
+            font-weight: bold !important;
+        }
+
+        /* Updated Image CSS to fix cutting off on smaller screens */
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; /* Changed from 350px to auto */
+            max-height: 400px; /* Optional: limit maximum height */
+            object-fit: cover; /* Optional: adjust as needed, 'contain' might be better depending on preference */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 570px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://hips.hearstapps.com/hmg-prod/images/f9f82931-c70c-4eff-9976-ff245161b202.jpg?crop=0.625xw:0.527xh;0.173xw,0.29xh&resize=1200:*') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+            z-index: 1;
+        }
+        
+        @media (max-width: 991px) {
+            #nm-seo-page .hero-title-section::after {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+            }
+            #nm-seo-page .hero-title-section {
+                 min-height: auto;
+                 padding: 35px;
+             }
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 1200px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 800px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: #000000;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: normal !important;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 991px) {
+            #nm-seo-page .nm-btn {
+                font-size: 13px;
+            }
+            #nm-seo-page p {
+                font-size: 13px;
+            }
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: #000000;
+            border-color: var(--btn-hover);
+        }
+        
+        #nm-seo-page a {
+            color: var(--brand-secondary);
+        }
+        
+        #nm-seo-page a:hover {
+            color: var(--link-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 10px 10px 0;
+            font-size: 16px;
+            font-family: inherit;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-left-color 0.25s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0 !important;
+            padding: 32px !important;
+            background: var(--bg-light) !important;
+            border-left: 6px solid var(--brand-primary) !important;
+            border-radius: 0 10px 10px 0 !important;
+            font-style: italic !important;
+            font-size: 18px !important;
+            color: var(--brand-primary) !important;
+            font-family: inherit;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 18px;
+            font-weight: normal !important;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.25s ease-in-out;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: normal !important;
+            color: var(--brand-secondary);
+            transition: transform 0.25s ease-in-out;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            #nm-seo-page .key-facts-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                width: calc(50% - 12px);
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1 class="hero-title">2027 Ram 2500 for Sale <br> in Libertyville, IL</h1>
+            <div class="hero-buttons">
+                <!-- <a href="{{CONTACT_URL}}" class="nm-btn">PRE-ORDER</a> -->
+                <a href="https://drivelibertycdjr.com/inventory?search=2027+ram+2500&filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22asc%22%7D%2C%22appliedFilters%22%3A%7B%7D%7D" class="nm-btn">VIEW INVENTORY</a>
+                <a href="https://drivelibertycdjr.com/contact" class="nm-btn">CONTACT US</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2027 Ram 2500 brings serious towing strength, heavy-duty performance and upscale cabin options to drivers who need a truck for demanding work and everyday travel. Its standard 6.4L HEMI® V8 produces 405 horsepower and 429 lb-ft of torque, while the available High-Output 6.7L Cummins® Turbo Diesel I6 delivers 430 horsepower and 1,075 lb-ft of torque. At Liberty Chrysler Dodge Jeep Ram, we help drivers from Libertyville, Mundelein, Vernon Hills, Gurnee and surrounding Lake County communities compare Ram 2500 configurations for work, recreation and hauling.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ram 2500 Specifications Define Heavy-Duty Capability</h2>
+            <ul class="key-facts-list">
+                <li>Standard 6.4L HEMI® V8 with 405 horsepower and 429 lb-ft of torque</li>
+                <li>Available High-Output 6.7L Cummins® Turbo Diesel I6</li>
+                <li>Diesel output of up to 430 horsepower and 1,075 lb-ft of torque</li>
+                <li>Eight-speed automatic transmission</li>
+                <li>Maximum towing capacity of up to 20,000 pounds when properly equipped</li>
+                <li>Maximum payload of up to 4,580 pounds on select gas configurations</li>
+                <li>Regular Cab, Crew Cab and Mega Cab configurations, depending on drivetrain and bed selection</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>The 2027 Ram 2500 Delivers Strength for Demanding Jobs</h2>
+                <p>The Ram 2500 offers two powertrains to suit different heavy-duty needs. The 6.4L HEMI V8 supplies 405 horsepower and 429 lb-ft of torque for hauling supplies, transporting tools and managing worksite duties. Drivers who prioritize low-end pulling power can choose the High-Output 6.7L Cummins Turbo Diesel, which produces 430 horsepower and 1,075 lb-ft of torque. Both engines use an eight-speed automatic transmission.</p>
+                <p>Depending on configuration, the Ram 2500 can tow up to 20,000 pounds with the diesel engine or carry a payload of up to 4,580 pounds with select gasoline-powered setups. These ratings make configuration important: the truck's engine, cab, drivetrain, axle ratio and equipment all affect its final capability.</p>
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/df0564b5-50b1-4dbb-bcdc-105e374b1ad2.jpg?w=768&width=768&q=75&format=webp" alt="The 2027 Ram 2500 Delivers Strength for Demanding Jobs" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ram 2500 Performance Highlights</h2>
+            <ul class="key-facts-list">
+                <li>6.4L HEMI V8 standard</li>
+                <li>Available High-Output 6.7L Cummins Turbo Diesel</li>
+                <li>Up to 430 horsepower and 1,075 lb-ft of diesel torque</li>
+                <li>Eight-speed automatic transmission</li>
+                <li>Up to 20,000 pounds of maximum towing capacity</li>
+                <li>Up to 4,580 pounds of maximum payload on select gas models</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>The 2027 Ram 2500 Brings Comfort to Long Workdays</h2>
+                <p>The 2027 Ram 2500 combines heavy-duty capability with available interior features designed to make long drives more comfortable. Depending on trim and configuration, drivers can enjoy:</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/2027/ram-2500/gallery/desktop/my27-ram-2500-gallery-pillar-thumbnail-02-desktop.jpg.image.2880.jpg" alt="The 2027 Ram 2500 Brings Comfort to Long Workdays" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <ul class="key-facts-list">
+                <li>Available leather-trimmed seating</li>
+                <li>Available heated and ventilated front seats</li>
+                <li>Spacious rear seating in Crew Cab and Mega Cab models</li>
+                <li>Available premium audio system</li>
+                <li>Upgraded interior materials and finishes</li>
+                <li>Practical cabin storage for everyday essentials</li>
+            </ul>
+            <p>For drivers traveling between Libertyville, Gurnee and the greater Chicago area, these available amenities help the Ram 2500 transition between demanding workdays and longer personal trips.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>The 2027 Ram 2500 Connects Work and Recreation</h2>
+                <p>Available infotainment, connectivity and towing technologies help drivers manage daily tasks and trailer operations. Depending on trim and equipment, features include:</p>
+            </div>
+            <div>
+                <img id="ram-2500-technology-img" src="https://www.edmunds.com/assets/m/cs/cms/4d81cbee-2210-445d-83c4-2828de3f05be/RM027_021TF_1600.jpg" alt="The 2027 Ram 2500 Connects Work and Recreation" class="nm-img-fluid" width="1920" height="720" style="max-height: 280px;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <ul class="key-facts-list">
+                <li>Available 14.5-inch Uconnect® 5 touchscreen</li>
+                <li>12.3-inch digital instrument cluster</li>
+                <li>Available 10.25-inch front-passenger interactive display</li>
+                <li>Wireless Apple CarPlay® and Android Auto™ compatibility</li>
+                <li>Available trailer camera views</li>
+                <li>Available Trailer Reverse Steering Control</li>
+                <li>Available digital rearview mirror with tow mode</li>
+            </ul>
+            <p>These technologies can help drivers access vehicle information, connect compatible smartphones and maneuver trailers with greater awareness, whether heading to a worksite or preparing for a weekend getaway.</p>
+        </div>
+    </section>
+    
+    <section >
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>The 2027 Ram 2500 Offers Features for Towing Confidence</h2>
+                <p>Available driver-assistance and towing technologies can include Forward Collision Warning with Active Braking, Adaptive Cruise Control, Blind Spot Monitoring with trailer coverage, and surround-view or trailer camera systems. Equipment varies by trim and package. These features can support awareness when hauling equipment, maneuvering in tight spaces or traveling on busy roads, but they do not replace attentive driving.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://ddoffroad.com/cdn/shop/files/1D8A399D-6C52-4068-916C-E0F5646B0AAB.png?v=1786237506&width=1445" alt="The 2027 Ram 2500 Offers Features for Towing Confidence" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ram 2500 Trim Levels Offer Different Priorities</h2>
+            <ul class="key-facts-list">
+                <li>Tradesman: A work-focused model with practical equipment for job sites and fleet use.</li>
+                <li>Big Horn: Adds style and convenience upgrades for drivers balancing work and daily travel.</li>
+                <li>Laramie: Emphasizes cabin comfort, technology and available premium features.</li>
+                <li>Rebel: Combines heavy-duty capability with off-road-oriented styling and equipment.</li>
+                <li>Power Wagon: Focuses on off-road performance and, for 2027, offers the available Cummins High-Output diesel.</li>
+                <li>Limited: Provides upscale materials and advanced available comfort and technology features.</li>
+                <li>Other available models: Black Express, Warlock and Limited Longhorn offer additional styling and equipment choices.</li>
+            </ul>
+            <p>Equipment varies by configuration, and not every trim or option is available on every truck.</p>
+        </div>
+    </section>
+
+    <section >
+        <div class="container">
+            <h2>What Do Automotive Experts Say About the 2027 Ram 2500?</h2>
+            <p><em>Car and Driver</em> praised the Ram HD cabin in its 2027 review, writing:</p>
+            <blockquote>
+                "Ram has the best interior in the segment with luxury-car-level detailing, extreme comfort, and a well-laid-out, modern design."
+            </blockquote>
+            <cite>Source: <a href="https://www.caranddriver.com/ram/2500-3500-2027" style="color:inherit; text-decoration:underline;">Car and Driver, 2027 Ram HD Review</a></cite>
+        </div>
+    </section>
+
+    
+
+    
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Explore the 2027 Ram 2500 at Liberty Chrysler Dodge Jeep Ram</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Liberty Chrysler Dodge Jeep Ram, we help drivers compare Ram 2500 engines, cab styles, bed lengths, towing ratings and available equipment. Visit us at 1000 E Park Ave, Libertyville, IL 60048, to explore available inventory, discuss financing and trade-ins, and find a heavy-duty truck suited to your needs.</p>
+            <div class="hero-buttons">
+                <!-- <a href="{{CONTACT_URL}}" class="nm-btn">PRE-ORDER</a> -->
+                <a href="https://drivelibertycdjr.com/inventory?search=2027+ram+2500&filters=%7B%22sortBy%22%3A%7B%22option%22%3A%7B%22label%22%3A%22Price%22%2C%22value%22%3A%22price%22%2C%22type%22%3A%22value%22%7D%2C%22direction%22%3A%22asc%22%7D%2C%22appliedFilters%22%3A%7B%7D%7D" class="nm-btn">VIEW INVENTORY</a>
+                <a href="https://drivelibertycdjr.com/contact" class="nm-btn">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>2027 Ram 2500 FAQs</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>What engines are available in the 2027 Ram 2500?</summary>
+                    <div class="faq-answer"><p>The standard 6.4L HEMI V8 produces 405 horsepower and 429 lb-ft of torque. The available High-Output 6.7L Cummins Turbo Diesel produces 430 horsepower and 1,075 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>How much can the 2027 Ram 2500 tow?</summary>
+                    <div class="faq-answer"><p>The Ram 2500 can tow up to 20,000 pounds when properly equipped with the available diesel powertrain. Actual capacity depends on configuration.</p></div>
+                </details>
+                <details>
+                    <summary>What is the maximum payload for the 2027 Ram 2500?</summary>
+                    <div class="faq-answer"><p>Select gasoline-powered configurations can carry up to 4,580 pounds when properly equipped.</p></div>
+                </details>
+                <details>
+                    <summary>What technology is available in the 2027 Ram 2500?</summary>
+                    <div class="faq-answer"><p>Available features include a 14.5-inch Uconnect 5 touchscreen, 12.3-inch digital instrument cluster, 10.25-inch passenger display, wireless smartphone integration and advanced towing technologies.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I shop for the 2027 Ram 2500 in Libertyville, IL?</summary>
+                    <div class="faq-answer"><p>Liberty Chrysler Dodge Jeep Ram is located at 1000 E Park Ave, Libertyville, IL 60048. Contact our team to ask about current inventory and available configurations.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps?q=Liberty+Chrysler+Dodge+Jeep+Ram,+1000+E+Park+Ave,+Libertyville,+IL+60048&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
