@@ -1,0 +1,914 @@
+<!-- ============================================================
+     SCHEMA 1: LocalBusiness / AutoDealer
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness", "WebPage"],
+  "@id": "https://www.iversonhuron.com/#business",
+  "name": "Iverson CDJR Huron",
+  "description": "Chrysler Dodge Jeep Ram dealership serving Huron, Aberdeen, Watertown, and surrounding South Dakota communities, offering new vehicles, pre-owned cars, financing, and auto service.",
+  "url": "https://www.iversonhuron.com/",
+  "telephone": "+1-605-570-9404",
+  "priceRange": "$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "image": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2500 Dakota Ave S",
+    "addressLocality": "Huron",
+    "addressRegion": "SD",
+    "postalCode": "57350",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.336845,
+    "longitude": -98.213010
+  },
+  "hasMap": "https://maps.google.com/maps?q=Iverson+Chrysler+Dodge+Jeep+Ram+Huron+SD",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Huron"},
+    {"@type": "City", "name": "Aberdeen"},
+    {"@type": "City", "name": "Watertown"}
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 2: Organization
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.iversonhuron.com/#organization",
+  "name": "Iverson CDJR Huron",
+  "url": "https://www.iversonhuron.com/",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-605-570-9404",
+    "areaServed": "SD",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2500 Dakota Ave S",
+    "addressLocality": "Huron",
+    "addressRegion": "SD",
+    "postalCode": "57350",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 3: Vehicle Listing - Car
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "@id": "https://www.iversonhuron.com/#jeep-grand-cherokee",
+  "name": "2026 Jeep Grand Cherokee",
+  "description": "The 2026 Jeep Grand Cherokee and 2026 Toyota 4Runner give Huron-area SUV shoppers two midsize choices for commuting, family transportation, cargo, towing, and outdoor activities. Compare both at Iverson CDJR Huron.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Jeep"
+  },
+  "model": "Grand Cherokee",
+  "modelDate": "2026",
+  "bodyType": "SUV",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Jeep"
+  },
+  "driveWheelConfiguration": ["2WD", "4WD"],
+  "vehicleTransmission": ["8-speed automatic"],
+  "vehicleEngine": [
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gasoline",
+      "name": "2.0L Hurricane 4 Turbo",
+      "enginePower": {
+         "@type": "QuantitativeValue",
+         "value": "324",
+         "unitCode": "BHP"
+      },
+      "torque": {
+         "@type": "QuantitativeValue",
+         "value": "332",
+         "unitCode": "F17"
+      }
+    }
+  ],
+  "numberOfDoors": 4,
+  "seatingCapacity": 5
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.iversonhuron.com/#grand-cherokee-inventory",
+  "name": "New 2026 Jeep Grand Cherokee Models",
+  "description": "Explore the full selection of new 2026 Jeep Grand Cherokee models at Iverson CDJR Huron.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Jeep"
+  },
+  "image": [
+    "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg"
+  ],
+  "category": "New Vehicles"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 5: BreadcrumbList
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.iversonhuron.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "New Vehicles",
+      "item": "https://www.iversonhuron.com/searchnew.aspx"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jeep",
+      "item": "https://www.iversonhuron.com/searchnew.aspx?Make=Jeep"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "2026 Jeep Grand Cherokee vs. 2026 Toyota 4Runner",
+      "item": "https://www.iversonhuron.com/searchnew.aspx?Make=Jeep&Model=Grand+Cherokee"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 6: ImageObject (Hero Image)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": "https://www.iversonhuron.com/#hero-image",
+  "name": "2026 Jeep Grand Cherokee vs. 2026 Toyota 4Runner at Iverson CDJR Huron",
+  "description": "The 2026 Jeep Grand Cherokee displayed by Iverson CDJR Huron serving Huron and surrounding South Dakota communities.",
+  "url": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "contentUrl": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "encodingFormat": "image/jpeg",
+  "representativeOfPage": true,
+  "creditText": "Jeep",
+  "creator": {
+    "@type": "Organization",
+    "name": "Iverson CDJR Huron",
+    "url": "https://www.iversonhuron.com/"
+  },
+  "license": "https://www.iversonhuron.com/",
+  "copyrightNotice": "© Iverson CDJR Huron"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 7: AggregateRating + Reviews
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "@id": "https://www.iversonhuron.com/#reviews",
+  "name": "Iverson CDJR Huron",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "210",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 8: FAQPage
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much horsepower does the 2026 Jeep Grand Cherokee produce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2.0L Hurricane 4 Turbo produces 324 horsepower and 332 lb-ft of torque. The 3.6L Pentastar V6 produces 293 horsepower and 260 lb-ft on Laredo and Laredo X models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 Jeep Grand Cherokee tow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2026 Grand Cherokee has a maximum towing capacity of 6,200 pounds when properly equipped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 Toyota 4Runner tow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2026 4Runner has a maximum towing capacity of 6,000 pounds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the 2026 Jeep Grand Cherokee offer 4x4?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The 2026 Grand Cherokee is available with 4x4 depending on configuration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can Huron-area drivers explore the 2026 Jeep Grand Cherokee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We help drivers compare available Grand Cherokee models, features, financing, trade-ins, service, and genuine Mopar parts at Iverson CDJR Huron, located at 2500 Dakota Ave S in Huron, South Dakota."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+        body {
+            /* Prevent horizontal scroll if the negative margins push out too far */
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nm-seo-page {
+            --brand-primary: #C71806; /* Iverson CDJR Huron accent red */
+            --brand-secondary: #111111; /* Near-black per brand guideline */
+            --text-main: #333333; /* Icon fill / body text per brand guideline */
+            --text-light: #666666; /* Text grey per brand guideline */
+            --bg-light: #F5F5F5; /* Off-white per brand guideline */
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+            
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+            width: 100%; /* Ensure sections take full width */
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+            width: 100%; /* Ensure background spans full width */
+        }
+
+        #nm-seo-page .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch; /* Guaranteed equal height rows */
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        #nm-seo-page h2 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: clamp(28px, 4vw, 35px);
+            color: var(--text-main);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page h3 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: 22px;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            /* Increased minimum height from 500px to 650px */
+            min-height: 650px;
+            /* Adjusted padding to visually center the content within the taller section */
+            padding: 120px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%; /* Force full width */
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grandcherokee-gallery-24-desktop.jpg') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 /* Increased desktop minimum height from 500px to 750px */
+                 min-height: 750px;
+                 padding: 160px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        /* Buttons get the blue color */
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: #9E1305; /* Darkened brand red for hover */
+            color: var(--white);
+            border-color: #9E1305;
+        }
+
+        #nm-seo-page .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        #nm-seo-page .comparison-table {
+            width: 100%;
+            min-width: 800px;
+            border-collapse: collapse;
+            background-color: var(--white);
+        }
+
+        #nm-seo-page .comparison-table th, 
+        #nm-seo-page .comparison-table td {
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        #nm-seo-page .comparison-table th {
+            background-color: var(--brand-primary);
+            color: var(--white);
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        #nm-seo-page .comparison-table th:first-child {
+            text-align: left;
+            font-size: 22px;
+        }
+
+        #nm-seo-page .comparison-table td:first-child {
+            font-weight: 700;
+            text-align: left;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            width: 25%;
+        }
+
+        #nm-seo-page .comparison-table td:nth-child(2) {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        
+        #nm-seo-page .comp-box {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent; /* Prepare for outline hover */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        #nm-seo-page .comp-box.primary:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-box.competitor:hover {
+            border-color: var(--text-light);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-img {
+            width: 100%;
+            height: 200px;
+            min-height: 200px; /* Maintains equal layout structure even if image URL is blocked/broken */
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+            background-color: var(--border); /* Gray background if image fails */
+            color: var(--text-light); /* Font color for broken image alt text */
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        #nm-seo-page .comp-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Pushes content down to keep cards even if content varies */
+        }
+
+        #nm-seo-page .comp-box ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .comp-box.primary ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-primary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .comp-box.competitor ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--text-light);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+</style>
+
+<article id="nm-seo-page">
+
+    <header id="hero" class="hero-title-section">
+        <div class="container">
+            <h1>2026 Jeep Grand Cherokee vs. 2026 Toyota 4Runner in Huron, SD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.iversonhuron.com/new-vehicles/grand-cherokee/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonhuron.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="preamble">
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">The 2026 Jeep Grand Cherokee and 2026 Toyota 4Runner give Huron-area SUV shoppers two midsize choices for commuting, family transportation, cargo, towing, and outdoor activities. The Grand Cherokee introduces a 2.0L Hurricane 4 Turbo producing 324 horsepower and 332 lb-ft of torque on upper trims, while the 4Runner uses a 2.4L turbocharged four-cylinder producing 278 horsepower and 317 lb-ft. Toyota also offers an i-FORCE MAX hybrid with 326 horsepower and 465 lb-ft of torque.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">For drivers in Huron and surrounding South Dakota communities, Iverson CDJR Huron helps shoppers compare the Grand Cherokee according to powertrain, towing, cargo capacity, passenger space, technology, and drivetrain requirements.</p>
+        </div>
+    </section>
+
+    <section id="key-highlights" class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Jeep Grand Cherokee vs. 2026 Toyota 4Runner Key Highlights</h2>
+            
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>2026 Jeep Grand Cherokee</th>
+                            <th>2026 Toyota 4Runner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard Engine</td>
+                            <td>3.6L Pentastar V6 on Laredo and Laredo X</td>
+                            <td>2.4L turbocharged I-4</td>
+                        </tr>
+                        <tr>
+                            <td>Standard Engine Output</td>
+                            <td>293 hp / 260 lb-ft on Laredo and Laredo X</td>
+                            <td>278 hp / 317 lb-ft</td>
+                        </tr>
+                        <tr>
+                            <td>Available Turbo Engine</td>
+                            <td>2.0L Hurricane 4 Turbo</td>
+                            <td>2.4L turbocharged I-4</td>
+                        </tr>
+                        <tr>
+                            <td>Available Hybrid</td>
+                            <td>Not available</td>
+                            <td>i-FORCE MAX</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Available Towing</td>
+                            <td>6,200 lbs.</td>
+                            <td>6,000 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Cargo Volume</td>
+                            <td>70.8 cu. ft.</td>
+                            <td>90.2 cu. ft. on two-row gas models</td>
+                        </tr>
+                        <tr>
+                            <td>Seating</td>
+                            <td>Up to 5 in two-row Grand Cherokee</td>
+                            <td>Up to 7, depending on configuration</td>
+                        </tr>
+                        <tr>
+                            <td>Transmission</td>
+                            <td>8-speed automatic</td>
+                            <td>8-speed automatic</td>
+                        </tr>
+                        <tr>
+                            <td>Drivetrain</td>
+                            <td>2WD or 4x4, depending on configuration</td>
+                            <td>2WD, part-time 4WD, or full-time 4WD, depending on configuration</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 16px auto 0 auto; font-style: italic;">Specifications vary by trim, engine, drivetrain, and equipment.</p>
+        </div>
+    </section>
+
+    <section id="powertrain">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Jeep Grand Cherokee Delivers Two Powertrain Paths</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 Grand Cherokee uses the 3.6L Pentastar V6 on Laredo and Laredo X models, while the Laredo Altitude, Limited, Limited Reserve, and Summit use the new 2.0L Hurricane 4 Turbo. The turbocharged engine produces 324 horsepower and 332 lb-ft of torque and works with an eight-speed automatic transmission. Jeep lists maximum towing capacity at 6,200 pounds when properly equipped.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grandcherokee-gallery-30-v3-desktop.jpg.image.1440.jpg" alt="2026 Jeep Grand Cherokee Performance" class="comp-img" loading="lazy">
+                    <h3>2026 Jeep Grand Cherokee Performance Highlights</h3>
+                    <ul>
+                        <li>3.6L Pentastar V6 on Laredo and Laredo X</li>
+                        <li>293 horsepower and 260 lb-ft with the V6</li>
+                        <li>2.0L Hurricane 4 Turbo on higher trims</li>
+                        <li>324 horsepower and 332 lb-ft with the Hurricane 4</li>
+                        <li>8-speed automatic transmission</li>
+                        <li>Up to 6,200 pounds of towing</li>
+                        <li>Available 4x4</li>
+                        <li>8.4 inches of ground clearance</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/4runner/galleries/FRN_MY25_0040_V001.png:tcom_gallery_1x1?ts=1789061638096&fmt=jpg&fit=crop&dpr=on,2" alt="2026 Toyota 4Runner Performance" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">2026 Toyota 4Runner Performance Highlights</h3>
+                    <ul>
+                        <li>2.4L turbocharged four-cylinder</li>
+                        <li>278 horsepower</li>
+                        <li>317 lb-ft of torque</li>
+                        <li>Available i-FORCE MAX hybrid</li>
+                        <li>326 horsepower with i-FORCE MAX</li>
+                        <li>465 lb-ft with i-FORCE MAX</li>
+                        <li>Up to 6,000 pounds of towing</li>
+                        <li>Available 2WD, part-time 4WD, or full-time 4WD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="utility" class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Jeep Grand Cherokee Organizes Cargo Space For Everyday Use</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The two-row Grand Cherokee seats up to five people and provides 37.7 cubic feet of cargo space behind the second row. Folding the second-row seats increases maximum cargo volume to 70.8 cubic feet. The layout provides space for groceries, luggage, sporting equipment, work supplies, and other daily cargo.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/vlp/desktop/my26-jeep-grand-cherokee-overview-slider-panel-3row-02-desktop-v2.jpg" alt="2026 Jeep Grand Cherokee Utility" class="comp-img" loading="lazy">
+                    <h3>2026 Jeep Grand Cherokee Utility Highlights</h3>
+                    <ul>
+                        <li>Two-row, five-passenger configuration</li>
+                        <li>37.7 cu. ft. behind the second row</li>
+                        <li>70.8 cu. ft. maximum cargo volume</li>
+                        <li>Available hands-free power liftgate</li>
+                        <li>60/40 split-folding second-row seats</li>
+                        <li>Cargo management system with adjustable tie-downs</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/4runner/galleries/FRN_MY25_0045_V001.png:tcom_gallery_4x3?ts=1789061638264&fmt=jpg&fit=crop&dpr=on,2" alt="2026 Toyota 4Runner Utility" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">2026 Toyota 4Runner Utility Highlights</h3>
+                    <ul>
+                        <li>Two-row and three-row configurations</li>
+                        <li>48.4 cu. ft. behind the second row on two-row gas models</li>
+                        <li>90.2 cu. ft. maximum cargo volume on two-row gas models</li>
+                        <li>42.6 cu. ft. behind the second row on two-row hybrid models</li>
+                        <li>82.6 cu. ft. maximum cargo volume on two-row hybrid models</li>
+                        <li>Standard power rear window</li>
+                        <li>Available hands-free power liftgate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Jeep Grand Cherokee Connects Drivers With Uconnect 5</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 Grand Cherokee adds a 12.3-inch Uconnect 5 NAV touchscreen, with Apple CarPlay support and Android Auto compatibility. Available technology includes wireless charging, a 360-degree Surround View Camera, Head-Up Display, and Hands-Free Active Driving Assist.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/design/desktop/my26-jeep-grand-cherokee-design-hero-technology-v4-desktop.jpg" alt="2026 Jeep Grand Cherokee Technology" class="comp-img" loading="lazy">
+                    <h3>2026 Jeep Grand Cherokee Technology Highlights</h3>
+                    <ul>
+                        <li>12.3-inch Uconnect 5 NAV touchscreen</li>
+                        <li>Apple CarPlay support</li>
+                        <li>Android Auto compatibility</li>
+                        <li>Available wireless charging</li>
+                        <li>Available 360-degree Surround View Camera</li>
+                        <li>Available Head-Up Display</li>
+                        <li>Available Hands-Free Active Driving Assist</li>
+                        <li>Available digital driver display</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/4runner/galleries/FRN_MY25_0006_V001.png:tcom_gallery_16x9?ts=1789059059402&fmt=jpg&fit=crop&dpr=on,2" alt="2026 Toyota 4Runner Technology" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">2026 Toyota 4Runner Technology Highlights</h3>
+                    <ul>
+                        <li>8-inch touchscreen standard</li>
+                        <li>Available 14-inch touchscreen</li>
+                        <li>Available 12.3-inch digital gauge display</li>
+                        <li>Wireless Apple CarPlay</li>
+                        <li>Wireless Android Auto</li>
+                        <li>Available wireless charging</li>
+                        <li>Toyota Safety Sense 3.0</li>
+                        <li>Available Multi-Terrain Monitor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car and Driver Review Section -->
+<section id="expert-reviews" class="bg-light-section">
+    <div class="container" style="text-align: center;">
+        <h2 style="text-align: center;">What Do Automotive Experts Say About the 2026 Jeep Grand Cherokee?</h2>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Car and Driver awarded the 2026 Grand Cherokee an 8.5/10 overall rating, praising its blend of ruggedness and premium features.</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">"Blending genuine off-road capability with a roomy interior and plenty of available luxury, the Grand Cherokee is the three-row SUV for families who want to venture far from paved roads."</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; color: var(--text-light);">Source: <a href="https://www.caranddriver.com/jeep/grand-cherokee" style="color: grey;">Car and Driver: 2026 Jeep Grand Cherokee Review</a></p>
+    </div>
+</section>
+
+<!-- Consumer Review Section -->
+<section id="consumer-reviews" class="bg-light-section">
+    <div class="container" style="text-align: center;">
+        <h2 style="text-align: center;">What Do Consumers Say About the 2026 Jeep Grand Cherokee?</h2>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">A verified Cars.com consumer awarded their two-row 2026 Grand Cherokee a perfect 5/5 rating across Value, Performance, Quality, Comfort, and Reliability.</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">"I couldn't be happier with my purchase. The ride is incredibly smooth and comfortable... The Grand Cherokee strikes a perfect balance between luxury, capability, and practicality. It's stylish, comfortable, and versatile enough for both family use and weekend adventures."</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; color: var(--text-light); font-weight: bold;">- Christiana H. (6/24/2026)</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; color: var(--text-light);">
+            Source: <a href="https://www.edmunds.com/jeep/grand-cherokee/2026/suv/consumer-reviews/" style="color: grey;">Cars.com: 2026 Jeep Grand Cherokee Consumer Reviews</a>
+        </p>
+    </div>
+</section>
+
+    <section id="faq" class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much horsepower does the 2026 Jeep Grand Cherokee produce?</summary>
+                    <div class="faq-answer"><p>The 2.0L Hurricane 4 Turbo produces 324 horsepower and 332 lb-ft of torque. The 3.6L Pentastar V6 produces 293 horsepower and 260 lb-ft on Laredo and Laredo X models.</p></div>
+                </details>
+                
+                <details>
+                    <summary>How much can the 2026 Jeep Grand Cherokee tow?</summary>
+                    <div class="faq-answer"><p>The 2026 Grand Cherokee has a maximum towing capacity of 6,200 pounds when properly equipped.</p></div>
+                </details>
+
+                <details>
+                    <summary>How much can the 2026 Toyota 4Runner tow?</summary>
+                    <div class="faq-answer"><p>The 2026 4Runner has a maximum towing capacity of 6,000 pounds.</p></div>
+                </details>
+                
+                <details>
+                    <summary>Does the 2026 Jeep Grand Cherokee offer 4x4?</summary>
+                    <div class="faq-answer"><p>Yes. The 2026 Grand Cherokee is available with 4x4 depending on configuration.</p></div>
+                </details>
+
+                <details style="border-bottom: none;">
+                    <summary>Where can Huron-area drivers explore the 2026 Jeep Grand Cherokee?</summary>
+                    <div class="faq-answer"><p>We help drivers compare available Grand Cherokee models, features, financing, trade-ins, service, and genuine Mopar parts at Iverson CDJR Huron, located at 2500 Dakota Ave S in Huron, South Dakota.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Iverson CDJR Huron Helps Huron Drivers Compare the 2026 Jeep Grand Cherokee</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Iverson CDJR Huron helps drivers compare the 2026 Jeep Grand Cherokee according to engine choice, 4x4 availability, towing requirements, cargo needs, technology, passenger capacity, financing, and trade-in options. Iverson CDJR Huron stocks new Jeep Grand Cherokee models, arranges test drives, and supports Grand Cherokee owners through its service and parts departments.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Iverson CDJR Huron serves Huron, South Dakota with new and used vehicles, financing, certified CDJR service, and genuine Mopar parts.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.iversonhuron.com/new-vehicles/grand-cherokee/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonhuron.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map" style="padding: 0;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2853.700835674802!2d-98.215539423441!3d44.33665220795952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8787be62f8bbc8f9%3A0xc7d5a48fced8b017!2sIverson%20Chrysler%20Dodge%20Jeep%20Ram%20Huron!5e0!3m2!1sen!2sus!4v1790259468067!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Iverson CDJR Huron Location Map"></iframe>
+    </section>
+
+</article>
