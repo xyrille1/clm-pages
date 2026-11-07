@@ -1,0 +1,667 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
+    overflow-x: clip;
+  }
+
+  .content-container {
+    margin: 0 auto;
+    max-width: 2560px;
+    padding: 0 1rem;
+    background-color: var(--primary-accent);
+    padding: 11px;
+  }
+
+  .mxsWrapper {
+    margin: 0 auto;
+    max-width: unset;
+    background-color: #111111;
+    color: white !important;
+  }
+
+  .mxsWrapper a {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .mxsWrapper a:hover {
+    color: var(--primary-text) !important;
+  }
+
+  .mxsWrapper h1 {
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 3px;
+
+    font-family: var(--primary-font);
+    margin-bottom: 30px;
+  }
+
+  .mxsWrapper h2 {
+    font-size: 30px;
+    font-weight: light;
+  }
+
+  .mxsWrapper h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .mxsWrapper h4 {
+    font-size: 16px;
+  }
+
+  .mxsWrapper h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .mxsWrapper p {
+    font-size: 16px;
+    font-family: var(--tertiary-font);
+  }
+
+  .main-wrapper {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  #awards {
+    background-color: #111111;
+    color: white;
+  }
+
+  #head-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  #left-head {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  #left-head h4 {
+    color: white;
+    font-family: var(--tertiary-font);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+
+  #left-head h1 {
+    text-align: left;
+    font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+
+  #right-head p {
+    font-size: 14px;
+    line-height: 28px;
+    font-family: var(--tertiary-font);
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(auto, 200px) minmax(auto, 200px);
+    grid-gap: 10px;
+  }
+
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .gallery-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .gallery-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .gallery-item-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .gallery-item-4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .gallery-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "img2 img2 img2 img1 img1 img1 img3 img3 img3 img4 img4 img4 img4"
+      "img5 img5 img5 img5 img5 img5 img5 img5 img5 img4 img4 img4 img4";
+    gap: 4px;
+  }
+
+  #banner-image-1 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    grid-area: img1;
+  }
+
+  #banner-image-2 {
+    object-fit: cover;
+    width: 100%;
+    grid-area: img2;
+  }
+
+  #banner-image-3 {
+    object-fit: cover;
+    width: 100%;
+    grid-area: img3;
+  }
+
+  #banner-image-4 {
+    object-fit: cover;
+    width: 100%;
+
+    grid-area: img4;
+  }
+
+  #banner-image-5 {
+    width: 100%;
+
+    grid-area: img5;
+    object-fit: cover;
+    object-position: center calc(70%);
+  }
+
+  .image-banner-container {
+    align-items: stretch;
+  }
+
+  .mxsWrapper p {
+    line-height: 30px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-image {
+    object-fit: contain;
+    width: 300px;
+    height: 500px;
+  }
+
+  .button-center {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .main-container {
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 40vw;
+    align-items: center;
+  }
+
+  #awards img {
+    max-width: 100%;
+  }
+
+  .awards-images-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .awards-images-container h3 {
+    margin-bottom: 15px;
+  }
+
+  .awards-images-container ul {
+    margin: 15px 0;
+  }
+
+  .awards-images-container li {
+    margin-left: 25px;
+    list-style: disc;
+  }
+
+  .awards-images-container p {
+    font-size: 17px;
+    line-height: 28px;
+    font-family: var(--tertiary-font);
+    margin-bottom: 15px;
+  }
+
+  .two_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin: 25px auto;
+  }
+
+  .two_cards > div {
+    flex-basis: 45%;
+  }
+
+  .lightgrey {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .flip {
+    flex-direction: row-reverse;
+  }
+
+  .team {
+    padding: 0 5%;
+  }
+
+  .teamGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+
+  .teamGalleryImage {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .teamGalleryImage img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: solid #5a5a5a 1px;
+  }
+
+  .accent-header {
+    font-weight: 100;
+    font-size: 2em;
+    color: white;
+    margin-block: 1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .accent-header::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-top: 0.4rem;
+  }
+
+  @media (max-width: 1000px) {
+    .two_cards {
+      display: block;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .main-container {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      padding: 3rem;
+    }
+
+    #head-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    #left-head h1 {
+      font-size: 40px;
+    }
+
+    #right-head {
+      width: 70%;
+    }
+
+    #right-head p {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .teamGalleryImage {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .main-wrapper {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 4px;
+  }
+  .grid-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item-1 {
+    background: url(https://media.dealermasters.com/6a1deaa36864fabd2a1c5804/172fe9a3e6e991fa9098311d0608a4e1.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+  }
+
+  .item-2 {
+    background: url(https://media.dealermasters.com/6a1deaa36864fabd2a1c5804/a36be7fa1a0e8deb9930a47254dd19a2.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+  }
+
+  .item-3 {
+    background: url(https://media.dealermasters.com/6a1deaa36864fabd2a1c5804/5cf32457388f8e0c6476ec209760770f.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+  }
+
+  .item-4 {
+    background: url(https://media.dealermasters.com/6a1deaa36864fabd2a1c5804/f148a330d3b3d725010898521472b168.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: span 2;
+    aspect-ratio: 1/2;
+  }
+
+  .item-5 {
+    background: url(https://media.dealermasters.com/6a1deaa36864fabd2a1c5804/113077402a934e74460eaabbda54d4ca.webp);
+    background-position: 50% 55%;
+    background-size: cover;
+    grid-column: span 3;
+    grid-row: 2;
+    aspect-ratio: 3/1;
+  }
+
+  .ar-btn {
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.5px;
+    margin: 0.5em 0;
+
+    background: var(--primary-color);
+    border-radius: 0px;
+    color: var(--secondary-color);
+    padding: 1.5rem;
+    border: 2px solid var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 350ms ease all;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-inline: 0;
+    column-gap: 1em;
+  }
+
+  .buttons-container a {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1025px) {
+    .ar-btn:hover,
+    .ar-btn:hover a {
+      background: var(--secondary-color);
+      border-color: var(--primary-text);
+      color: var(--primary-text) !important;
+      transform: scale(1.05);
+    }
+  }
+  @media (max-width: 835px) {
+    .buttons-container {
+      flex-direction: column;
+      row-gap: 1em;
+    }
+  }
+</style>
+
+<div class="mxsWrapper">
+  <section id="head" class="main-wrapper">
+    <div id="head-wrapper">
+      <div id="left-head">
+        <h4>ABOUT US</h4>
+        <h1>Hi Tech Luxury Collection in Austin, TX</h1>
+        <p>
+          Explore Austin's Premier Destination for New &amp; Pre-Owned Luxury
+          Vehicles
+        </p>
+      </div>
+
+      <div id="right-head"></div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: 5px; height: 100px">
+    <div
+      style="text-align: center"
+      class="content-container mobile-ready flex-container"
+    >
+      <div
+        class="flex-item image-content-one"
+        style="width: 100%; display: flex; justify-content: center"
+      >
+        <button
+          class="ar-btn"
+          style="width: 300px; cursor: pointer"
+          type="button"
+          onclick="
+            event.preventDefault();
+            window.gatsbyNavigate('?title=Contact%20Us#contact-form');
+          "
+        >
+          <a
+            href="?title=Contact%20Us#contact-form"
+            title="Contact Us"
+            style="color: #ffffff"
+            >CONTACT US</a
+          >
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid-container">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+  <section id="awards" class="main-wrapper">
+    <div class="awards-images-container">
+      <div>
+        <div class="lightgrey">
+          <div>
+            <p>
+              At Hi Tech Motorcars, we bring together the world's most
+              prestigious automotive brands under one roof. With a curated
+              selection of <a href="/search">new and pre-owned</a> models from
+              <a
+                href="/search/?=&min-year=2014&fq=1&max-year=2026&new=true%2Cfalse&certified=true&make=Bentley"
+                >Bentley</a
+              >,
+              <a
+                href="/search/?=&min-year=2014&fq=1&max-year=2026&new=true%2Cfalse&certified=true&make=AstonMartin"
+                >Aston Martin</a
+              >,
+              <a
+                href="/search/?=&min-year=2014&fq=1&max-year=2026&new=true%2Cfalse&certified=true&make=Lotus"
+                >Lotus</a
+              >, and
+              <a
+                href="/search/?=&min-year=2014&fq=1&max-year=2026&new=true%2Cfalse&certified=true&make=Rolls-Royce"
+                >Rolls-Royce</a
+              >
+              we are your go-to source for luxury and performance in Austin,
+              Texas.
+            </p>
+            <p>
+              Our experienced team is dedicated to helping you find the vehicle
+              that suits your lifestyle and driving dreams. Whether you're
+              browsing our inventory online, scheduling a test drive, or
+              exploring our flexible financing options, we make the process
+              seamless and enjoyable.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="accent-header">Exceptional Vehicle Selection</h2>
+            <p>
+              Hand-selected inventory of new and pre-owned luxury cars, all
+              expertly inspected and backed by our commitment to quality.
+            </p>
+          </div>
+          <div>
+            <h2 class="accent-header">Personalized Financing</h2>
+            <p>
+              Competitive rates and tailored finance plans designed to meet your
+              needs.
+            </p>
+          </div>
+          <div>
+            <h2 class="accent-header">Premium Service</h2>
+            <p>
+              Factory-trained technicians and genuine parts ensure your
+              investment stays in top condition.
+            </p>
+          </div>
+          <div>
+            <h2 class="accent-header">Convenient Shopping Experience</h2>
+            <p>
+              Browse, inquire, and apply online, with dedicated specialists
+              ready to assist you at every step.
+            </p>
+          </div>
+          
+          <!-- New Communities Section added here -->
+          <div>
+            <h2 class="accent-header">Serving Our Communities</h2>
+            <p>
+              Just as we bring together the world's most prestigious automotive brands under one roof, our dedication to exceptional service extends throughout Texas. Whether you visit us from the heart of <strong><a href="https://www.hitechluxurycollection.com/luxury-and-exotic-cars-for-sale-in-austin-tx/">Austin</a></strong>, or the surrounding luxury communities of <strong><a href="https://www.hitechluxurycollection.com/luxury-and-exotic-cars-for-sale-in-rollingwood-tx/">Rollingwood</a>, <a href="https://www.hitechluxurycollection.com/luxury-and-exotic-cars-for-sale-near-west-lake-hills-tx/">West Lake Hills</a>, <a href="https://www.hitechluxurycollection.com/luxury-and-exotic-cars-near-spanish-oaks-in-bee-cave-tx/">Spanish Oaks</a>, <a href="https://www.hitechluxurycollection.com/luxury-and-exotic-cars-near-terrell-hills-tx">Terrell Hills</a>, <a href="https://www.hitechluxurycollection.com/luxury-exotic-cars-for-sale-lakeway-tx/">Lakeway</a>, <a href="https://www.hitechluxurycollection.com/luxury-exotic-cars-alamo-heights-tx/">Alamo Heights</a>, <a href="https://www.hitechluxurycollection.com/luxury-exotic-cars-fair-oaks-ranch-tx/">Fair Oaks Ranch</a>,</strong> or <strong><a href="https://www.hitechluxurycollection.com/luxury-exotic-cars-leander-tx/">Leander</a></strong>, we are your go-to source for unparalleled luxury and performance. 
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- awards-images-container -->
+    </div>
+    <div class="buttons-container">
+      <a href="/search" title="view our inventory">
+        <button class="ar-btn">View Inventory</button>
+      </a>
+
+      <a href="/staff" title="Meet Our Staff">
+        <button class="ar-btn">Our Staff</button>
+      </a>
+
+      <a href="/schedule-service" title="Schedule Service">
+        <button class="ar-btn">Schedule Service</button>
+      </a>
+
+      <a href="?title=Schedule%20Visit#contact-form" title="Schedule Visit">
+        <button class="ar-btn">Schedule Visit</button>
+      </a>
+    </div>
+  </section>
+</div>
