@@ -1,0 +1,916 @@
+<!-- ============================================================
+     SCHEMA 1: LocalBusiness / AutoDealer
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness", "WebPage"],
+  "@id": "https://www.iversonchrysler.com/#business",
+  "name": "Iverson Chrysler Center",
+  "description": "The trusted Chrysler, Dodge, Jeep, and RAM dealership in Mitchell, SD. Offering new vehicles, pre-owned cars, financing, and auto service.",
+  "url": "https://www.iversonchrysler.com/",
+  "telephone": "+1-605-550-8889",
+  "priceRange": "$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "image": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "600 S Burr St",
+    "addressLocality": "Mitchell",
+    "addressRegion": "SD",
+    "postalCode": "57301",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.704815,
+    "longitude": -98.017682
+  },
+  "hasMap": "https://maps.google.com/maps?q=600+S+Burr+St,+Mitchell,+SD+57301",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Mitchell"},
+    {"@type": "City", "name": "Sioux Falls"},
+    {"@type": "City", "name": "Aberdeen"}
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 2: Organization
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.iversonchrysler.com/#organization",
+  "name": "Iverson Chrysler Center",
+  "url": "https://www.iversonchrysler.com/",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-605-550-8889",
+    "areaServed": "SD",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "600 S Burr St",
+    "addressLocality": "Mitchell",
+    "addressRegion": "SD",
+    "postalCode": "57301",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 3: Vehicle Listing - Car
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "@id": "https://www.iversonchrysler.com/#ram-1500",
+  "name": "2026 RAM 1500",
+  "description": "The 2026 RAM 1500 and 2026 Ford F-150 give Mitchell-area truck shoppers two full-size pickups with multiple powertrains, cab configurations, towing equipment, payload capability, technology, and off-road options.",
+  "brand": {
+    "@type": "Brand",
+    "name": "RAM"
+  },
+  "model": "1500",
+  "modelDate": "2026",
+  "bodyType": "Truck",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "RAM"
+  },
+  "driveWheelConfiguration": ["2WD", "4WD"],
+  "vehicleTransmission": ["8-speed automatic"],
+  "vehicleEngine": [
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gasoline",
+      "name": "3.6L Pentastar V6",
+      "enginePower": {
+         "@type": "QuantitativeValue",
+         "value": "305",
+         "unitCode": "BHP"
+      },
+      "torque": {
+         "@type": "QuantitativeValue",
+         "value": "269",
+         "unitCode": "F17"
+      }
+    }
+  ],
+  "numberOfDoors": 4,
+  "seatingCapacity": 5
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.iversonchrysler.com/#ram-1500-inventory",
+  "name": "New 2026 RAM 1500 Models",
+  "description": "Explore the full selection of new 2026 RAM 1500 models at Iverson Chrysler Center.",
+  "brand": {
+    "@type": "Brand",
+    "name": "RAM"
+  },
+  "image": [
+    "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg"
+  ],
+  "category": "New Vehicles"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 5: BreadcrumbList
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.iversonchrysler.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "New Vehicles",
+      "item": "https://www.iversonchrysler.com/searchnew.aspx"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "RAM",
+      "item": "https://www.iversonchrysler.com/searchnew.aspx?Make=Ram"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "2026 RAM 1500 vs. 2026 Ford F-150",
+      "item": "https://www.iversonchrysler.com/searchnew.aspx?Make=Ram&Model=1500"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 6: ImageObject (Hero Image)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": "https://www.iversonchrysler.com/#hero-image",
+  "name": "2026 RAM 1500 vs. 2026 Ford F-150 at Iverson Chrysler Center",
+  "description": "The 2026 RAM 1500 displayed by Iverson Chrysler Center serving Mitchell and surrounding South Dakota communities.",
+  "url": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "contentUrl": "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2026/grand-cherokee/gallery/desktop/my26-grand-cherokee-gallery-exterior-image-1-desktop.jpg.image.1440.jpg",
+  "encodingFormat": "image/jpeg",
+  "representativeOfPage": true,
+  "creditText": "RAM",
+  "creator": {
+    "@type": "Organization",
+    "name": "Iverson Chrysler Center",
+    "url": "https://www.iversonchrysler.com/"
+  },
+  "license": "https://www.iversonchrysler.com/",
+  "copyrightNotice": "© Iverson Chrysler Center"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 7: AggregateRating + Reviews
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "@id": "https://www.iversonchrysler.com/#reviews",
+  "name": "Iverson Chrysler Center",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "210",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 8: FAQPage
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 RAM 1500 tow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2026 RAM 1500 can tow up to 11,610 pounds when properly equipped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the 2026 RAM 1500 have a V8?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The 5.7-liter HEMI V8 is available for 2026 and produces 395 horsepower and 410 lb-ft of torque."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the 2026 RAM 1500 offer an off-road model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The lineup includes the RAM 1500 Rebel and RHO for off-road driving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 RAM 1500 carry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2026 RAM 1500 has a maximum payload capacity of 2,360 pounds when properly equipped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I find a 2026 RAM 1500 in Mitchell, SD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Iverson Chrysler Center offers new 2026 RAM 1500 models at 600 S Burr St, Mitchell, SD 57301."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+        body {
+            /* Prevent horizontal scroll if the negative margins push out too far */
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nm-seo-page {
+            --brand-primary: #000000; /* No brand color exists; using neutral black per UI guidelines */
+            --brand-secondary: #111111; /* Near-black per brand guideline */
+            --text-main: #333333; /* Icon fill / body text per brand guideline */
+            --text-light: #666666; /* Text grey per brand guideline */
+            --bg-light: #F5F5F5; /* Off-white per brand guideline */
+            --white: #FFFFFF;
+            --border: #AFAFAF; /* Neutral mid-grey per brand guideline */
+            --max-width: 1200px;
+            
+            font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+            width: 100%; /* Ensure sections take full width */
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+            width: 100%; /* Ensure background spans full width */
+        }
+
+        #nm-seo-page .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch; /* Guaranteed equal height rows */
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        #nm-seo-page h2 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: clamp(28px, 4vw, 35px);
+            color: var(--text-main);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page h3 {
+            font-family: "DM Sans", "Roboto", "Helvetica Neue", Arial, sans-serif;
+            font-size: 22px;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            /* Increased minimum height from 500px to 650px */
+            min-height: 650px;
+            /* Adjusted padding to visually center the content within the taller section */
+            padding: 120px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%; /* Force full width */
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://di-uploads-pod47.dealerinspire.com/iversonchryslercenter/uploads/2026/09/hero-ram-1500.jpg') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 /* Increased desktop minimum height from 500px to 750px */
+                 min-height: 750px;
+                 padding: 160px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        /* Buttons get the blue color */
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: #333333; /* Darkened hover color based on brand guidelines */
+            color: var(--white);
+            border-color: #333333;
+        }
+
+        #nm-seo-page .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        #nm-seo-page .comparison-table {
+            width: 100%;
+            min-width: 800px;
+            border-collapse: collapse;
+            background-color: var(--white);
+        }
+
+        #nm-seo-page .comparison-table th, 
+        #nm-seo-page .comparison-table td {
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        #nm-seo-page .comparison-table th {
+            background-color: var(--brand-primary);
+            color: var(--white);
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        #nm-seo-page .comparison-table th:first-child {
+            text-align: left;
+            font-size: 22px;
+        }
+
+        #nm-seo-page .comparison-table td:first-child {
+            font-weight: 700;
+            text-align: left;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            width: 25%;
+        }
+
+        #nm-seo-page .comparison-table td:nth-child(2) {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        
+        #nm-seo-page .comp-box {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent; /* Prepare for outline hover */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        #nm-seo-page .comp-box.primary:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-box.competitor:hover {
+            border-color: var(--text-light);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-img {
+            width: 100%;
+            height: 200px;
+            min-height: 200px; /* Maintains equal layout structure even if image URL is blocked/broken */
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+            background-color: var(--border); /* Gray background if image fails */
+            color: var(--text-light); /* Font color for broken image alt text */
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        #nm-seo-page .comp-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Pushes content down to keep cards even if content varies */
+        }
+
+        #nm-seo-page .comp-box ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .comp-box.primary ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-primary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .comp-box.competitor ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--text-light);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+</style>
+
+<article id="nm-seo-page">
+
+    <header id="hero" class="hero-title-section">
+        <div class="container">
+            <h1>2026 RAM 1500 vs. 2026 Ford F-150 in Mitchell, SD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.iversonchrysler.com/new-vehicles/ram-1500/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonchrysler.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="preamble">
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">The 2026 RAM 1500 and 2026 Ford F-150 give Mitchell-area truck shoppers two full-size pickups with multiple powertrains, cab configurations, towing equipment, payload capability, technology, and off-road options. The RAM 1500 offers a 3.6-liter Pentastar V6, available 5.7-liter HEMI V8, 3.0-liter Hurricane inline-six, and high-output 3.0-liter Hurricane engine. The F-150 offers several engines, including a 2.7-liter EcoBoost V6, 3.5-liter EcoBoost V6, 5.0-liter V8, 3.5-liter PowerBoost hybrid, and high-output engines for the Raptor lineup.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">For drivers in Mitchell and surrounding South Dakota communities, the choice can depend on towing requirements, payload needs, engine preference, passenger space, technology, and how the truck will be used. At Iverson Chrysler Center in Mitchell, we can help shoppers compare available configurations and equipment.</p>
+        </div>
+    </section>
+
+    <section id="key-highlights" class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Key Highlights</h2>
+            
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>2026 RAM 1500</th>
+                            <th>2026 Ford F-150</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Base engine</td>
+                            <td>3.6L Pentastar V6 with eTorque</td>
+                            <td>2.7L EcoBoost V6</td>
+                        </tr>
+                        <tr>
+                            <td>Base engine output</td>
+                            <td>305 hp / 269 lb-ft</td>
+                            <td>325 hp / 400 lb-ft</td>
+                        </tr>
+                        <tr>
+                            <td>Available engine</td>
+                            <td>5.7L HEMI V8</td>
+                            <td>5.0L Ti-VCT V8</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum available output</td>
+                            <td>540 hp / 521 lb-ft</td>
+                            <td>720 hp / 640 lb-ft</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum towing</td>
+                            <td>Up to 11,610 lbs.</td>
+                            <td>Up to 13,500 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum payload</td>
+                            <td>Up to 2,360 lbs.</td>
+                            <td>Up to 2,440 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Cab configurations</td>
+                            <td>Quad Cab and Crew Cab</td>
+                            <td>Regular Cab, SuperCab and SuperCrew</td>
+                        </tr>
+                        <tr>
+                            <td>Infotainment</td>
+                            <td>Available Uconnect 5 systems</td>
+                            <td>SYNC 4</td>
+                        </tr>
+                        <tr>
+                            <td>Off-road options</td>
+                            <td>Rebel and RHO</td>
+                            <td>Tremor, Raptor and Raptor R</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 16px auto 0 auto; font-style: italic;">Specifications vary by configuration, drivetrain, cab, bed, equipment, and engine.</p>
+        </div>
+    </section>
+
+    <section id="powertrain">
+        <div class="container">
+            <h2 style="text-align: center;">2026 RAM 1500 Provides Multiple Powertrain Choices</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 RAM 1500 gives Mitchell drivers several engine options for different work and recreation requirements. The 3.6-liter Pentastar V6 produces 305 horsepower and 269 lb-ft of torque, while the available 5.7-liter HEMI V8 produces 395 horsepower and 410 lb-ft.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/2026/ram-1500/gallery/desktop/my26-ram-1500-gallery-pillar-thumbnail1-desktop-v1.jpg.image.1440.jpg" alt="2026 RAM 1500 Performance" class="comp-img" loading="lazy">
+                    <h3>RAM 1500 performance highlights</h3>
+                    <ul>
+                        <li>3.6L Pentastar V6 produces 305 hp and 269 lb-ft.</li>
+                        <li>Available 5.7L HEMI V8 produces 395 hp and 410 lb-ft.</li>
+                        <li>Available 3.0L Hurricane engine produces 420 hp and 469 lb-ft.</li>
+                        <li>High-output 3.0L Hurricane produces 540 hp and 521 lb-ft.</li>
+                        <li>Maximum available towing reaches 11,610 pounds with the appropriate configuration.</li>
+                        <li>Maximum available payload reaches 2,360 pounds.</li>
+                        <li>Available four-wheel drive supports work and off-road applications.</li>
+                        <li>Available 14.5-inch touchscreen and 10.25-inch passenger display.</li>
+                        <li>Five selectable drive modes optimize traction and performance.</li>
+                        
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:92e7ecd9-646a-430f-a771-a90f0142445a/as/25_FRD_F15_51172.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford F-150 Performance" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">F-150 performance highlights</h3>
+                    <ul>
+                        <li>2.7L EcoBoost V6 produces 325 hp and 400 lb-ft.</li>
+                        <li>3.5L EcoBoost V6 produces 400 hp and 500 lb-ft.</li>
+                        <li>5.0L V8 produces 400 hp and 410 lb-ft.</li>
+                        <li>3.5L PowerBoost hybrid produces 430 hp and up to 578 lb-ft.</li>
+                        <li>3.5L High-Output EcoBoost produces 450 hp and 510 lb-ft in the Raptor.</li>
+                        <li>5.2L supercharged V8 produces 720 hp and 640 lb-ft in the Raptor R.</li>
+                        <li>Maximum available towing reaches 13,500 pounds.</li>
+                        <li>Maximum available payload reaches 2,440 pounds.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="utility" class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 RAM 1500 Supports Towing and Hauling</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The RAM 1500 offers several configurations for drivers who use a truck for trailers, equipment, cargo, or recreational activities. Depending on engine and configuration, maximum towing reaches 11,610 pounds and maximum payload reaches 2,360 pounds.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/2026/ram-1500/gallery/desktop/my26-ram-1500-gallery-pillar-thumbnail7-desktop-v1.jpg.image.1440.jpg" alt="2026 RAM 1500 Utility" class="comp-img" loading="lazy">
+                    <h3>RAM 1500 utility highlights</h3>
+                    <ul>
+                        <li>Maximum towing capacity reaches 11,610 pounds with the appropriate configuration.</li>
+                        <li>Maximum payload capacity reaches 2,360 pounds.</li>
+                        <li>Crew Cab configurations provide additional passenger room.</li>
+                        <li>Available Active-Level Four Corner Air Suspension is offered on Crew Cab models.</li>
+                        <li>Available trailer-focused technology assists with towing tasks.</li>
+                        <li>Rebel and RHO configurations add off-road equipment.</li>
+                        <li>Available RamBox Cargo Management System features lockable, drainable bed storage.</li>
+                        <li>Available Multifunction Tailgate features 60/40 split swing-away doors.</li>
+                        <li>Available onboard power inverter provides up to 2.0 kW of exportable power via bed outlets.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:83db77a9-c1d4-46d9-a7b6-c8ded4f5d40f/as/FRDNTRKT0016_Ford_F-Series_W2_3W0A0926_01_E_RGB.webp?max-quality=75&crop-names=1_21x9&width=3840" alt="2026 Ford F-150 Utility" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">F-150 utility highlights</h3>
+                    <ul>
+                        <li>Maximum towing capacity reaches 13,500 pounds with the appropriate configuration.</li>
+                        <li>Maximum payload capacity reaches 2,440 pounds.</li>
+                        <li>Regular Cab, SuperCab, and SuperCrew configurations are available.</li>
+                        <li>Available Pro Power Onboard can provide electrical power for tools and equipment.</li>
+                        <li>Available PowerBoost hybrid technology combines towing capability with onboard power.</li>
+                        <li>Tremor, Raptor, and Raptor R configurations provide additional off-road capability.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology">
+        <div class="container">
+            <h2 style="text-align: center;">2026 RAM 1500 Connects Truck Capability With Technology</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 RAM 1500 combines its truck-focused equipment with available digital displays, connectivity, and driver-assistance technology. Uconnect 5 technology is available with large touchscreen configurations, while higher trims can add larger displays and additional cabin technology.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box primary">
+                    <img src="https://media.ed.edmunds-media.com/ram/1500/2026/oem/2026_ram_1500_crew-cab-pickup_rebel_swd_oem_1_1600x1067.jpg" alt="2026 RAM 1500 Technology" class="comp-img" loading="lazy">
+                    <h3>RAM 1500 technology highlights</h3>
+                    <ul>
+                        <li>Uconnect 5 touchscreen technology is available.</li>
+                        <li>Available larger touchscreen displays provide additional screen space.</li>
+                        <li>Available digital instrument displays provide configurable vehicle information.</li>
+                        <li>Available driver-assistance features support everyday driving.</li>
+                        <li>Available towing technology assists with trailer-related tasks.</li>
+                        <li>Available four-corner air suspension can adjust ride height on equipped models.</li>
+                        <li>Class-exclusive available 10.25-inch front passenger interactive display allows navigation and entertainment control.</li>
+                        <li>Available dual wireless charging pads keep multiple devices powered simultaneously.</li>
+                        <li>Available Klipsch Reference Premier audio system offers up to 23 speakers for premium sound quality.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:9aae3aba-ff2b-43db-b4aa-7ae5901bd7d4/as/25_FRD_F15_64420.webp?max-quality=75&crop-names=1_82x83&width=1920" alt="2026 Ford F-150 Technology" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">F-150 technology highlights</h3>
+                    <ul>
+                        <li>SYNC 4 touchscreen technology is available across the lineup.</li>
+                        <li>Available Pro Power Onboard supplies electricity for tools and devices.</li>
+                        <li>Available BlueCruise provides hands-free highway driving capability on equipped models.</li>
+                        <li>Available 360-Degree Camera technology improves visibility around the truck.</li>
+                        <li>Available towing technology supports trailer setup and monitoring.</li>
+                        <li>PowerBoost models combine hybrid capability with available onboard electrical power.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expert-reviews" class="bg-light-section">
+    <div class="container" style="text-align: center;">
+        <h2 style="text-align: center;">What Do Automotive Experts Say About the 2026 RAM 1500?</h2>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">MotorTrend reviewed the 2026 RAM 1500 and highlighted its broad range of configurations, returning HEMI V8, Hurricane inline-six engines, ride comfort, steering response, and available cabin technology.</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">"The versatile 2026 Ram 1500 lives at the heart of the truck brand's lineup."</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; color: var(--text-light);">Source: <a href="https://www.motortrend.com/cars/ram/1500/" style="color: inherit;">MotorTrend, 2026 Ram 1500 Expert Review</a></p>
+    </div>
+</section>
+
+<section id="owner-reviews" class="bg-light-section">
+    <div class="container" style="text-align: center;">
+        <h2 style="text-align: center;">What Are 2026 RAM 1500 Owners Saying?</h2>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Kelley Blue Book's 2026 RAM 1500 Crew Cab consumer reviews include feedback from current owners on performance, comfort, quality, reliability, and styling</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">"Been driving Rams for over 25years and this one by far is the bestriding of them all. Would recommend the 2026 Laramie with the Hemi 5.7."</p>
+        <p style="max-width: 900px; margin-left: auto; margin-right: auto; color: var(--text-light);">
+            Source: <a href="https://www.kbb.com/ram/1500-crew-cab/2026/consumer-reviews/" style="color: inherit;">Kelley Blue Book, 2026 RAM 1500 Crew Cab Consumer Reviews</a>
+        </p>
+    </div>
+</section>
+
+    <section id="faq" class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much can the 2026 RAM 1500 tow?</summary>
+                    <div class="faq-answer"><p>The 2026 RAM 1500 can tow up to 11,610 pounds when properly equipped.</p></div>
+                </details>
+                
+                <details>
+                    <summary>Does the 2026 RAM 1500 have a V8?</summary>
+                    <div class="faq-answer"><p>Yes. The 5.7-liter HEMI V8 is available for 2026 and produces 395 horsepower and 410 lb-ft of torque.</p></div>
+                </details>
+
+                <details>
+                    <summary>Does the 2026 RAM 1500 offer an off-road model?</summary>
+                    <div class="faq-answer"><p>Yes. The lineup includes the RAM 1500 Rebel and RHO for off-road driving.</p></div>
+                </details>
+                
+                <details>
+                    <summary>How much can the 2026 RAM 1500 carry?</summary>
+                    <div class="faq-answer"><p>The 2026 RAM 1500 has a maximum payload capacity of 2,360 pounds when properly equipped.</p></div>
+                </details>
+
+                <details style="border-bottom: none;">
+                    <summary>Where can I find a 2026 RAM 1500 in Mitchell, SD?</summary>
+                    <div class="faq-answer"><p>Iverson Chrysler Center offers new 2026 RAM 1500 models at 600 S Burr St, Mitchell, SD 57301.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">We Help Mitchell Drivers Compare the 2026 RAM 1500</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">At Iverson Chrysler Center in Mitchell, we help local shoppers evaluate trucks according to their towing, hauling, passenger, technology, and driving requirements. The RAM 1500 offers several engine choices, available four-wheel drive, substantial towing capacity, multiple cab configurations, and available off-road equipment.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">We can help you review available trims, compare equipment, explore financing options, and arrange a test drive.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.iversonchrysler.com/new-vehicles/ram-1500/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonchrysler.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map" style="padding: 0;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.286169488596!2d-98.02031152336777!3d43.70460164910422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87861109393fffff%3A0xdd207461538a136e!2sIverson%20Chrysler%20Center!5e0!3m2!1sen!2sus!4v1790265123754!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Iverson Chrysler Center Location Map"></iframe>
+    </section>
+
+</article>
