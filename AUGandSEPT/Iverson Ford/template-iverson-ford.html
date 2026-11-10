@@ -1,0 +1,1011 @@
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.iversonford.com/#business",
+        "name": "Iverson Ford",
+        "legalName": "Iverson Ford",
+        "description": "Premier vehicle dealership in Huron, SD offering new vehicles, pre-owned cars, financing, and auto service.",
+        "url": "https://www.iversonford.com",
+        "telephone": "+1-605-352-6411",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1920&auto=format&fit=crop",
+        "logo": "https://www.iversonford.com/images/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "400 4th St NE",
+          "addressLocality": "Huron",
+          "addressRegion": "SD",
+          "postalCode": "57350",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.3667,
+          "longitude": -98.2167
+        },
+        "hasMap": "https://maps.google.com/?q=Iverson+Ford+Huron+SD",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Huron"},
+          {"@type": "City", "name": "Aberdeen"},
+          {"@type": "City", "name": "Redfield"},
+          {"@type": "City", "name": "Mitchell"},
+          {"@type": "City", "name": "Sioux Falls"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.iversonford.com/#organization",
+        "name": "Iverson Ford",
+        "url": "https://www.iversonford.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.iversonford.com/images/logo.png",
+          "width": 250,
+          "height": 100
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-605-352-6411",
+          "areaServed": "SD",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "400 4th St NE",
+          "addressLocality": "Huron",
+          "addressRegion": "SD",
+          "postalCode": "57350",
+          "addressCountry": "US"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Iverson Auto Group",
+          "url": "https://www.iversonauto.com/"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.iversonford.com/#ford-maverick",
+        "name": "2026 Ford Maverick",
+        "description": "The 2026 Ford Maverick is a compact pickup built for drivers who want everyday efficiency, practical capability, and modern technology in a maneuverable truck.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "model": "Maverick",
+        "modelDate": "2026",
+        "bodyType": "Pickup Truck",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Ford"
+        },
+        "driveWheelConfiguration": ["Front-Wheel Drive", "All-Wheel Drive"],
+        "vehicleTransmission": ["8-speed automatic", "Electronic continuously variable transmission (eCVT)"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Hybrid",
+            "name": "2.5-liter hybrid powertrain"
+          },
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "2.0-liter EcoBoost®"
+          }
+        ],
+        "numberOfDoors": 4,
+        "fuelType": ["Hybrid", "Gasoline"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.iversonford.com/#ford-maverick-inventory",
+        "name": "New 2026 Ford Maverick Models",
+        "description": "Explore the full selection of new 2026 Ford Maverick models, including the XL, XLT, Lobo™, Lariat, and Tremor® trims at Iverson Ford.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "image": [
+          "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1920&auto=format&fit=crop"
+        ],
+        "category": "New Vehicles",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.iversonford.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.iversonford.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ford",
+            "item": "https://www.iversonford.com/searchnew.aspx?Make=Ford"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2026 Ford Maverick",
+            "item": "https://www.iversonford.com/searchnew.aspx?Make=Ford&ModelAndTrim=Maverick"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.iversonford.com/#hero-image",
+        "name": "2026 Ford Maverick at Iverson Ford",
+        "description": "The 2026 Ford Maverick displayed at Iverson Ford in Huron, South Dakota.",
+        "url": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1920&auto=format&fit=crop",
+        "contentUrl": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1920&auto=format&fit=crop",
+        "encodingFormat": "image/jpeg",
+        "representativeOfPage": true,
+        "creditText": "Ford",
+        "creator": {
+          "@type": "Organization",
+          "name": "Iverson Ford",
+          "url": "https://www.iversonford.com"
+        },
+        "license": "https://www.iversonford.com",
+        "copyrightNotice": "© Iverson Ford"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: AggregateRating + Reviews
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "@id": "https://www.iversonford.com/#reviews",
+        "name": "Iverson Ford",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "415",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "David T."},
+            "datePublished": "2026-03-10",
+            "reviewBody": "Great experience at Iverson Ford. The team helped me find the perfect Maverick for my commuting needs.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Sarah J."},
+            "datePublished": "2025-11-20",
+            "reviewBody": "Traveled from Aberdeen to check out the Ford lineup. Excellent customer service and a smooth buying process.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the 2026 Ford Maverick available as a hybrid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The 2026 Ford Maverick offers a 2.5-liter hybrid powertrain on most trim levels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can the 2026 Ford Maverick tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When properly equipped with the available 4K Tow Package, the Maverick can tow up to 4,000 pounds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2026 Ford Maverick offer all-wheel drive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Intelligent All-Wheel Drive is available on both the 2.5-liter Hybrid and 2.0-liter EcoBoost® engines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many passengers does the 2026 Ford Maverick seat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Maverick seats up to five passengers in its four-door SuperCrew® cab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the FLEXBED® system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FLEXBED® is Ford's configurable cargo management system that helps owners organize, secure, and customize the truck bed for different hauling needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I test drive the 2026 Ford Maverick near Huron, SD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Iverson Ford offers the 2026 Ford Maverick for drivers throughout Huron, Aberdeen, Redfield, Mitchell, Sioux Falls, and surrounding South Dakota communities. Visit the dealership to compare trims and schedule a personalized test drive."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        #nm-seo-page {
+            /* Updated brand colors based on the provided image */
+            --brand-primary: #031731; 
+            --brand-secondary: #0a2f5e; /* A slightly lighter shade for hover states */
+            
+            /* Text stays black/dark grey as requested */
+            --text-main: #333333;
+            --text-light: #555555;
+            
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+            
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        /* Flexbox structure to replace old CSS Grid layout */
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px); 
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--text-main); /* Enforcing black/dark grey text */
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Hero Section */
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary); 
+            min-height: 400px; 
+            padding: 100px 24px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.assets.ford.com/adobe/assets/urn:aaid:aem:6b6dd047-d3e9-4852-be6c-9e6823485f81/as/2026_Maverick_Mosaic2.webp?max-quality=75&crop-names=1_2x1&width=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2; 
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 500px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--brand-secondary); 
+            color: var(--white);
+            border-color: var(--brand-secondary);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            #nm-seo-page .key-facts-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: 1px solid var(--border); /* Full border */
+            border-radius: 8px; /* Full rounded corners */
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: var(--brand-primary);
+        }
+
+        /* Trims List Styles - 3 columns centered on desktop */
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on mobile */
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+            }
+            /* Center the 5th item on tablet */
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(6, 1fr); /* 6 columns to allow half-column offsets */
+            }
+            #nm-seo-page .trims-list li {
+                grid-column: span 2; /* 3 items per row */
+            }
+            /* Center the two bottom items */
+            #nm-seo-page .trims-list li:nth-child(4) {
+                grid-column: 2 / 4; 
+            }
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 4 / 6;
+                justify-self: stretch;
+                width: auto;
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; 
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05); /* Matching shadow to Key Facts */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Matching transition */
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-3px); /* Match lift */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Match shadow */
+            border-color: var(--brand-primary); /* Match border color change */
+        }
+
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            background-color: white;
+            padding: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto; 
+            max-height: 200px; 
+            object-fit: contain; 
+            display: block;
+        }
+
+        #nm-seo-page .trim-content {
+            padding: 24px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--text-main);
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        /* Centered Testimonial Card Styles */
+        #nm-seo-page blockquote {
+            margin: 24px auto;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 18px;
+            color: var(--text-main);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            max-width: 900px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        
+        #nm-seo-page blockquote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        #nm-seo-page blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 15px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            line-height: 1.5;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main); /* Reverted to black */
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary); /* Keeps blue accent icon */
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        #nm-seo-page .basic-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 24px;
+        }
+        
+        #nm-seo-page .basic-list li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 17px;
+        }
+    </style>
+
+
+<article id="nm-seo-page">
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Ford Maverick For Sale in <br !important> Huron, SD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.iversonford.com/new-vehicles/maverick/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Ford Maverick is a compact pickup built for drivers who want everyday efficiency, practical capability, and modern technology in a maneuverable truck. The 2026 Ford Maverick offers a standard 2.5-liter hybrid powertrain on most trims, while an available 2.0-liter EcoBoost® engine delivers stronger performance. Available Intelligent All-Wheel Drive and the available 4K Tow Package allow properly equipped Maverick models to tow up to 4,000 pounds and carry up to 1,500 pounds of payload.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Iverson Ford serves drivers throughout Huron, Aberdeen, Redfield, Mitchell, Sioux Falls, and surrounding South Dakota communities looking for a versatile truck that handles commuting, home improvement projects, outdoor recreation, and everyday work with confidence.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Key Facts About the 2026 Ford Maverick</h2>
+            <ul class="key-facts-list">
+                <li>The 2026 Ford Maverick offers a standard 2.5-liter hybrid powertrain on most trims.</li>
+                <li>The 2026 Ford Maverick offers an available 2.0-liter EcoBoost® engine.</li>
+                <li>The 2026 Ford Maverick offers available Intelligent All-Wheel Drive.</li>
+                <li>The 2026 Ford Maverick can tow up to 4,000 pounds when properly equipped with the available 4K Tow Package.</li>
+                <li>The 2026 Ford Maverick delivers up to 1,500 pounds of maximum payload when properly equipped.</li>
+                <li>The 2026 Ford Maverick features the FLEXBED® cargo management system.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2026 Ford Maverick Combines Hybrid Efficiency, Compact Size, and Everyday Capability</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto;">The Maverick combines pickup capability with the comfort and maneuverability of a compact truck. Its unibody design delivers a smooth ride while the FLEXBED® cargo management system provides configurable storage for tools, camping gear, sporting equipment, and home improvement supplies. Whether commuting through Huron or heading to the Missouri River for a weekend getaway, the Maverick adapts to everyday South Dakota life.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2026 Ford Maverick Delivers Efficient Power and Confident Towing Capability</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">The 2026 Ford Maverick offers two powertrain choices to match different driving needs. The available 2.5-liter hybrid powertrain emphasizes fuel efficiency for daily driving, while the available 2.0-liter EcoBoost® engine delivers stronger acceleration and can be paired with Intelligent All-Wheel Drive for additional confidence during South Dakota winters. When equipped with the available 4K Tow Package, properly configured Maverick models tow up to 4,000 pounds.</p>
+            
+            <div class="content-grid two-col">
+                <div>
+                    <p><strong>2026 Ford Maverick Performance Highlights</strong></p>
+                    <ul class="basic-list">
+                        <li>Available 2.5-liter hybrid powertrain</li>
+                        <li>Available 2.0-liter EcoBoost® engine</li>
+                        <li>Available Intelligent All-Wheel Drive</li>
+                        <li>Up to 4,000-pound towing capacity</li>
+                        <li>Up to 1,500-pound payload</li>
+                        <li>Eight-speed automatic transmission with EcoBoost® engine</li>
+                        <li>Electronic continuously variable transmission (eCVT) with Hybrid models</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:b227af99-4185-455c-b804-1824421c34b9/as/25_FRD_MCK_64382.webp?max-quality=75&crop-names=1_82x83&width=1920" alt="2026 Ford Maverick Performance and Towing" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Ford Maverick FLEXBED® System Expands Cargo Versatility</h2>
+                <p>The FLEXBED® system helps owners organize cargo using multiple tie-downs, storage solutions, and available power outlets. The SuperCrew® cab seats up to five passengers and includes under-seat storage for tools, backpacks, or work gear. Drivers throughout Huron, Aberdeen, Mitchell, Redfield, and Sioux Falls can easily transition between weekday jobs and weekend recreation.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:848eefbb-aa6e-4509-91b2-79b8c2087140/as/2026_Maverick_Mosaic4.webp?max-quality=75&crop-names=1_1x1&width=1920" alt="2026 Ford Maverick FLEXBED and Versatility" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Ford Maverick Technology Supports Connected Driving</h2>
+                <p>Every Maverick includes a 13.2-inch SYNC® 4 touchscreen with wireless Apple CarPlay® and Android Auto™ compatibility. Available FordPass Connect™, USB-C charging ports, and a B&O® Sound System by Bang & Olufsen provide convenience whether traveling across Beadle County or throughout South Dakota.</p>
+            </div>
+            <div>
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:df4200c8-6a9d-4e64-a35f-0330495afb71/as/FMMV0630000_2025_Maverick_Launch_KeyVisual21.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford Maverick Dashboard Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Ford Maverick Includes Ford Co-Pilot360® Driver-Assist Technology</h2>
+                <p>Standard Ford Co-Pilot360® technologies include Pre-Collision Assist with Automatic Emergency Braking, Lane-Keeping System, Auto High-Beam Headlamps, and a Rear View Camera. Available Adaptive Cruise Control, Blind Spot Information System with Cross-Traffic Alert, and Pro Trailer Backup Assist™ provide additional confidence when towing or traveling on longer highway trips.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:bd1aee97-5e65-40ff-baf1-53b6bbabc650/as/25_FRD_MAV_53138_V2.webp?max-quality=75&crop-names=1_8x9&width=3840" alt="2026 Ford Maverick Safety and Driver Assistance" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div>
+                <h2>What Do Experts Say About the 2026 Ford Maverick?</h2>
+                <p>Car and Driver describes the Maverick as "a simple, honest truck with enough capability for casual truck drivers who don't need something the size of an F-150." The publication also praises its hybrid efficiency, practical size, and everyday usability while naming it one of its 2026 10Best Trucks.</p>
+                <p><em>Source: Car and Driver 2026 Ford Maverick Review</em></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">What Are 2026 Ford Maverick Owners Saying?</h2>
+            <blockquote>
+                <p>"Truck seems perfect so far. Bed is a perfect fit for hauling my drumset, and it's definitely big enough for a deer carcass too."</p>
+                <cite><strong>A 2026 Ford Maverick Hybrid Lariat owner on Reddit shared:</strong></cite>
+            </blockquote>
+            <p style="text-align: center; max-width: 900px; margin: 24px auto 0 auto; color: var(--text-main); font-size: 17px;">The owner's experience highlights two of the Maverick's biggest strengths: excellent fuel efficiency compared with a full-size pickup and a cargo bed that's practical for everyday hobbies, outdoor recreation, and hauling equipment without the size of a traditional truck.</p>
+            <p style="text-align: center; color: var(--text-light); font-style: italic; margin-top: 16px;">Source: Reddit New 2026 Maverick Hybrid Owner</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>Iverson Ford Recommends the 2026 Ford Maverick for Everyday Truck Owners</h2>
+                <p>Drivers visiting Iverson Ford often want a truck that's efficient enough for commuting yet capable enough for work and recreation. The 2026 Ford Maverick continues to stand out by combining flexible powertrains, practical capability, modern technology, and compact dimensions that fit everyday South Dakota driving.</p>
+            </div>
+            <div>
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:c3f5cbc5-903b-46db-9ac8-66e46c9445e2/as/26_FRD_MAV_54238.webp?max-quality=75&crop-names=1_16x9&width=3840" alt="Iverson Ford Dealership" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 32px;">2026 Ford Maverick Trim Levels Offer Capability for Different Driving Needs</h2>
+            <ul class="trims-list">
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/maverick/2026/jellybeans/26_frd_mvk_xl_oxwh_ps34.png" alt="2026 Ford Maverick XL Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>XL</strong>
+                        <p>Standard hybrid powertrain on most configurations, FLEXBED® cargo management, and Ford Co-Pilot360® technologies deliver practical everyday capability.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/maverick/2026/jellybeans/26_frd_mvk_xlt_ltbl_ps34_MW.png" alt="2026 Ford Maverick XLT Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>XLT</strong>
+                        <p>Adds upgraded exterior styling, additional convenience features, enhanced interior comfort, and more available equipment.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/maverick/2026/jellybeans/26_frd_mvk_lobo_vctb_ps34.png" alt="2026 Ford Maverick Lobo Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Lobo™</strong>
+                        <p>Features a lowered sport suspension, torque-vectoring capability, exclusive styling, and EcoBoost® performance for drivers seeking a street-performance truck.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/maverick/2026/jellybeans/26_frd_mvk_lar_blkap_ruby_ps34.png" alt="2026 Ford Maverick Lariat Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Lariat</strong>
+                        <p>Adds premium interior materials, upgraded technology, enhanced comfort, and additional driver-assistance features.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/maverick/2026/jellybeans/26_frd_mvk_trem_orfy_ps34.png" alt="2026 Ford Maverick Tremor Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Tremor®</strong>
+                        <p>Includes an off-road-tuned suspension, Trail Control™, Trail One-Pedal Drive, skid plates, and all-terrain capability for exploring beyond the pavement.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>2026 Ford Maverick FAQs</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Is the 2026 Ford Maverick available as a hybrid?</summary>
+                    <div class="faq-answer"><p>Yes. The 2026 Ford Maverick offers a 2.5-liter hybrid powertrain on most trim levels.</p></div>
+                </details>
+                <details>
+                    <summary>How much can the 2026 Ford Maverick tow?</summary>
+                    <div class="faq-answer"><p>When properly equipped with the available 4K Tow Package, the Maverick can tow up to 4,000 pounds.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2026 Ford Maverick offer all-wheel drive?</summary>
+                    <div class="faq-answer"><p>Yes. Intelligent All-Wheel Drive is available on both the 2.5-liter Hybrid and 2.0-liter EcoBoost® engines.</p></div>
+                </details>
+                <details>
+                    <summary>How many passengers does the 2026 Ford Maverick seat?</summary>
+                    <div class="faq-answer"><p>The Maverick seats up to five passengers in its four-door SuperCrew® cab.</p></div>
+                </details>
+                <details>
+                    <summary>What is the FLEXBED® system?</summary>
+                    <div class="faq-answer"><p>FLEXBED® is Ford's configurable cargo management system that helps owners organize, secure, and customize the truck bed for different hauling needs.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I test drive the 2026 Ford Maverick in Huron, SD?</summary>
+                    <div class="faq-answer"><p>Iverson Ford offers the 2026 Ford Maverick for drivers throughout Huron, Aberdeen, Redfield, Mitchell, Sioux Falls, and surrounding South Dakota communities. Visit the dealership to compare trims and schedule a personalized test drive.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+           
+            <h2 style="text-align: center;">Iverson Ford Offers the 2026 Ford Maverick <br !important> in Huron</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Iverson Ford proudly serves drivers throughout Huron, Aberdeen, Redfield, Mitchell, Sioux Falls, and nearby South Dakota communities. Visit the dealership to compare Maverick trims, explore available hybrid and EcoBoost® powertrains, and schedule a personalized test drive.</p>
+       
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.iversonford.com/new-vehicles/maverick/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365071.2277969389!2d-98.49220466334887!3d44.36914714132543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8787be81332af5c3%3A0x71839b7e52a31da3!2sIverson%20Ford!5e0!3m2!1sen!2sus!4v1784292613932!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>

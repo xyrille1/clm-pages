@@ -1,0 +1,941 @@
+<!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "AutoDealer",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.iversonford.com/#business",
+        "name": "Iverson Ford",
+        "description": "New Ford and pre-owned vehicle sales, Ford-certified service, and an OEM parts department, at a single location in Huron, South Dakota.",
+        "url": "https://www.iversonford.com/",
+        "telephone": "+1-605-352-6464",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2500 Dakota Avenue S.",
+          "addressLocality": "Huron",
+          "addressRegion": "SD",
+          "postalCode": "57350",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.33654,
+          "longitude": -98.213827
+        },
+        "hasMap": "https://maps.google.com/?q=2500+Dakota+Avenue+S.,+Huron,+SD+57350",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Huron"
+          },
+          {
+            "@type": "City",
+            "name": "Mitchell"
+          },
+          {
+            "@type": "City",
+            "name": "Sioux Falls"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.iversonford.com/#organization",
+        "name": "Iverson Ford",
+        "url": "https://www.iversonford.com/",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+1-605-514-0002",
+          "areaServed": "SD"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2500 Dakota Avenue S.",
+          "addressLocality": "Huron",
+          "addressRegion": "SD",
+          "postalCode": "57350",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.iversonford.com/#ford-expedition",
+        "name": "2027 Ford Expedition",
+        "description": "The 2027 Ford Expedition gives Huron-area families a full-size three-row SUV with up to 440 horsepower, available 4x4, seating for up to eight, and maximum towing capacity of 9,600 pounds when properly equipped.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "model": "Expedition",
+        "modelDate": "2027",
+        "bodyType": "Full-size three-row SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Ford"
+        },
+        "driveWheelConfiguration": [
+          "4x2",
+          "4x4"
+        ],
+        "vehicleTransmission": [
+          "10-speed automatic transmission"
+        ],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "name": "3.5L EcoBoost V6"
+          },
+          {
+            "@type": "EngineSpecification",
+            "name": "3.5L EcoBoost V6 High-Output"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.iversonford.com/#ford-expedition-inventory",
+        "name": "New 2027 Ford Expedition Models",
+        "description": "Our current inventory already includes 2027 Expedition Active, Expedition MAX Active, and Expedition Tremor models.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "category": "New Vehicles"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.iversonford.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.iversonford.com/new-vehicles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "2027 Ford Expedition",
+            "item": "https://www.iversonford.com/new-vehicles/expedition/"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much horsepower does the 2027 Ford Expedition have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The standard 3.5L EcoBoost V6 produces 400 horsepower. The available High-Output version produces 440 horsepower."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much can the 2027 Ford Expedition tow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Properly equipped 4x4 Expedition models can tow up to 9,600 pounds with the Heavy-Duty Trailer Tow Package."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many people can the 2027 Expedition seat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depending on trim and seating configuration, the Expedition can accommodate seven or eight passengers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the 2027 Ford Expedition have 4x4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. 4x4 is available across the lineup, with standard 4x4 on Tremor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a longer 2027 Ford Expedition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Expedition MAX uses a longer body and provides up to 123.1 cubic feet of cargo space."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <style>
+        #nm-seo-page {
+            /* Brand colors from the Iverson Ford brand guideline */
+            --brand-primary: #102B4E; 
+            --brand-secondary: #2861A4; /* Secondary mid blue, used for hover states */
+            
+            /* Text stays black/dark grey as requested */
+            --text-main: #333333;
+            --text-light: #555555;
+            
+            --bg-light: #F4F4F4;
+            --white: #FFFFFF;
+            --border: #EEEEEE;
+            --max-width: 1200px;
+            
+            font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        /* Flexbox structure to replace old CSS Grid layout */
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px); 
+                flex: 0 0 calc(50% - 24px);
+            }
+
+            /* Highlights list + image: size the list to its content and
+               center the pair so the gap to the image stays tight */
+            #nm-seo-page .content-grid.two-col.highlights-tight {
+                justify-content: center;
+                gap: 32px;
+            }
+
+            #nm-seo-page .content-grid.two-col.highlights-tight > div:first-child {
+                width: auto;
+                flex: 0 1 auto;
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--text-main); /* Enforcing black/dark grey text */
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 480px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Hero Section */
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary); 
+            min-height: 480px; 
+            padding: 100px 24px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://di-uploads-pod45.dealerinspire.com/iversonford/uploads/2026/09/2027-Ford-Expedition-Hero.jpg') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2; 
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 500px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--brand-secondary); 
+            color: var(--white);
+            border-color: var(--brand-secondary);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            #nm-seo-page .key-facts-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: 1px solid var(--border); /* Full border */
+            border-radius: 8px; /* Full rounded corners */
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: var(--brand-primary);
+        }
+
+        /* Trims List Styles - 3 columns centered on desktop */
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on mobile */
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+            }
+            /* Center a lone last item on tablet (e.g. 2-2-2-1) */
+            #nm-seo-page .trims-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(6, 1fr); /* 6 columns to allow half-column offsets */
+            }
+            #nm-seo-page .trims-list li {
+                grid-column: span 2; /* 3 items per row */
+            }
+            /* Reset the tablet centering rule */
+            #nm-seo-page .trims-list li:last-child:nth-child(odd) {
+                grid-column: span 2;
+                justify-self: stretch;
+                width: auto;
+            }
+            /* One item left in the last row (e.g. 3-3-1): center it */
+            #nm-seo-page .trims-list li:last-child:nth-child(3n+1) {
+                grid-column: 3 / 5;
+            }
+            /* Two items left in the last row (e.g. 3-3-2): center the pair */
+            #nm-seo-page .trims-list li:nth-last-child(2):nth-child(3n+1) {
+                grid-column: 2 / 4;
+            }
+            #nm-seo-page .trims-list li:last-child:nth-child(3n+2) {
+                grid-column: 4 / 6;
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; 
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05); /* Matching shadow to Key Facts */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Matching transition */
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-3px); /* Match lift */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Match shadow */
+            border-color: var(--brand-primary); /* Match border color change */
+        }
+
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            background-color: white;
+            padding: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto; 
+            max-height: 200px; 
+            object-fit: contain; 
+            display: block;
+        }
+
+        #nm-seo-page .trim-content {
+            padding: 24px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--text-main);
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        /* Centered Testimonial Card Styles */
+        #nm-seo-page blockquote {
+            margin: 24px auto;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 18px;
+            color: var(--text-main);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            max-width: 900px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        
+        #nm-seo-page blockquote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        #nm-seo-page blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 15px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            line-height: 1.5;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main); /* Reverted to black */
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary); /* Keeps blue accent icon */
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        #nm-seo-page .basic-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 24px;
+        }
+        
+        #nm-seo-page .basic-list li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 17px;
+        }
+    </style>
+
+<article id="nm-seo-page">
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2027 Ford Expedition in <br !important> Huron, SD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.iversonford.com/new-vehicles/expedition/?_dFR%5Bmake%5D%5B0%5D=Ford&_dFR%5Bmodel_slug%5D%5B0%5D=Expedition&_dFR%5Bmodel_slug%5D%5B1%5D=Expedition%20Max&_dFR%5Btype%5D%5B0%5D=New&_dFR%5Byear%5D%5B0%5D=2027" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2027 Ford Expedition gives Huron-area families a full-size three-row SUV with up to 440 horsepower, available 4x4, seating for up to eight, and maximum towing capacity of 9,600 pounds when properly equipped. The standard 3.5L EcoBoost V6 produces 400 horsepower and 480 lb-ft of torque, while the available High-Output version produces 440 horsepower and 510 lb-ft.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">For drivers in Huron, Mitchell, Sioux Falls, and surrounding South Dakota communities, Iverson Ford provides a local place to explore Expedition configurations, compare trims, value a trade, arrange financing, and maintain your Ford.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2027 Ford Expedition Key Facts</h2>
+            <ul class="key-facts-list">
+                <li>The standard 3.5L EcoBoost V6 produces 400 horsepower and 480 lb-ft of torque.</li>
+                <li>The available 3.5L EcoBoost V6 High-Output engine produces 440 horsepower and 510 lb-ft of torque.</li>
+                <li>A 10-speed automatic transmission pairs with both engines.</li>
+                <li>4x2 and 4x4 configurations are available depending on trim.</li>
+                <li>Maximum towing reaches 9,600 pounds with available 4x4 and the Heavy-Duty Trailer Tow Package.</li>
+                <li>Standard Expedition models provide up to 108.5 cubic feet of cargo capacity.</li>
+                <li>Expedition MAX models provide up to 123.1 cubic feet of cargo capacity.</li>
+                <li>Seating accommodates up to eight passengers on select configurations.</li>
+                <li>The standard Expedition measures 209.9 inches long, while Expedition MAX measures 221.7 inches.</li>
+                <li>The 24-inch panoramic display and 13.2-inch center display are standard.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2027 Ford Expedition Brings Two EcoBoost V6 Power Levels</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">The 2027 Expedition uses Ford's 3.5L EcoBoost V6 as its foundation. The standard version develops 400 horsepower and 480 lb-ft of torque, while the High-Output version raises output to 440 horsepower and 510 lb-ft. Both engines use a 10-speed automatic transmission. Depending on configuration, drivers can choose 4x2 or 4x4.</p>
+            
+            <div class="content-grid two-col highlights-tight">
+                <div>
+                    <p><strong>2027 Ford Expedition Performance Highlights</strong></p>
+                    <ul class="basic-list">
+                        <li>3.5L EcoBoost V6</li>
+                        <li>400 horsepower</li>
+                        <li>480 lb-ft of torque</li>
+                        <li>Available 440-hp High-Output V6</li>
+                        <li>Available 510 lb-ft of torque</li>
+                        <li>10-speed automatic transmission</li>
+                        <li>Available 4x4</li>
+                        <li>Up to 9,600 pounds of towing capacity</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:a3d841c3-797a-406e-bb90-bf154e1948f1/as/27_FRD_EPD_TREM_FRDNBRDT0033_RSF_BikesShot5_0234_04_S_RGB.webp?max-quality=75&crop-names=1_21x9&width=1920" alt="2027 Ford Expedition Performance Highlights" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2027 Ford Expedition Expands Passenger and Cargo Flexibility</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">The Expedition provides three rows of seating with configurations for seven or eight passengers, depending on trim and seating arrangement. Standard-wheelbase models offer 22.9 cubic feet behind the third row, 69.9 cubic feet behind the second row, and 108.5 cubic feet behind the first row. The longer Expedition MAX increases those figures to 37.4, 84.5, and 123.1 cubic feet.</p>
+            
+            <div class="content-grid two-col">
+                <div style="order: 2;">
+                    <p><strong>2027 Ford Expedition Interior Highlights</strong></p>
+                    <ul class="basic-list">
+                        <li>Three-row seating</li>
+                        <li>Up to eight-passenger capacity</li>
+                        <li>Available second-row captain's chairs</li>
+                        <li>60/40 PowerFold third-row seating</li>
+                        <li>Up to 108.5 cubic feet of standard Expedition cargo space</li>
+                        <li>Up to 123.1 cubic feet in Expedition MAX</li>
+                        <li>Available Flex Powered Console</li>
+                        <li>Available heated and ventilated front-row seating</li>
+                    </ul>
+                </div>
+                <div style="order: 1;">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:10f05b95-4cd7-41fe-a3a9-ad857aa4f710/as/27_FRD_EPD_dig_active_dsg_int1.webp?max-quality=75&crop-names=1_16x9&width=3840" alt="2027 Ford Expedition Interior Highlights" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2027 Ford Expedition Uses Connected Technology for Family Travel</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">Ford equips the 2027 Expedition with a 24-inch panoramic display and 13.2-inch center display. The Ford Digital Experience provides access to vehicle information, maps, entertainment, and connected functions, while available BlueCruise provides hands-free highway driving capability. Ford Co-Pilot360 technology also provides driver-assistance features including adaptive cruise control, lane centering, and pre-collision assistance.</p>
+            
+            <div class="content-grid two-col highlights-tight">
+                <div>
+                    <p><strong>2027 Ford Expedition Technology Highlights</strong></p>
+                    <ul class="basic-list">
+                        <li>24-inch panoramic display</li>
+                        <li>13.2-inch center display</li>
+                        <li>Ford Digital Experience</li>
+                        <li>Ford Co-Pilot360 driver-assistance technology</li>
+                        <li>Available BlueCruise</li>
+                        <li>Available 360-degree Zone Lighting</li>
+                        <li>Available B&amp;O Sound System by Bang &amp; Olufsen</li>
+                        <li>Available Ford Connectivity Package</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:7488cc33-0281-44e3-a30c-b956e7bea2ea/as/27_FRD_EPD_64307_360_Cam_PULT.webp?max-quality=75&crop-names=1_16x9&width=1920" alt="2027 Ford Expedition Technology Highlights" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 32px;">2027 Ford Expedition Trims Provide Different Equipment Levels</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">Ford offers seven 2027 Expedition configurations:</p>
+            <ul class="trims-list">
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_01_active_dmgr_V1.png" alt="2027 Ford Expedition Active Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Active:</strong>
+                        <p>Provides seating for up to eight, a 400-hp 3.5-liter EcoBoost V6, 24-inch panoramic display, 13.2-inch center display, and flexible three-row cargo space.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_05_active_MAX_dmgr_V1.png" alt="2027 Ford Expedition MAX Active Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>MAX Active:</strong>
+                        <p>Adds the longer MAX body with up to 123.1 cubic feet of cargo capacity while retaining the Active model's 400-hp EcoBoost V6 and available 4x4.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_02_platinum_glag_V1.png" alt="2027 Ford Expedition Platinum Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Platinum:</strong>
+                        <p>Adds leather-trimmed seating, heated and ventilated front captain's chairs, standard 20-inch wheels, and availability of the 440-hp High-Output V6.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_06_platinum_MAX_glag_V1.png" alt="2027 Ford Expedition MAX Platinum Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>MAX Platinum:</strong>
+                        <p>Combines Platinum equipment with the longer MAX body and its expanded 123.1-cubic-foot maximum cargo capacity.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_03_tremor_mrgr_V1.png" alt="2027 Ford Expedition Tremor Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>Tremor:</strong>
+                        <p>Provides standard 4x4, the 440-hp High-Output V6, an electronic-locking differential, and off-road-focused equipment.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_04_king-ranch_stwh_v2.png" alt="2027 Ford Expedition King Ranch Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>King Ranch:</strong>
+                        <p>Adds Del Rio full-leather seating, heated and ventilated front seats, heated second-row captain's chairs, and distinctive King Ranch design elements.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trim-image-container">
+                        <img src="https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/expedition/2027/jellybeans/27_exp_mw_07_king-ranch_MAX_stwh_v2.png" alt="2027 Ford Expedition MAX King Ranch Trim" class="trim-image" loading="lazy">
+                    </div>
+                    <div class="trim-content">
+                        <strong>MAX King Ranch:</strong>
+                        <p>Combines King Ranch equipment with the extended MAX body, providing up to 123.1 cubic feet of maximum cargo capacity.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+    <div class="container" style="text-align: center;">
+        <div>
+            <h2>What Do Automotive Experts Say About the 2027 Ford Expedition?</h2>
+            <p>Carsforsale.com evaluated the 2027 Ford Expedition and awarded it an outstanding <strong>9/10 overall rating</strong>. They praised its powerful EcoBoost V6 engines, generous interior space, and massive 9,600-pound towing capacity.</p>
+            <p>"The 2027 Ford Expedition succeeds by focusing on what buyers in this segment want most: space, towing, comfort, and technology."</p>
+            <p><em>Source: <a href="https://www.carsforsale.com/car-reviews/ford-expedition-review/" target="_blank" style="color: inherit">Carsforsale.com: 2027 Ford Expedition Review</a></em></p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light-section">
+    <div class="container">
+        <h2 style="text-align: center;">What Are 2027 Ford Expedition Owners Saying?</h2>
+        <blockquote>
+            <p>"Plenty of room and a lot of git up and go. And just a nice ride."</p>
+            <cite><strong>An Edmunds owner review for a 2027 Ford Expedition MAX Platinum describes the vehicle's space, acceleration, and ride:</strong></cite>
+        </blockquote>
+        <p style="text-align: center; max-width: 900px; margin: 24px auto 0 auto; color: var(--text-main); font-size: 17px;">The owner posted this after purchasing a 2027 Expedition MAX Platinum with the 3.5L turbocharged V6 and 4WD.</p>
+        <p style="text-align: center; color: var(--text-light); font-style: italic; margin-top: 16px;">Source: <a href="https://www.edmunds.com/ford/expedition/2027/consumer-reviews/" target="_blank" style="color: inherit">Edmunds: 2027 Ford Expedition Owner Reviews</a></p>
+    </div>
+</section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+           
+            <h2 style="text-align: center;">We Help South Dakota Drivers Find <br !important> the 2027 Ford Expedition</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Iverson Ford, we help you compare 2027 Expedition trims, 4x2 and 4x4 configurations, towing equipment, passenger layouts, Expedition MAX cargo capacity, and available technology. We are located at 2500 Dakota Avenue S. in Huron and serve drivers throughout Huron, Mitchell, Sioux Falls, and surrounding communities.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">We also help with financing, trade-in valuation, Ford service, genuine Ford parts, and current vehicle offers. Our current inventory already includes 2027 Expedition Active, Expedition MAX Active, and Expedition Tremor models.</p>
+       
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.iversonford.com/new-vehicles/expedition/?_dFR%5Bmake%5D%5B0%5D=Ford&_dFR%5Bmodel_slug%5D%5B0%5D=Expedition&_dFR%5Bmodel_slug%5D%5B1%5D=Expedition%20Max&_dFR%5Btype%5D%5B0%5D=New&_dFR%5Byear%5D%5B0%5D=2027" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions About the 2027 Ford Expedition</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much horsepower does the 2027 Ford Expedition have?</summary>
+                    <div class="faq-answer"><p>The standard 3.5L EcoBoost V6 produces 400 horsepower. The available High-Output version produces 440 horsepower.</p></div>
+                </details>
+                <details>
+                    <summary>How much can the 2027 Ford Expedition tow?</summary>
+                    <div class="faq-answer"><p>Properly equipped 4x4 Expedition models can tow up to 9,600 pounds with the Heavy-Duty Trailer Tow Package.</p></div>
+                </details>
+                <details>
+                    <summary>How many people can the 2027 Expedition seat?</summary>
+                    <div class="faq-answer"><p>Depending on trim and seating configuration, the Expedition can accommodate seven or eight passengers.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2027 Ford Expedition have 4x4?</summary>
+                    <div class="faq-answer"><p>Yes. 4x4 is available across the lineup, with standard 4x4 on Tremor.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Is there a longer 2027 Ford Expedition?</summary>
+                    <div class="faq-answer"><p>Yes. The Expedition MAX uses a longer body and provides up to 123.1 cubic feet of cargo space.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365071.2277969389!2d-98.49220466334887!3d44.36914714132543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8787be81332af5c3%3A0x71839b7e52a31da3!2sIverson%20Ford!5e0!3m2!1sen!2sus!4v1784292613932!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
