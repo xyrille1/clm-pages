@@ -1,0 +1,967 @@
+<!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "AutoDealer",
+    "LocalBusiness"
+  ],
+  "@id": "https://www.iversonford.com/#business",
+  "name": "Iverson Ford",
+  "description": "Iverson Ford offers new Ford vehicles, used vehicles, financing resources, trade-in tools, Ford-certified service, genuine OEM parts, and service and parts specials at 2500 Dakota Avenue S. in Huron, SD.",
+  "url": "https://www.iversonford.com",
+  "telephone": "+1-605-352-6464",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2500 Dakota Avenue S.",
+    "addressLocality": "Huron",
+    "addressRegion": "SD",
+    "postalCode": "57350",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.33654,
+    "longitude": -98.213827
+  },
+  "hasMap": "https://www.google.com/maps/place/Iverson+Ford/",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Huron"
+    },
+    {
+      "@type": "City",
+      "name": "Cavour"
+    },
+    {
+      "@type": "City",
+      "name": "Broadland"
+    },
+    {
+      "@type": "City",
+      "name": "Wolsey"
+    },
+    {
+      "@type": "City",
+      "name": "Virgil"
+    },
+    {
+      "@type": "City",
+      "name": "Yale"
+    },
+    {
+      "@type": "City",
+      "name": "Iroquois"
+    },
+    {
+      "@type": "City",
+      "name": "Hitchcock"
+    },
+    {
+      "@type": "City",
+      "name": "Wessington"
+    },
+    {
+      "@type": "City",
+      "name": "Wessington Springs"
+    },
+    {
+      "@type": "City",
+      "name": "Woonsocket"
+    },
+    {
+      "@type": "City",
+      "name": "Tulare"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Beadle County"
+    }
+  ]
+}
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.iversonford.com/#organization",
+  "name": "Iverson Ford",
+  "url": "https://www.iversonford.com",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-605-514-0002",
+    "areaServed": "SD"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2500 Dakota Avenue S.",
+    "addressLocality": "Huron",
+    "addressRegion": "SD",
+    "postalCode": "57350",
+    "addressCountry": "US"
+  }
+}
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "@id": "https://www.iversonford.com/#ford-f-150-xlt",
+  "name": "2026 Ford F-150 XLT",
+  "description": "The 2026 Ford F-150 XLT gives Huron-area truck shoppers a flexible full-size pickup for commuting, hauling, towing, job-site transportation, and outdoor recreation.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "model": "F-150",
+  "modelDate": "2026",
+  "bodyType": "Pickup Truck",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ford"
+  },
+  "driveWheelConfiguration": [
+    "Four-Wheel Drive"
+  ],
+  "vehicleTransmission": [
+    "10-speed automatic"
+  ],
+  "vehicleEngine": [
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gasoline",
+      "name": "2.7-liter EcoBoost V6"
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gasoline",
+      "name": "3.5-liter EcoBoost V6"
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gasoline",
+      "name": "5.0-liter Ti-VCT V8"
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Hybrid",
+      "name": "3.5-liter PowerBoost Full Hybrid V6"
+    }
+  ],
+  "fuelType": [
+    "Gasoline",
+    "Hybrid"
+  ]
+}
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.iversonford.com/#ford-f-150-xlt-inventory",
+  "name": "New 2026 Ford F-150 XLT Models",
+  "description": "New 2026 Ford F-150 XLT models in SuperCab and SuperCrew configurations at Iverson Ford in Huron, SD.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "category": "New Vehicles"
+}
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.iversonford.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "New Vehicles",
+      "item": "https://www.iversonford.com/new-vehicles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "2026 Ford F-150 XLT",
+      "item": "https://www.iversonford.com/new-vehicles/f-150/"
+    }
+  ]
+}
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 Ford F-150 tow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The F-150 can tow up to 13,500 pounds when properly equipped with the 3.5L EcoBoost V6."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What engine comes standard in the F-150 XLT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The standard engine is the 2.7L EcoBoost V6 with 325 horsepower and 400 lb-ft of torque."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 4x4 available on the F-150 XLT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The XLT offers available 4x4 capability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What bed sizes are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SuperCab models use a 6.5-foot bed, while SuperCrew models offer 5.5-foot or 6.5-foot beds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many engines does the F-150 XLT offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The XLT offers four engine choices, including EcoBoost, V8, and PowerBoost hybrid options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the F-150 XLT have a 10-speed transmission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Gas-powered XLT models use a 10-speed automatic transmission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the F-150 XLT have a touchscreen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The XLT includes a 12-inch touchscreen with SYNC 4 technology."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the F-150 XLT have towing technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Available features include Pro Trailer Hitch Assist and Pro Trailer Backup Assist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the F-150 XLT use Pro Power Onboard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pro Power Onboard is available, with the PowerBoost hybrid offering up to 7.2 kW."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the F-150 XLT offer BlueCruise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ford offers available BlueCruise hands-free highway driving on the XLT."
+      }
+    }
+  ]
+}
+    </script>
+
+    <style>
+        #nm-seo-page {
+            /* Iverson Ford brand guideline (2026-07-30) */
+            --brand-primary: #102B4E; /* Primary brand navy */
+            --brand-secondary: #2861A4; /* Secondary mid blue, hover states */
+
+            --text-main: #333333; /* Neutral body text */
+            --text-light: #555555;
+
+            --bg-light: #F4F4F4; /* Neutral light grey */
+            --white: #FFFFFF;
+            --border: #EEEEEE; /* Neutral border grey */
+            --max-width: 1200px;
+            
+            font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        /* Flexbox structure to replace old CSS Grid layout */
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px); 
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--text-main); /* Enforcing black/dark grey text */
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Hero Section */
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary); 
+            min-height: 400px; 
+            padding: 100px 24px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.assets.ford.com/adobe/assets/urn:aaid:aem:9701ae23-7727-4722-b008-c2e05ae0ca5b/as/26_frd_f15_xlt_blkap_scc5_agbl_dr78.webp?max-quality=75&crop-names=1_16x9&width=4096') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2; 
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 500px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--brand-secondary); 
+            color: var(--white);
+            border-color: var(--brand-secondary);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            #nm-seo-page .key-facts-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: 1px solid var(--border); /* Full border */
+            border-radius: 8px; /* Full rounded corners */
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: var(--brand-primary);
+        }
+
+        /* Trims List Styles - 3 columns centered on desktop */
+        #nm-seo-page .trims-list {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column on mobile */
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+            }
+            /* Center the 5th item on tablet */
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #nm-seo-page .trims-list {
+                grid-template-columns: repeat(6, 1fr); /* 6 columns to allow half-column offsets */
+            }
+            #nm-seo-page .trims-list li {
+                grid-column: span 2; /* 3 items per row */
+            }
+            /* Center the two bottom items */
+            #nm-seo-page .trims-list li:nth-child(4) {
+                grid-column: 2 / 4; 
+            }
+            #nm-seo-page .trims-list li:nth-child(5) {
+                grid-column: 4 / 6;
+                justify-self: stretch;
+                width: auto;
+            }
+        }
+
+        #nm-seo-page .trims-list li {
+            position: relative;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; 
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05); /* Matching shadow to Key Facts */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Matching transition */
+        }
+
+        #nm-seo-page .trims-list li:hover {
+            transform: translateY(-3px); /* Match lift */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Match shadow */
+            border-color: var(--brand-primary); /* Match border color change */
+        }
+
+        #nm-seo-page .trim-image-container {
+            width: 100%;
+            background-color: white;
+            padding: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nm-seo-page .trim-image {
+            width: 100%;
+            height: auto; 
+            max-height: 200px; 
+            object-fit: contain; 
+            display: block;
+        }
+
+        #nm-seo-page .trim-content {
+            padding: 24px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        #nm-seo-page .trims-list strong {
+            color: var(--text-main);
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #nm-seo-page .trims-list p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        /* Centered Testimonial Card Styles */
+        #nm-seo-page blockquote {
+            margin: 24px auto;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 18px;
+            color: var(--text-main);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            max-width: 900px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        
+        #nm-seo-page blockquote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        #nm-seo-page blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 15px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            line-height: 1.5;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main); /* Reverted to black */
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary); /* Keeps blue accent icon */
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        #nm-seo-page .basic-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 24px;
+        }
+        
+        #nm-seo-page .basic-list li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 17px;
+        }
+    </style>
+
+
+<article id="nm-seo-page">
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Ford F-150 XLT in <br !important> Huron, SD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.iversonford.com/new-vehicles/f-150/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Ford F-150 XLT gives Huron-area truck shoppers a flexible full-size pickup for commuting, hauling, towing, job-site transportation, and outdoor recreation. Ford pairs the XLT with several powertrain choices, available 4x4, different cab and bed configurations, and technology designed around everyday truck use. At Iverson Ford, we help drivers from Huron and surrounding Beadle County communities find an F-150 suited to their individual needs.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Ford F-150 XLT Highlights Combine Power With Everyday Utility</h2>
+            <ul class="key-facts-list">
+                <li>The 2.7-liter EcoBoost V6 produces 325 horsepower and 400 lb-ft of torque.</li>
+                <li>The available 3.5-liter EcoBoost V6 produces 382 horsepower and 500 lb-ft of torque.</li>
+                <li>The available 5.0-liter Ti-VCT V8 produces 400 horsepower and 410 lb-ft of torque.</li>
+                <li>The available 3.5-liter PowerBoost Full Hybrid V6 produces 420 horsepower and 570 lb-ft of torque.</li>
+                <li>A 10-speed automatic transmission pairs with every XLT powertrain.</li>
+                <li>Available 4x4 gives the XLT additional traction capability for changing surfaces and road conditions.</li>
+                <li>The properly equipped F-150 can tow up to 13,500 pounds with the available 3.5-liter EcoBoost V6.</li>
+                <li>The PowerBoost Full Hybrid can provide up to 7.2 kW through Pro Power Onboard.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 16px;">2026 Ford F-150 XLT Performance Supports Huron Work Requirements</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 48px auto;">The F-150 XLT provides different power levels for drivers with different priorities. The standard 2.7-liter EcoBoost V6 develops 325 horsepower and 400 lb-ft of torque. The available 3.5-liter EcoBoost V6 increases output to 382 horsepower and 500 lb-ft, while the 5.0-liter V8 produces 400 horsepower and 410 lb-ft. The available PowerBoost Full Hybrid V6 produces 420 horsepower and 570 lb-ft.</p>
+            
+            <div class="content-grid two-col">
+                <div>
+                    <ul class="basic-list">
+                        <li>2.7L EcoBoost V6: 325 hp and 400 lb-ft</li>
+                        <li>3.5L EcoBoost V6: 382 hp and 500 lb-ft</li>
+                        <li>5.0L Ti-VCT V8: 400 hp and 410 lb-ft</li>
+                        <li>3.5L PowerBoost Full Hybrid V6: 420 hp and 570 lb-ft</li>
+                        <li>Maximum available towing: 13,500 pounds with the appropriate 3.5L EcoBoost configuration</li>
+                        <li>Maximum PowerBoost towing: 11,600 pounds when properly equipped</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:92e7ecd9-646a-430f-a771-a90f0142445a/as/25_FRD_F15_51172.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford F-150 XLT Performance" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Ford F-150 XLT Configurations Fit Different Jobs and Lifestyles</h2>
+                <p>Ford gives XLT buyers a choice between SuperCab and SuperCrew configurations. The SuperCab uses a 6.5-foot bed, while the SuperCrew can be paired with either a 5.5-foot or 6.5-foot bed.</p>
+                <ul class="basic-list">
+                    <li>SuperCab: 6.5-foot bed</li>
+                    <li>SuperCrew: 5.5-foot or 6.5-foot bed</li>
+                    <li>Available 4x4: added traction capability</li>
+                    <li>Multiple powertrains: different performance and towing characteristics</li>
+                    <li>Available towing equipment: added trailer-management functionality</li>
+                </ul>
+                <p>These combinations can work for agricultural tasks, construction, manufacturing, transportation, service work, and recreational hauling around Huron. A properly configured bed can accommodate tools, supplies, equipment, camping gear, hunting equipment, or other cargo.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:add020b4-cdb9-4cd6-96f6-810172208c75/as/26_FRD_F15_64541.webp?max-quality=75&crop-names=1_3x2&width=1920" alt="2026 Ford F-150 XLT Configurations" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2026 Ford F-150 XLT Technology Adds Connectivity and Trailer Assistance</h2>
+                <p>The XLT includes a 12-inch center display with SYNC 4 technology. Ford also makes several driver-assistance and towing technologies available, giving buyers options for increasing convenience behind the wheel.</p>
+                <ul class="basic-list">
+                    <li>12-inch center display with SYNC 4</li>
+                    <li>Wireless Apple CarPlay and Android Auto</li>
+                    <li>Available Pro Trailer Hitch Assist</li>
+                    <li>Available Pro Trailer Backup Assist</li>
+                    <li>Available Ford Co-Pilot360 Assist 2.0</li>
+                    <li>Available BlueCruise hands-free highway driving assistance</li>
+                    <li>Available Pro Power Onboard with up to 7.2 kW on PowerBoost models</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:d6bfb94d-da4e-471b-a761-18297bc9f061/as/26_FRD_F15_62074.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford F-150 XLT Technology" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2026 Ford F-150 XLT is built for Huron Roads and Outdoor Activities</h2>
+                <p>Huron sits along U.S. Highway 14 and South Dakota Highway 37, providing connections through the surrounding region. The F-150 XLT can serve drivers traveling for work, agricultural activities, commuting, and regional recreation.</p>
+                <ul class="basic-list">
+                    <li>Fishing and boating around the James River</li>
+                    <li>Swimming and boating at Ravine Lake</li>
+                    <li>Hunting throughout the surrounding area</li>
+                    <li>Golf and walking trails</li>
+                    <li>Splash Central Waterpark and family recreation</li>
+                    <li>South Dakota State Fair and other local events</li>
+                </ul>
+                <p>Nearby communities include Cavour, Broadland, Wolsey, Virgil, Yale, Iroquois, Hitchcock, Wessington, Wessington Springs, Woonsocket, and Tulare.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:d13de9f2-d519-4f87-811f-23f86064abfc/as/_EPP1357_V1.webp?max-quality=75&crop-names=1_16x9&width=3840" alt="2026 Ford F-150 XLT on Huron Roads" class="nm-img-fluid" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="container" style="text-align: center;">
+        <div>
+            <h2>What Do Automotive Experts Say About the 2026 Ford F-150 XLT?</h2>
+            <p>Car and Driver identifies the XLT as its preferred 2026 Ford F-150 trim, noting that it provides access to desirable options while remaining relatively affordable. The publication also describes the XLT as the least expensive trim that does not feel like a basic work truck inside.</p>
+            <p>"We recommend the XLT trim level, as it unlocks several desirable options but remains relatively affordable."</p>
+            <p>Car and Driver also notes that the XLT is available with multiple engine choices, including the 3.5L EcoBoost V6, 5.0L V8, and PowerBoost hybrid.</p>
+            <p><em>Source: <a href="https://www.caranddriver.com/shopping-advice/a71921147/ford-f-150-trim-level-what-to-buy/" target="_blank" rel="noopener noreferrer" style="color: inherit">Car and Driver: Which Ford F-150 Trim Level Is the Best Choice?</a></em></p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light-section">
+    <div class="container">
+        <h2 style="text-align: center;">What Are 2026 Ford F-150 XLT Owners Saying?</h2>
+        <p style="text-align: center; max-width: 900px; margin: 24px auto 0 auto; color: var(--text-main); font-size: 17px;">An Edmunds owner review describes a 2026 Ford F-150 XLT SuperCrew 4WD equipped with the 3.5L turbocharged V6, 10-speed automatic transmission, and 6.5-foot bed. The review comments on the truck's presence after ownership:</p>
+        <blockquote>
+            <p>"The longer bed gives the truck a more commanding presence in my driveway and on the street."</p>
+            <cite>Source: <a href="https://www.edmunds.com/ford/f-150/2026/supercrew/consumer-reviews/" target="_blank" rel="noopener noreferrer" style="color: inherit">Edmunds: 2026 Ford F-150 Owner Reviews</a></cite>
+        </blockquote>
+    </div>
+</section>
+
+    <section>
+        <div class="container">
+            <h2>2026 Ford F-150 XLT FAQs</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much can the 2026 Ford F-150 tow?</summary>
+                    <div class="faq-answer"><p>The F-150 can tow up to 13,500 pounds when properly equipped with the 3.5L EcoBoost V6.</p></div>
+                </details>
+                <details>
+                    <summary>What engine comes standard in the F-150 XLT?</summary>
+                    <div class="faq-answer"><p>The standard engine is the 2.7L EcoBoost V6 with 325 horsepower and 400 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>Is 4x4 available on the F-150 XLT?</summary>
+                    <div class="faq-answer"><p>Yes. The XLT offers available 4x4 capability.</p></div>
+                </details>
+                <details>
+                    <summary>What bed sizes are available?</summary>
+                    <div class="faq-answer"><p>SuperCab models use a 6.5-foot bed, while SuperCrew models offer 5.5-foot or 6.5-foot beds.</p></div>
+                </details>
+                <details>
+                    <summary>How many engines does the F-150 XLT offer?</summary>
+                    <div class="faq-answer"><p>The XLT offers four engine choices, including EcoBoost, V8, and PowerBoost hybrid options.</p></div>
+                </details>
+                <details>
+                    <summary>Does the F-150 XLT have a 10-speed transmission?</summary>
+                    <div class="faq-answer"><p>Yes. Gas-powered XLT models use a 10-speed automatic transmission.</p></div>
+                </details>
+                <details>
+                    <summary>Does the F-150 XLT have a touchscreen?</summary>
+                    <div class="faq-answer"><p>Yes. The XLT includes a 12-inch touchscreen with SYNC 4 technology.</p></div>
+                </details>
+                <details>
+                    <summary>Does the F-150 XLT have towing technology?</summary>
+                    <div class="faq-answer"><p>Yes. Available features include Pro Trailer Hitch Assist and Pro Trailer Backup Assist.</p></div>
+                </details>
+                <details>
+                    <summary>Can the F-150 XLT use Pro Power Onboard?</summary>
+                    <div class="faq-answer"><p>Yes. Pro Power Onboard is available, with the PowerBoost hybrid offering up to 7.2 kW.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Does the F-150 XLT offer BlueCruise?</summary>
+                    <div class="faq-answer"><p>Yes. Ford offers available BlueCruise hands-free highway driving on the XLT.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+           
+            <h2 style="text-align: center;">2026 Ford F-150 XLT at Iverson Ford <br !important> in Huron, SD</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Iverson Ford, we help drivers throughout Huron and surrounding communities choose an F-150 configuration that fits their work, towing, hauling, commuting, and recreational needs. We offer new Ford vehicles, used vehicles, financing resources, trade-in tools, Ford-certified service, genuine OEM parts, and service and parts specials. Our dealership is located at 2500 Dakota Avenue S. in Huron.</p>
+       
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.iversonford.com/new-vehicles/f-150/" class="nm-btn">View Inventory</a>
+                <a href="https://www.iversonford.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367236.9470659134!2d-98.44551276881765!3d44.020595838165164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8787be81332af5c3%3A0x71839b7e52a31da3!2sIverson%20Ford!5e0!3m2!1sen!2sus!4v1790344865726!5m2!1sen!2sus" title="Map to Iverson Ford, 2500 Dakota Avenue S., Huron, SD" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
