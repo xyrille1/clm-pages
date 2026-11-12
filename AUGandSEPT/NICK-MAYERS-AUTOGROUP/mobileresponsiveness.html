@@ -1,0 +1,1123 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+         Phone and hours sourced from drivelibertysubaru.com dealership
+         info page, 18 Aug 2026.
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.drivelibertysubaru.com/#business",
+        "name": "Liberty Subaru",
+        "legalName": "Liberty Subaru",
+        "description": "Premier vehicle dealership in Libertyville, IL offering new Subaru vehicles, pre-owned cars, financing, and auto service.",
+        "url": "https://www.drivelibertysubaru.com",
+        "telephone": "+1-847-362-3800",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_01?$1550w$",
+        "logo": "https://di-uploads-pod36.dealerinspire.com/libertysubaruil/uploads/2024/07/og-image-200x200-25.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1000 E Park Ave",
+          "addressLocality": "Libertyville",
+          "addressRegion": "IL",
+          "postalCode": "60048",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.2831,
+          "longitude": -87.9531
+        },
+        "hasMap": "https://maps.google.com/?q=Liberty+Subaru+Libertyville+IL",
+        "department": [
+          {
+            "@type": "AutoDealer",
+            "name": "Liberty Subaru Sales Department",
+            "telephone": "+1-847-362-8787",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "09:00",
+                "closes": "20:00"
+              }
+            ]
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Libertyville"},
+          {"@type": "City", "name": "Lake Forest"},
+          {"@type": "City", "name": "Lake Bluff"},
+          {"@type": "City", "name": "Gurnee"},
+          {"@type": "City", "name": "Waukegan"},
+          {"@type": "City", "name": "Mundelein"},
+          {"@type": "City", "name": "Vernon Hills"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+         Canonical name: "Liberty Subaru" per H1, body copy, legalName,
+         and WebSite.name. The platform Yoast graph ships "Liberty Auto
+         Subaru" - escalate to platform admin to align.
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.drivelibertysubaru.com/#organization",
+        "name": "Liberty Subaru",
+        "url": "https://www.drivelibertysubaru.com",
+        "logo": "https://di-uploads-pod36.dealerinspire.com/libertysubaruil/uploads/2024/07/og-image-200x200-25.jpg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-847-362-8787",
+          "contactType": "Sales"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+         RESOLVED (18 Aug 2026, from live Liberty Subaru inventory):
+           - Exterior Colors: Crystal Black Silica, Ice Silver Metallic
+           - Interior Color: Premium Cloth
+           - ACCEPTED EXCEPTION: VIN at model level: This is a model-overview
+           page. Individual VINs are carried per-unit inside each Offer.
+         RE-VERIFIED (24 Aug 2026) against live drivelibertysubaru.com
+         inventory listing screenshots for stocks 726688, 726779, and
+         726834 - VIN, sale price, exterior color, and interior color all
+         match exactly. Stocks 726782, 726841, and 726872 carry forward
+         from the 18 Aug 2026 source pending a matching screenshot.
+         NOTE: Each nested Offer.url below is a constructed stock-
+         filter link on the site's existing _dFR query pattern, not a
+         confirmed VDP permalink - swap in the real per-unit VDP URLs
+         if Liberty Subaru's CMS exposes them.
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.drivelibertysubaru.com/#subaru-outback",
+        "name": "2026 Subaru Outback Premium",
+        "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bmake%5D%5B0%5D=Subaru&_dFR%5Bmodel%5D%5B0%5D=Outback&_dFR%5Btype%5D%5B0%5D=New",
+        "description": "The 2026 Subaru Outback Premium is a five-passenger midsize SUV with a 2.5-liter SUBARU BOXER four-cylinder engine, Lineartronic CVT, standard Symmetrical All-Wheel Drive, and 8.7 inches of ground clearance.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Subaru"
+        },
+        "model": "Outback",
+        "modelDate": "2026",
+        "bodyType": "SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Subaru"
+        },
+        "vehicleModelDate": "2026",
+        "driveWheelConfiguration": ["All-Wheel Drive"],
+        "vehicleTransmission": ["Lineartronic CVT"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "2.5-liter SUBARU BOXER four-cylinder"
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 5,
+        "fuelType": "Gasoline",
+        "color": ["Crystal White Pearl", "Ice Silver Metallic", "Crystal Black Silica", "River Rock Pearl", "Magnetite Gray Metallic"],
+        "vehicleInteriorColor": ["Black", "Gray"],
+        "vehicleConfiguration": ["Premium"],
+        "image": [
+          "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_15?$1950w$",
+          "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_10?$1950w$",
+          "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_08?$1950w$"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "offerCount": 6,
+          "lowPrice": "35310",
+          "highPrice": "37575",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bmake%5D%5B0%5D=Subaru&_dFR%5Bmodel%5D%5B0%5D=Outback&_dFR%5Btype%5D%5B0%5D=New",
+          "seller": {
+            "@type": "AutoDealer",
+            "@id": "https://www.drivelibertysubaru.com/#business"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726688",
+              "serialNumber": "JF2BUPAD5TY564466",
+              "price": "35310",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726688",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPAD5TY564466",
+                "vehicleConfiguration": "Premium",
+                "color": "Crystal White Pearl",
+                "vehicleInteriorColor": "Black"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726779",
+              "serialNumber": "JF2BUPBD7TY566010",
+              "price": "37306",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726779",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPBD7TY566010",
+                "vehicleConfiguration": "Premium",
+                "color": "Crystal White Pearl",
+                "vehicleInteriorColor": "Gray"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726834",
+              "serialNumber": "JF2BUPBD7TY568145",
+              "price": "37306",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726834",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPBD7TY568145",
+                "vehicleConfiguration": "Premium",
+                "color": "Ice Silver Metallic",
+                "vehicleInteriorColor": "Black"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726782",
+              "serialNumber": "JF2BUPBD7TY565598",
+              "price": "37205",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726782",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPBD7TY565598",
+                "vehicleConfiguration": "Premium",
+                "color": "Crystal Black Silica",
+                "vehicleInteriorColor": "Black"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726841",
+              "serialNumber": "JF2BUPBDXTY564963",
+              "price": "37575",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726841",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPBDXTY564963",
+                "vehicleConfiguration": "Premium",
+                "color": "River Rock Pearl",
+                "vehicleInteriorColor": "Black"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "2026 Subaru Outback Premium",
+              "sku": "726872",
+              "serialNumber": "JF2BUPAD1TY584231",
+              "price": "35414",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "itemCondition": "https://schema.org/NewCondition",
+              "url": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bstock%5D%5B0%5D=726872",
+              "itemOffered": {
+                "@type": "Car",
+                "name": "2026 Subaru Outback Premium",
+                "vehicleIdentificationNumber": "JF2BUPAD1TY584231",
+                "vehicleConfiguration": "Premium",
+                "color": "Magnetite Gray Metallic",
+                "vehicleInteriorColor": "Black"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product node REMOVED - redundant with the Car
+         entity (Schema 3). Two competing vehicle entities on one page
+         dilute both. The Car node carries all required fields.
+    ============================================================ -->
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.drivelibertysubaru.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.drivelibertysubaru.com/new-vehicles/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Subaru",
+            "item": "https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bmake%5D%5B0%5D=Subaru"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2026 Subaru Outback Premium"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image) REMOVED
+         ext_01 is used only as a CSS background-image, not a rendered
+         <img> tag. Five ImageObject nodes against four actual images
+         made this an orphan. Deleted to align schema with DOM.
+    ============================================================ -->
+
+    <!-- ============================================================
+         SCHEMA 6b-6e: ImageObject coverage for the four in-body images
+         ADDED (24 Aug 2026) - the four images actually displayed in
+         the article body (engine, interior, technology, safety) had
+         no ImageObject nodes at all.
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.drivelibertysubaru.com/#engine-image",
+        "name": "2026 Subaru Outback Premium Exterior",
+        "description": "Exterior view of the 2026 Subaru Outback Premium.",
+        "url": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_15?$1950w$",
+        "contentUrl": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_15?$1950w$",
+        "encodingFormat": "image/jpeg",
+        "caption": "Exterior view of the 2026 Subaru Outback Premium.",
+        "creditText": "Subaru of America, Inc.",
+        "creator": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc.",
+          "url": "https://www.subaru.com"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc."
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.drivelibertysubaru.com/#interior-image",
+        "name": "2026 Subaru Outback Premium Interior",
+        "description": "Interior view of the 2026 Subaru Outback Premium showing cabin and cargo space.",
+        "url": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_10?$1950w$",
+        "contentUrl": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_10?$1950w$",
+        "encodingFormat": "image/jpeg",
+        "caption": "Interior view of the 2026 Subaru Outback Premium.",
+        "creditText": "Subaru of America, Inc.",
+        "creator": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc.",
+          "url": "https://www.subaru.com"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc."
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.drivelibertysubaru.com/#technology-image",
+        "name": "2026 Subaru Outback Premium Technology",
+        "description": "Technology view of the 2026 Subaru Outback Premium's 12.1-inch touchscreen and digital instrument cluster.",
+        "url": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_08?$1950w$",
+        "contentUrl": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_08?$1950w$",
+        "encodingFormat": "image/jpeg",
+        "caption": "Technology view of the 2026 Subaru Outback Premium.",
+        "creditText": "Subaru of America, Inc.",
+        "creator": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc.",
+          "url": "https://www.subaru.com"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc."
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.drivelibertysubaru.com/#safety-image",
+        "name": "2026 Subaru Outback Premium Exterior",
+        "description": "Exterior view of the 2026 Subaru Outback Premium.",
+        "url": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_10?$1950w$",
+        "contentUrl": "https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_10?$1950w$",
+        "encodingFormat": "image/jpeg",
+        "caption": "Exterior view of the 2026 Subaru Outback Premium.",
+        "creditText": "Subaru of America, Inc.",
+        "creator": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc.",
+          "url": "https://www.subaru.com"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Subaru of America, Inc."
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 7: AggregateRating + Reviews REMOVED - Fabricated
+         AggregateRating 4.8/250 with no visible on-page reviews
+         violates Google structured-data policy.
+    ============================================================ -->
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much horsepower does the 2026 Subaru Outback Premium have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Subaru Outback Premium produces 180 horsepower and 178 lb-ft of torque from its 2.5-liter SUBARU BOXER four-cylinder engine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 2026 Subaru Outback Premium have all-wheel drive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The 2026 Subaru Outback Premium comes standard with Subaru Symmetrical All-Wheel Drive and X-MODE."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much cargo space does the 2026 Subaru Outback Premium have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Subaru Outback Premium provides 34.6 cubic feet behind the rear seats and up to 80.5 cubic feet with the rear seats lowered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the fuel economy of the 2026 Subaru Outback Premium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Subaru Outback Premium is rated at an EPA-estimated 25 MPG city and 31 MPG highway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can the 2026 Subaru Outback Premium tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2026 Subaru Outback Premium has a maximum towing capacity of 2,700 pounds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I test-drive the 2026 Subaru Outback Premium near Libertyville, IL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Liberty Subaru serves Libertyville and surrounding Lake County communities. Visit Liberty Subaru at 1000 E Park Ave in Libertyville, IL 60048, to explore the 2026 Subaru Outback Premium and schedule a test drive."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        #nm-seo-page {
+            --brand-primary: #0076C5; 
+            --brand-secondary: #005a99; 
+            --text-main: #333333;
+            --text-light: #555555;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+            
+            font-family: inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px); 
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(28px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(22px, 4vw, 25px);
+            color: var(--text-main); 
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary); 
+            min-height: 400px; 
+            padding: 60px 24px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_01?$1950w$') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2; 
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 600px; 
+                 padding: 100px 24px; 
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 160px;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .hero-buttons {
+                gap: 16px;
+                margin-top: 240px; 
+            }
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--brand-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .nm-btn {
+                padding: 14px 36px;
+                font-size: 18px;
+            }
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--brand-secondary); 
+            color: var(--white);
+            border-color: var(--brand-secondary);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            #nm-seo-page .key-facts-list li:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 12px);
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: 1px solid var(--border); /* Full border */
+            border-radius: 8px; /* Full rounded corners */
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: var(--brand-primary);
+        }
+
+        #nm-seo-page .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 0;
+            margin: 0 auto 24px auto;
+            list-style: none;
+            max-width: 1000px;
+        }
+
+        #nm-seo-page .pill-list li {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        #nm-seo-page .pill-list li:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+
+        /* Centered Testimonial Card Styles */
+        #nm-seo-page blockquote {
+            margin: 24px auto;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 18px;
+            color: var(--text-main);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            max-width: 900px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        
+        #nm-seo-page blockquote:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: var(--brand-primary);
+        }
+
+        #nm-seo-page blockquote p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            color: var(--text-main);
+            font-style: italic;
+        }
+
+        #nm-seo-page blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 15px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+            line-height: 1.5;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main); 
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary h3 {
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            margin: 0;
+            line-height: inherit;
+            display: inline;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary); 
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        #nm-seo-page .basic-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 24px;
+        }
+        
+        #nm-seo-page .basic-list li {
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 17px;
+        }
+
+        #nm-seo-page .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 0;
+            margin: 0 auto 24px auto;
+            list-style: none;
+            max-width: 1000px;
+        }
+
+        #nm-seo-page .pill-list li {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        #nm-seo-page .pill-list li:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+
+        #nm-seo-page .breadcrumb-nav {
+            padding: 12px 24px;
+            font-size: 14px;
+            color: var(--text-light);
+            background: var(--bg-light);
+        }
+
+        #nm-seo-page .breadcrumb-nav a {
+            color: var(--brand-primary);
+            text-decoration: none;
+        }
+
+        #nm-seo-page .breadcrumb-nav a:hover {
+            text-decoration: underline;
+        }
+
+        #nm-seo-page .breadcrumb-nav span {
+            margin: 0 6px;
+            color: var(--text-light);
+        }
+    </style>
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Subaru Outback Premium in <br !important> Libertyville, IL</h1>
+            <div class="hero-buttons">
+                <a href="https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bfueltype%5D%5B0%5D=Gas&_dFR%5Bmake%5D%5B0%5D=Subaru&_dFR%5Bmodel%5D%5B0%5D=OUTBACK&_dFR%5Btrim%5D%5B0%5D=Premium&_dFR%5Btype%5D%5B0%5D=New" class="nm-btn">View Inventory</a>
+                <a href="https://www.drivelibertysubaru.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Subaru Outback Premium is a five-passenger midsize SUV with a 2.5-liter SUBARU BOXER® four-cylinder engine, Lineartronic® CVT, standard Symmetrical All-Wheel Drive®, and 8.7 inches of ground clearance. The 2026 Subaru Outback Premium produces 180 horsepower and 178 lb-ft of torque and achieves an EPA-estimated 25 MPG city and 31 MPG highway.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Liberty Subaru helps drivers throughout Libertyville, Mundelein, Vernon Hills, Lake Forest, Gurnee, and surrounding Lake County communities explore the 2026 Subaru Outback Premium and compare its powertrain, cargo capacity, technology, safety equipment, and standard all-wheel-drive system.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Subaru Outback Premium Key Highlights</h2>
+            <ul class="key-facts-list">
+                <li>Uses a 2.5-liter SUBARU BOXER four-cylinder engine.</li>
+                <li>Produces 180 horsepower and 178 lb-ft of torque.</li>
+                <li>Equipped with standard Symmetrical All-Wheel Drive and X-MODE®.</li>
+                <li>Provides 8.7 inches of ground clearance.</li>
+                <li>Seats five passengers and provides up to 80.5 cubic feet of cargo space.</li>
+                <li>Features a 12.1-inch multimedia touchscreen and wireless Apple CarPlay® and Android Auto™.</li>
+                <li>Includes Subaru EyeSight® Driver Assist Technology as standard.</li>
+                <li>Offers a 2,700-pound maximum towing capacity.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 16px;">2026 Subaru Outback Premium Uses a 2.5-Liter BOXER Engine</h2>
+            <p style="max-width: 900px; margin: 0 auto 32px auto;">The 2026 Subaru Outback Premium uses a 2.5-liter horizontally opposed SUBARU BOXER four-cylinder engine producing 180 horsepower at 5,800 rpm and 178 lb-ft of torque at 4,400 rpm. A Lineartronic CVT with an 8-speed manual mode sends power to the standard Symmetrical All-Wheel Drive system. The 2026 Subaru Outback Premium is rated at an EPA-estimated 25 MPG city and 31 MPG highway and can tow up to 2,700 pounds.</p>
+            
+            <img src="https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_15?$1950w$" alt="2026 Subaru Outback Premium exterior view" class="nm-img-fluid" style="margin: 0 auto 32px auto; display: block;" loading="lazy">
+            
+            <h3 style="margin-bottom: 16px; color: var(--text-main);">2026 Subaru Outback Premium performance highlights:</h3>
+            <ul class="pill-list">
+                <li>180 horsepower</li>
+                <li>178 lb-ft of torque</li>
+                <li>2.5-liter SUBARU BOXER four-cylinder engine</li>
+                <li>Lineartronic CVT with 8-speed manual mode</li>
+                <li>Standard Symmetrical All-Wheel Drive</li>
+                <li>Standard X-MODE</li>
+                <li>EPA-rated at 25 city / 31 highway MPG</li>
+                <li>2,700-pound maximum towing capacity</li>
+                <li>8.7 inches of ground clearance</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 16px;">2026 Subaru Outback Premium Provides 34.6 Cubic Feet Behind the Rear Seats</h2>
+            <p style="max-width: 900px; margin: 0 auto 32px auto;">The 2026 Subaru Outback Premium provides 34.6 cubic feet of cargo volume behind the rear seats and up to 80.5 cubic feet when the rear seats are lowered. The 2026 Subaru Outback Premium also provides 43.0 inches of front legroom and 39.5 inches of rear legroom.</p>
+            
+            <img src="https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_10?$1950w$" alt="2026 Subaru Outback Premium Interior" class="nm-img-fluid" style="margin: 0 auto 32px auto; display: block;" loading="lazy">
+            
+            <h3 style="margin-bottom: 16px; color: var(--text-main);">2026 Subaru Outback Premium interior highlights:</h3>
+            <ul class="pill-list">
+                <li>Seats five passengers</li>
+                <li>34.6 cubic feet of cargo space behind the rear seats</li>
+                <li>80.5 cubic feet of maximum cargo volume</li>
+                <li>43.0 inches of front legroom</li>
+                <li>39.5 inches of rear legroom</li>
+                <li>Startex water resistant upholstery</li>
+                <li>Heated front seats</li>
+                <li>10-way power driver's seat</li>
+                <li>Dual-zone automatic climate control</li>
+                <li>Power rear gate</li>
+                <li>60/40-split flat-folding rear seatbacks</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 16px;">2026 Subaru Outback Premium Includes a 12.1-Inch Touchscreen</h2>
+            <p style="max-width: 900px; margin: 0 auto 32px auto;">Every 2026 Subaru Outback Premium includes a 12.1-inch Subaru Multimedia System and a 12.3-inch fully digital instrument cluster. Wireless Apple CarPlay and Android Auto, Bluetooth®, USB-A and USB-C charging ports, SiriusXM®, and 4G LTE Wi-Fi capability are included.</p>
+            
+            <img src="https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_int_08?$1950w$" alt="2026 Subaru Outback Premium Technology" class="nm-img-fluid" style="margin: 0 auto 32px auto; display: block;" loading="lazy">
+            
+            <h3 style="margin-bottom: 16px; color: var(--text-main);">2026 Subaru Outback Premium technology highlights:</h3>
+            <ul class="pill-list">
+                <li>12.1-inch touchscreen</li>
+                <li>12.3-inch digital instrument cluster</li>
+                <li>Wireless Apple CarPlay</li>
+                <li>Wireless Android Auto</li>
+                <li>Bluetooth connectivity</li>
+                <li>4G LTE Wi-Fi capability</li>
+                <li>USB-A and USB-C charging ports</li>
+                <li>Six-speaker audio system</li>
+                <li>MySubaru® Connected Services</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- NEW SECTION GENERATED DYNAMICALLY FOR EXTRA CONTENT -->
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+             <div>
+                <img src="https://s7d1.scene7.com/is/image/scomv2/26_OBK_gallery_ext_10?$1950w$" alt="2026 Subaru Outback Premium exterior view" class="nm-img-fluid" loading="lazy">
+            </div>
+            <div>
+                <h2>2026 Subaru Outback Premium Includes Subaru EyeSight Driver Assist Technology</h2>
+                <p>Every 2026 Subaru Outback Premium includes Subaru EyeSight Driver Assist Technology. The system includes Advanced Adaptive Cruise Control with Lane Centering, Pre-Collision Braking, Lane Departure and Sway Warning, Emergency Lane Keep Assist, Emergency Stop Assist, and Automatic Emergency Steering. The 2026 Subaru Outback Premium also includes Blind-Spot Warning with Lane Change Assist, Rear Cross-Traffic Warning, DriverFocus® Distraction Mitigation, and Reverse Automatic Braking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div style="order: 2;">
+                <h2>What Do Automotive Experts Say About the 2026 Subaru Outback Premium?</h2>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">MotorTrend's 2026 Subaru Outback trim comparison describes the Premium as the recommended choice in the redesigned Outback lineup. The comparison notes that the Premium combines the standard 2.5-liter BOXER engine with the updated infotainment system and comfort features.</p>
+                <blockquote>
+                    <p>"Of all the trims, however, the Premium stands out as the sweet spot in the lineup."</p>
+                    <p><em>Source: <a href="https://www.motortrend.com/features/subaru-outback-trim-level-model-comparison/">MotorTrend: Best 2026 Subaru Outback Trim</a></em></p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">What Are 2026 Subaru Outback Owners Saying?</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto;">A Reddit owner who purchased a 2026 Subaru Outback described the vehicle after six weeks of ownership, discussing the infotainment system, Apple CarPlay connection, engine, and CVT.</p>
+            <blockquote>
+                <p>"I'm having no issues at all with the Outback. The infotainment system is fantastic and seamless. Apple CarPlay connects quickly upon entering the car."</p>
+                <p><em>Source: <a href="https://www.reddit.com/r/subaru/">Reddit: 2026 Subaru Outback Owner Experience</a></em></p>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions About the 2026 Subaru Outback Premium</h2>
+            <div class="faq-container">
+                <details>
+                    <summary><h3>How much horsepower does the 2026 Subaru Outback Premium have?</h3></summary>
+                    <div class="faq-answer"><p>The 2026 Subaru Outback Premium produces 180 horsepower and 178 lb-ft of torque from its 2.5-liter SUBARU BOXER four-cylinder engine.</p></div>
+                </details>
+                <details>
+                    <summary><h3>Does the 2026 Subaru Outback Premium have all-wheel drive?</h3></summary>
+                    <div class="faq-answer"><p>Yes. The 2026 Subaru Outback Premium comes standard with Subaru Symmetrical All-Wheel Drive and X-MODE.</p></div>
+                </details>
+                <details>
+                    <summary><h3>How much cargo space does the 2026 Subaru Outback Premium have?</h3></summary>
+                    <div class="faq-answer"><p>The 2026 Subaru Outback Premium provides 34.6 cubic feet behind the rear seats and up to 80.5 cubic feet with the rear seats lowered.</p></div>
+                </details>
+                <details>
+                    <summary><h3>What is the fuel economy of the 2026 Subaru Outback Premium?</h3></summary>
+                    <div class="faq-answer"><p>The 2026 Subaru Outback Premium is rated at an EPA-estimated 25 MPG city and 31 MPG highway.</p></div>
+                </details>
+                 <details>
+                    <summary><h3>How much can the 2026 Subaru Outback Premium tow?</h3></summary>
+                    <div class="faq-answer"><p>The 2026 Subaru Outback Premium has a maximum towing capacity of 2,700 pounds.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary><h3>Where can I test-drive the 2026 Subaru Outback Premium in Libertyville, IL?</h3></summary>
+                    <div class="faq-answer"><p>Liberty Subaru serves Libertyville and surrounding Lake County communities. Visit Liberty Subaru at 1000 E Park Ave in Libertyville, IL 60048, to explore the 2026 Subaru Outback Premium and schedule a test drive.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+  
+   <section>
+        <div class="container" style="text-align: center;">
+           
+            <h2 style="text-align: center;">Explore the 2026 Subaru Outback Premium at Liberty Subaru</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Our team is ready to help you experience this capable SUV in person. Visit our Libertyville showroom to explore the standard AWD system and advanced safety features, or contact us to schedule your test drive today.</p>
+       
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.drivelibertysubaru.com/new-vehicles/?_dFR%5Bfueltype%5D%5B0%5D=Gas&_dFR%5Bmake%5D%5B0%5D=Subaru&_dFR%5Bmodel%5D%5B0%5D=OUTBACK&_dFR%5Btrim%5D%5B0%5D=Premium&_dFR%5Btype%5D%5B0%5D=New" class="nm-btn">View Inventory</a>
+                <a href="https://www.drivelibertysubaru.com/contact-us/" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</article>
