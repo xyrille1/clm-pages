@@ -1,0 +1,613 @@
+<!-- ============================================================
+     SCHEMA 1: LocalBusiness / AutoDealer
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": ["AutoDealer", "LocalBusiness"], "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#business", "name": "Nick Mayer Chevrolet Lewisburg", "legalName": "Nick Mayer Chevrolet Lewisburg", "description": "Chevrolet dealership serving Lewisburg, Columbia, Spring Hill, Shelbyville, Chapel Hill, and surrounding Middle Tennessee communities, offering new vehicles, pre-owned cars, financing, and auto service.", "url": "https://www.nickmayerchevroletgmcoflewisburg.com/", "telephone": "+1-931-246-4218", "priceRange": "$$$", "currenciesAccepted": "USD", "paymentAccepted": "Cash, Credit Card, Financing", "image": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/gallery-preview/v2/2026-colorado-gallery-preview-02.png?imwidth=3000", "address": { "@type": "PostalAddress", "streetAddress": "861 N. Ellington Pkwy", "addressLocality": "Lewisburg", "addressRegion": "TN", "postalCode": "37091", "addressCountry": "US" }, "geo": { "@type": "GeoCoordinates", "latitude": 35.4612, "longitude": -86.7831 }, "hasMap": "https://maps.google.com/maps?q=Nick+Mayer+Chevrolet+Lewisburg", "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "00:00", "closes": "00:00" } ], "areaServed": [ {"@type": "City", "name": "Lewisburg"}, {"@type": "City", "name": "Columbia"}, {"@type": "City", "name": "Spring Hill"}, {"@type": "City", "name": "Shelbyville"}, {"@type": "City", "name": "Chapel Hill"} ] }
+</script>
+
+<!-- ============================================================
+     SCHEMA 2: Organization
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "Organization", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#organization", "name": "Nick Mayer Chevrolet Lewisburg", "url": "https://www.nickmayerchevroletgmcoflewisburg.com/", "contactPoint": { "@type": "ContactPoint", "contactType": "Sales", "telephone": "+1-931-246-4218", "areaServed": "TN", "availableLanguage": "English" }, "address": { "@type": "PostalAddress", "streetAddress": "861 N. Ellington Pkwy", "addressLocality": "Lewisburg", "addressRegion": "TN", "postalCode": "37091", "addressCountry": "US" } }
+</script>
+
+<!-- ============================================================
+     SCHEMA 3: Vehicle Listing - Car
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "Car", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#chevrolet-colorado", "name": "2026 Chevrolet Colorado", "url": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?ModelAndTrim=Colorado", "description": "The 2026 Chevrolet Colorado features a 2.7L TurboMax turbocharged engine, available four-wheel drive, a standard 11.3-inch infotainment display, and up to 7,700 pounds of maximum towing, making it an ideal midsize truck for Middle Tennessee.", "brand": { "@type": "Brand", "name": "Chevrolet" }, "model": "Colorado", "modelDate": "2026", "bodyType": "Pickup Truck", "manufacturer": { "@type": "Organization", "name": "Chevrolet" }, "driveWheelConfiguration": ["Rear-Wheel Drive", "4WD"], "vehicleTransmission": ["8-Speed Automatic"], "vehicleEngine": [ { "@type": "EngineSpecification", "engineType": "Gasoline", "name": "2.7L TurboMax Turbocharged 4-Cylinder", "engineDisplacement": { "@type": "QuantitativeValue", "value": "2.7", "unitCode": "LTR" }, "enginePower": { "@type": "QuantitativeValue", "value": "310", "unitCode": "BHP" }, "torque": { "@type": "QuantitativeValue", "value": "430", "unitCode": "F17" } } ], "numberOfDoors": 4, "seatingCapacity": 5, "fuelType": "Gasoline", "image": [ "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/gallery-preview/v2/2026-colorado-gallery-preview-02.png?imwidth=3000", "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/truck-pages/zr2-family-visid/01-images/02-images/2026-colorado-zr2-motortrend.png?imwidth=2400", "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/technology/v3/2026-colorado-technology-01.png?imwidth=2400", "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/performance/2026-colorado-performance-03.png?imwidth=2400" ], "payload": { "@type": "QuantitativeValue", "value": "7700", "unitCode": "LBR", "name": "Maximum Towing Capacity" }, "offers": { "@type": "AggregateOffer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition", "url": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?ModelAndTrim=Colorado", "seller": { "@type": "AutoDealer", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#business" } } }
+</script>
+
+<!-- ============================================================
+     SCHEMA 4: Product node REMOVED - redundant with the Car
+     entity (Schema 3). The Car node now carries url, image, and
+     AggregateOffer. lowPrice/highPrice pending live inventory data.
+============================================================ -->
+
+<!-- ============================================================
+     SCHEMA 5: BreadcrumbList
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.nickmayerchevroletgmcoflewisburg.com/" }, { "@type": "ListItem", "position": 2, "name": "New Vehicles", "item": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx" }, { "@type": "ListItem", "position": 3, "name": "Chevrolet", "item": "https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?Make=Chevrolet" }, { "@type": "ListItem", "position": 4, "name": "2026 Chevrolet Colorado vs 2026 Toyota Tacoma" } ] }
+</script>
+
+<!-- ============================================================
+     SCHEMA 6: ImageObject nodes for rendered page images
+     The masthead-01.jpg hero was a CSS background only - removed.
+     These four nodes cover the four Colorado images rendered as
+     <img> tags on the page.
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "ImageObject", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#colorado-performance-image", "name": "2026 Chevrolet Colorado ZR2 Performance", "description": "2026 Chevrolet Colorado ZR2 performance view.", "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/truck-pages/zr2-family-visid/01-images/02-images/2026-colorado-zr2-motortrend.png?imwidth=2400", "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/truck-pages/zr2-family-visid/01-images/02-images/2026-colorado-zr2-motortrend.png?imwidth=2400", "encodingFormat": "image/png", "creditText": "Chevrolet", "creator": { "@type": "Organization", "name": "Chevrolet", "url": "https://www.chevrolet.com" } }
+</script>
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "ImageObject", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#colorado-utility-image", "name": "2026 Chevrolet Colorado Versatility", "description": "2026 Chevrolet Colorado utility and cargo view.", "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/gallery-preview/v2/2026-colorado-gallery-preview-02.png?imwidth=3000", "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/gallery-preview/v2/2026-colorado-gallery-preview-02.png?imwidth=3000", "encodingFormat": "image/png", "creditText": "Chevrolet", "creator": { "@type": "Organization", "name": "Chevrolet", "url": "https://www.chevrolet.com" } }
+</script>
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "ImageObject", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#colorado-technology-image", "name": "2026 Chevrolet Colorado Technology", "description": "2026 Chevrolet Colorado technology and infotainment view.", "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/technology/v3/2026-colorado-technology-01.png?imwidth=2400", "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/technology/v3/2026-colorado-technology-01.png?imwidth=2400", "encodingFormat": "image/png", "creditText": "Chevrolet", "creator": { "@type": "Organization", "name": "Chevrolet", "url": "https://www.chevrolet.com" } }
+</script>
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "ImageObject", "@id": "https://www.nickmayerchevroletgmcoflewisburg.com/#colorado-ownership-image", "name": "2026 Chevrolet Colorado at Nick Mayer Chevrolet Lewisburg", "description": "2026 Chevrolet Colorado ownership experience.", "url": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/performance/2026-colorado-performance-03.png?imwidth=2400", "contentUrl": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/performance/2026-colorado-performance-03.png?imwidth=2400", "encodingFormat": "image/png", "creditText": "Chevrolet", "creator": { "@type": "Organization", "name": "Chevrolet", "url": "https://www.chevrolet.com" } }
+</script>
+
+<!-- ============================================================
+     SCHEMA 7: AggregateRating + Reviews REMOVED
+     Fabricated AggregateRating 4.7/185 with no visible on-page
+     reviews violates Google structured-data policy.
+============================================================ -->
+
+<!-- ============================================================
+     SCHEMA 8: FAQPage
+============================================================ -->
+<script type="application/ld+json">
+	{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "Is the 2026 Chevrolet Colorado a good midsize truck for Middle Tennessee?", "acceptedAnswer": { "@type": "Answer", "text": "The 2026 Chevrolet Colorado offers midsize truck dimensions, 310 horsepower from its 2.7L TurboMax engine, available four-wheel drive, and up to 7,700 pounds of towing capability for commuting, work, and recreation." } }, { "@type": "Question", "name": "How much can the 2026 Chevrolet Colorado tow?", "acceptedAnswer": { "@type": "Answer", "text": "The 2026 Chevrolet Colorado can tow up to 7,700 pounds when properly equipped." } }, { "@type": "Question", "name": "Does the 2026 Chevrolet Colorado offer four-wheel drive?", "acceptedAnswer": { "@type": "Answer", "text": "The 2026 Chevrolet Colorado offers available four-wheel drive." } }, { "@type": "Question", "name": "Which has more maximum towing, the 2026 Chevrolet Colorado or the 2026 Toyota Tacoma?", "acceptedAnswer": { "@type": "Answer", "text": "The 2026 Chevrolet Colorado tows up to 7,700 pounds. The 2026 Toyota Tacoma tows up to 6,500 pounds. The 2026 Chevrolet Colorado provides 1,200 pounds more maximum towing capacity." } }, { "@type": "Question", "name": "Where can I test-drive a 2026 Chevrolet Colorado in Lewisburg?", "acceptedAnswer": { "@type": "Answer", "text": "Nick Mayer Chevrolet Lewisburg is located at 861 N. Ellington Pkwy, Lewisburg, TN 37091. Nick Mayer Chevrolet Lewisburg serves drivers from Lewisburg, Columbia, Spring Hill, Shelbyville, Chapel Hill, and surrounding Middle Tennessee communities." } } ] }
+</script>
+
+<style>
+	body {
+		/* Prevent horizontal scroll if the negative margins push out too far */
+		overflow-x: hidden; margin: 0; padding: 0;
+	}
+	
+	#nm-seo-page {
+		--brand-primary: #006eb7;/* Image Blue */
+		--brand-secondary: #00508a;/* Darker blue for hover */
+		--text-main: #333333;/* Standard black/dark grey text */
+		--text-light: #555555; --bg-light: #F8F9FA; --white: #FFFFFF; --border: #E5E7EB; --max-width: 1200px; font-family: inherit; color: var(--text-main); line-height: 1.7; background-color: var(--white); -webkit-font-smoothing: antialiased; width: 100%; margin: 0 auto;
+	}
+	
+	#nm-seo-page *,
+	#nm-seo-page *::before,
+	#nm-seo-page *::after {
+		box-sizing: border-box;
+	}
+	
+	#nm-seo-page .container {
+		width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 24px;
+	}
+	
+	#nm-seo-page section {
+		padding: 64px 0; border-bottom: 1px solid var(--border); width: 100%;/* Ensure sections take full width */
+	}
+	
+	#nm-seo-page section:last-child {
+		border-bottom: none;
+	}
+	
+	#nm-seo-page .bg-light-section {
+		background-color: var(--bg-light); border-bottom: none; width: 100%;/* Ensure background spans full width */
+	}
+	
+	#nm-seo-page .content-grid {
+		display: grid; grid-template-columns: 1fr; gap: 48px; width: 100%;
+	}
+	
+	@media (min-width: 768px) {
+		#nm-seo-page .content-grid.two-col {
+			grid-template-columns: repeat(2, 1fr); align-items: stretch;/* Guaranteed equal height rows */
+		}
+	}
+	
+	#nm-seo-page h1 {
+		font-size: clamp(36px, 5vw, 52px); color: var(--white); font-weight: 700; line-height: 1.2; margin: 0; text-align: center; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+	}
+	
+	#nm-seo-page h2 {
+		font-size: clamp(28px, 4vw, 35px); color: var(--text-main); font-weight: 700; margin: 0 0 24px 0; line-height: 1.3;
+	}
+	
+	#nm-seo-page h3 {
+		font-size: 22px; color: var(--text-main); margin-top: 0; margin-bottom: 16px;
+	}
+	
+	#nm-seo-page p {
+		margin: 0 0 16px 0; font-size: 17px; color: var(--text-light);
+	}
+	
+	#nm-seo-page .nm-img-fluid {
+		width: 100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); display: block;
+	}
+	
+	#nm-seo-page .hero-title-section {
+		position: relative; background-color: var(--brand-primary); min-height: 400px; padding: 100px 24px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; width: 100%;/* Force full width */
+	}
+	
+	#nm-seo-page .hero-title-section::before {
+		content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/masthead/2026-colorado-masthead.png?imwidth=2400') center center / cover no-repeat; z-index: 0;
+	}
+	
+	#nm-seo-page .hero-title-section::after {
+		content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)); z-index: 1;
+	}
+	
+	#nm-seo-page .hero-title-section .container {
+		position: relative; z-index: 2;
+	}
+	
+	@media (min-width: 992px) {
+		#nm-seo-page .hero-title-section {
+			min-height: 500px; padding: 140px 24px;
+		}
+	}
+	
+	#nm-seo-page .hero-buttons {
+		display: flex; justify-content: center; gap: 16px; margin-top: 32px; flex-wrap: wrap;
+	}
+	
+	#nm-seo-page .nm-btn {
+		display: inline-block; background-color: var(--brand-primary); color: var(--white); padding: 14px 36px; border-radius: 4px; font-size: 18px; font-weight: 700; text-transform: uppercase; text-align: center; text-decoration: none !important; border: 2px solid var(--brand-primary); transition: all 0.3s ease; cursor: pointer;
+	}
+	
+	#nm-seo-page .nm-btn:hover {
+		background-color: var(--brand-secondary); color: var(--white); border-color: var(--brand-secondary);
+	}
+	
+	#nm-seo-page .table-responsive {
+		width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 40px 0; border-radius: 8px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+	}
+	
+	#nm-seo-page .comparison-table {
+		width: 100%; min-width: 800px; border-collapse: collapse; background-color: var(--white);
+	}
+	
+	#nm-seo-page .comparison-table th,
+	#nm-seo-page .comparison-table td {
+		padding: 20px 24px; text-align: center; border-bottom: 1px solid var(--border); font-size: 16px; color: var(--text-main);
+	}
+	
+	#nm-seo-page .comparison-table th {
+		background-color: var(--brand-primary); color: var(--white); font-weight: 700; vertical-align: middle;
+	}
+	
+	#nm-seo-page .comparison-table th:first-child {
+		text-align: left; font-size: 22px;
+	}
+	
+	#nm-seo-page .comparison-table td:first-child {
+		font-weight: 700; text-align: left; background-color: var(--bg-light); color: var(--text-main); width: 25%;
+	}
+	
+	#nm-seo-page .comparison-table td:nth-child(2) {
+		color: var(--text-main);
+	}
+	
+	#nm-seo-page .comp-box {
+		background: var(--white); padding: 40px 32px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); display: flex; flex-direction: column; border: 2px solid transparent; transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+	}
+	
+	#nm-seo-page .comp-box.lincoln:hover {
+		border-color: var(--brand-primary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transform: scale(1.03);
+	}
+	
+	#nm-seo-page .comp-box.competitor:hover {
+		border-color: var(--brand-secondary); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transform: scale(1.03);
+	}
+	
+	#nm-seo-page .comp-img {
+		width: 100%; height: 200px; min-height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); display: block; background-color: var(--border); color: var(--text-light); font-size: 14px; line-height: 1.4;
+	}
+	
+	#nm-seo-page .comp-box ul {
+		list-style: none; padding: 0; margin: 0; flex-grow: 1;
+	}
+	
+	#nm-seo-page .comp-box ul li {
+		position: relative; padding-left: 28px; margin-bottom: 16px; color: var(--text-light);
+	}
+	
+	#nm-seo-page .comp-box.lincoln ul li::before {
+		content: '•'; position: absolute; left: 8px; top: 0; color: var(--brand-primary); font-weight: bold;
+	}
+	
+	#nm-seo-page .comp-box.competitor ul li::before {
+		content: '•'; position: absolute; left: 8px; top: 0; color: var(--brand-secondary); font-weight: bold;
+	}
+	
+	#nm-seo-page .faq-container {
+		margin-top: 32px; border-top: 1px solid var(--border);
+	}
+	
+	#nm-seo-page details {
+		border-bottom: 1px solid var(--border);
+	}
+	
+	#nm-seo-page summary {
+		display: flex; justify-content: space-between; align-items: center; padding: 24px 0; font-size: 19px; font-weight: 600; color: var(--text-main); cursor: pointer; list-style: none; transition: color 0.2s ease;
+	}
+	
+	#nm-seo-page summary::-webkit-details-marker {
+		display: none;
+	}
+	
+	#nm-seo-page summary::after {
+		content: "+"; font-size: 28px; font-weight: 300; color: var(--brand-primary); transition: transform 0.3s ease; margin-left: 16px; line-height: 1;
+	}
+	
+	#nm-seo-page details[open] summary::after {
+		transform: rotate(45deg);
+	}
+	
+	#nm-seo-page .faq-answer {
+		padding: 0 40px 24px 0;
+	}
+	
+	#nm-seo-page .faq-answer p {
+		margin: 0; font-size: 16px;
+	}
+	/* Breadcrumb */
+	
+	#nm-seo-page .breadcrumb-nav {
+		padding: 12px 24px; font-size: 14px; color: var(--text-light); background: var(--bg-light);
+	}
+	
+	#nm-seo-page .breadcrumb-nav a {
+		color: var(--brand-primary); text-decoration: none;
+	}
+	
+	#nm-seo-page .breadcrumb-nav a:hover {
+		text-decoration: underline;
+	}
+	
+	#nm-seo-page .breadcrumb-nav span {
+		margin: 0 6px; color: var(--text-light);
+	}
+	/* Mobile table restack */
+	
+	@media (max-width: 767px) {
+		#nm-seo-page .comparison-table {
+			min-width: 0;
+		}
+		#nm-seo-page .comparison-table thead {
+			display: none;
+		}
+		#nm-seo-page .comparison-table tbody tr {
+			display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 2px solid var(--border); padding: 16px 0;
+		}
+		#nm-seo-page .comparison-table td {
+			border-bottom: none; padding: 10px 12px; text-align: left;
+		}
+		#nm-seo-page .comparison-table td:first-child {
+			grid-column: 1 / -1; width: 100%; background-color: var(--brand-primary); color: var(--white); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 4px; margin-bottom: 4px;
+		}
+		#nm-seo-page .comparison-table td:nth-child(2)::before {
+			content: "Colorado: "; font-weight: 700; color: var(--brand-primary);
+		}
+		#nm-seo-page .comparison-table td:nth-child(3)::before {
+			content: "Tacoma: "; font-weight: 700; color: var(--text-light);
+		}
+	}
+
+</style>
+
+<article id="nm-seo-page">
+
+	<header class="hero-title-section">
+		<div class="container">
+
+			<h1>2026 Chevrolet Colorado vs.
+				<br> 2026 Toyota Tacoma in Lewisburg, TN</h1>
+			<div class="hero-buttons">
+				<a href="https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?ModelAndTrim=Colorado" class="nm-btn">View Inventory</a>
+				<a href="https://www.nickmayerchevroletgmcoflewisburg.com/contactus.aspx" class="nm-btn">Contact Us</a>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div style="text-align: center;" class="container">
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Nick Mayer Chevrolet Lewisburg compares the 2026 Chevrolet Colorado and the 2026 Toyota Tacoma for midsize truck shoppers in Lewisburg, TN. The 2026 Chevrolet Colorado and the 2026 Toyota Tacoma are midsize pickups that offer available four-wheel drive, off-road-focused configurations, and modern technology. The 2026 Chevrolet Colorado uses a 2.7L TurboMax turbocharged four-cylinder engine producing 310 horsepower and 430 lb-ft of torque. The 2026 Toyota Tacoma uses a 2.4-liter turbocharged four-cylinder and offers an available i-FORCE MAX hybrid powertrain.</p>
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Nick Mayer Chevrolet Lewisburg is located at 861 N. Ellington Pkwy, Lewisburg, TN 37091 (Sales: 931-246-4218). Nick Mayer Chevrolet Lewisburg serves drivers in Lewisburg, Columbia, Spring Hill, Shelbyville, and Chapel Hill, Tennessee.</p>
+		</div>
+	</section>
+
+	<section class="bg-light-section">
+		<div class="container">
+
+			<h2 style="text-align: center;">2026 Chevrolet Colorado vs. 2026 Toyota Tacoma Comparison</h2>
+
+			<div class="table-responsive">
+
+				<table class="comparison-table">
+					<thead>
+						<tr>
+							<th>Feature</th>
+							<th>2026 Chevrolet Colorado</th>
+							<th>2026 Toyota Tacoma</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Engine Options</td>
+							<td>2.7L TurboMax Turbocharged 4-Cyl</td>
+							<td>2.4L Turbocharged 4-Cyl / i-FORCE MAX Hybrid</td>
+						</tr>
+						<tr>
+							<td>2.7L TurboMax Output</td>
+							<td>310 hp / 430 lb-ft</td>
+							<td>--</td>
+						</tr>
+						<tr>
+							<td>2.4L Turbo Output</td>
+							<td>--</td>
+							<td>278 hp / 317 lb-ft</td>
+						</tr>
+						<tr>
+							<td>i-FORCE MAX Hybrid Output</td>
+							<td>--</td>
+							<td>326 hp / 465 lb-ft</td>
+						</tr>
+
+						<tr>
+							<td>Transmission</td>
+							<td>8-speed automatic</td>
+							<td>8-speed automatic</td>
+						</tr>
+						<tr>
+							<td>Available Drivetrain</td>
+							<td>2WD / 4WD</td>
+							<td>2WD / 4WD</td>
+						</tr>
+						<tr>
+							<td>Maximum Towing</td>
+							<td>Up to 7,700 lbs.</td>
+							<td>Up to 6,500 lbs.</td>
+						</tr>
+						<tr>
+							<td>Standard Infotainment</td>
+							<td>11.3-inch touchscreen</td>
+							<td>8-inch touchscreen</td>
+						</tr>
+						<tr>
+							<td>Available Hybrid</td>
+							<td>No</td>
+							<td>Yes (i-FORCE MAX)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+
+			<h2 style="text-align: center;">2026 Chevrolet Colorado Performance Specifications</h2>
+
+			<p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 Chevrolet Colorado uses a 2.7-liter TurboMax turbocharged four-cylinder engine producing 310 horsepower and 430 lb-ft of torque. The 2026 Chevrolet Colorado tows up to 7,700 pounds when properly equipped. The 2026 Chevrolet Colorado offers available four-wheel drive and available off-road-focused Trail Boss and ZR2 configurations.</p>
+
+			<div class="content-grid two-col">
+				<div class="comp-box lincoln">
+					<img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicle-groups/truck-pages/zr2-family-visid/01-images/02-images/2026-colorado-zr2-motortrend.png?imwidth=2400" alt="2026 Chevrolet Colorado Performance" loading="lazy" class="comp-img">
+
+					<h3>2026 Chevrolet Colorado powertrain highlights:</h3>
+
+					<ul>
+						<li>2.7L TurboMax engine: 310 horsepower and 430 lb-ft of torque.</li>
+						<li>Up to 7,700 pounds of maximum towing when properly equipped.</li>
+						<li>Available four-wheel drive.</li>
+						<li>Available off-road-focused Trail Boss and ZR2 models.</li>
+						<li>Available advanced off-road camera technology.</li>
+					</ul>
+				</div>
+				<div class="comp-box competitor">
+					<img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/tacoma/mlp/story-features/TAC_MY26_0004_V001.png?fmt=jpeg&qlt=90&dpr=on,3&wid=600" alt="2026 Toyota Tacoma Performance" loading="lazy" class="comp-img">
+
+					<h3 style="color: var(--text-light);">2026 Toyota Tacoma powertrain highlights:</h3>
+
+					<ul>
+						<li>2.4-liter turbocharged four-cylinder: 278 hp / 317 lb-ft.</li>
+						<li>Available i-FORCE MAX hybrid: 326 horsepower and 465 lb-ft of torque.</li>
+						<li>Up to 6,500 pounds of maximum towing.</li>
+						<li>Available four-wheel drive.</li>
+					</ul>
+				</div>
+			</div>
+
+			<p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto; font-style: italic;">The 2026 Chevrolet Colorado tows up to 7,700 pounds, 1,200 pounds more than the 2026 Toyota Tacoma's maximum of 6,500 pounds. The 2026 Toyota Tacoma offers an available i-FORCE MAX hybrid powertrain with 326 horsepower and 465 lb-ft of torque. Edmunds describes the 2026 Chevrolet Colorado as a capable midsize truck with strong towing numbers and available off-road equipment. Source: <a href="https://www.edmunds.com/chevrolet/colorado/2026/crew-cab/consumer-reviews/" style="color: inherit; text-decoration: underline;">Edmunds 2026 Chevrolet Colorado Review</a></p>
+		</div>
+	</section>
+
+	<section class="bg-light-section">
+		<div class="container">
+
+			<h2 style="text-align: center;">2026 Chevrolet Colorado Utility and Cargo Features</h2>
+
+			<p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 Chevrolet Colorado combines a midsize footprint with a five-foot cargo bed, available four-wheel drive, and multiple configurations for different uses.</p>
+
+			<div class="content-grid two-col">
+				<div class="comp-box lincoln">
+					<img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/gallery/exterior/2026-colorado-gallery-exterior-10.png?imwidth=800" alt="2026 Chevrolet Colorado Versatility" loading="lazy" class="comp-img">
+
+					<h3>2026 Chevrolet Colorado utility highlights:</h3>
+
+					<ul>
+						<li>Five-passenger crew cab configuration.</li>
+						<li>Five-foot cargo bed.</li>
+						<li>Up to 17 available tie-down locations.</li>
+						<li>Available 120-volt bed power outlet.</li>
+						<li>Available StowFlex tailgate storage.</li>
+						<li>Available EZ Lift-and-Lower tailgate.</li>
+					</ul>
+				</div>
+				<div class="comp-box competitor">
+					<img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/tacoma/galleries/TAH_MY26_0011_V001.png:tcom_gallery_16x9?ts=1789593574283&fmt=jpg&fit=crop&dpr=on,2" alt="2026 Toyota Tacoma Versatility" loading="lazy" class="comp-img">
+
+                    <h3>The 2026 Toyota Tacoma</h3>
+                    
+					<ul>
+                        <li>Versatile cargo bed</li>
+                        <li>Available composite construction</li>
+                        <li>Enhanced durability and protection</li>
+                    </ul>
+				</div>
+			</div>
+
+			<p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto; font-style: italic;">The 2026 Chevrolet Colorado provides a five-foot bed with up to 17 tie-down locations, a 120-volt power outlet, and StowFlex tailgate storage for job-site and recreation use in Lewisburg, Shelbyville, Chapel Hill, and surrounding areas.</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+
+			<h2 style="text-align: center;">2026 Chevrolet Colorado Technology Features</h2>
+
+			<p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The 2026 Chevrolet Colorado includes an 11.3-inch diagonal infotainment touchscreen as standard, Google built-in compatibility, and wireless Apple CarPlay and Android Auto.</p>
+
+			<div class="content-grid two-col">
+				<div class="comp-box lincoln">
+					<img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/technology/v3/2026-colorado-technology-01.png?imwidth=2400" alt="2026 Chevrolet Colorado Technology" loading="lazy" class="comp-img">
+
+					<h3>2026 Chevrolet Colorado technology highlights:</h3>
+
+					<ul>
+						<li>11.3-inch diagonal infotainment touchscreen (standard).</li>
+						<li>Google built-in compatibility.</li>
+						<li>Wireless Apple CarPlay and Android Auto.</li>
+						<li>Available wireless smartphone charging.</li>
+						<li>Available advanced camera system.</li>
+						<li>Available off-road performance displays.</li>
+					</ul>
+				</div>
+				<div class="comp-box competitor">
+					<img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2026/tacoma/galleries/TAH_MY25_0005_V001.png:tcom_gallery_16x9?ts=1786636030825&fmt=jpg&fit=crop&dpr=on,2" alt="2026 Toyota Tacoma Technology" loading="lazy" class="comp-img">
+
+					<h3>2026 Toyota Tacoma technology highlights:</h3>
+
+					<ul>
+						<li>Standard 8-inch display.</li>
+						<li>Available 14-inch touchscreen.</li>
+						<li>Toyota connected technology features.</li>
+					</ul>
+				</div>
+			</div>
+
+			<p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto; font-style: italic;">The 2026 Chevrolet Colorado includes a larger standard touchscreen at 11.3 inches compared to the Tacoma's standard 8-inch display.</p>
+		</div>
+	</section>
+
+	<section class="bg-light-section">
+		<div class="container">
+
+			<h2 style="text-align: center;">Ownership at Nick Mayer Chevrolet Lewisburg</h2>
+
+			<p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Nick Mayer Chevrolet Lewisburg helps drivers compare 2026 Chevrolet Colorado trims, explore available inventory, value trade-ins, review financing options, and schedule service with factory-trained technicians.</p>
+
+			<div class="content-grid two-col">
+				<div style="order: 2;">
+
+					<h3>Ownership support at Nick Mayer Chevrolet Lewisburg:</h3>
+
+					<ul style="list-style: disc; padding-left: 20px; color: var(--text-light);">
+						<li>New 2026 Chevrolet Colorado inventory.</li>
+						<li>Financing and lease assistance.</li>
+						<li>Trade-in evaluations.</li>
+						<li>Factory-trained service technicians.</li>
+						<li>Genuine GM parts.</li>
+						<li>Maintenance and repair support.</li>
+					</ul>
+
+					<p style="margin-top: 16px;">Drivers in Lewisburg, Columbia, Spring Hill, Shelbyville, Chapel Hill, and surrounding Middle Tennessee communities can visit Nick Mayer Chevrolet Lewisburg to explore the 2026 Chevrolet Colorado.</p>
+				</div>
+				<div style="order: 1;">
+					<img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2026/trucks/colorado/01-images/performance/2026-colorado-performance-03.png?imwidth=2400" alt="Nick Mayer Chevrolet of Lewisburg Dealership Experience" loading="lazy" class="nm-img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div style="text-align: center;" class="container">
+
+			<h2 style="text-align: center;">Dealership Perspective</h2>
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">&quot;Our team works with Middle Tennessee drivers who need a midsize truck that can handle daily transportation, work projects, towing, and weekend recreation. The 2026 Chevrolet Colorado gives shoppers 310 horsepower, 430 lb-ft of torque, up to 7,700 pounds of towing capability, modern technology, and available off-road equipment in a midsize package.&quot; - Nick Mayer Chevrolet Lewisburg Sales Team</p>
+		</div>
+	</section>
+
+	<section class="bg-light-section">
+		<div style="text-align: center;" class="container">
+
+			<h2 style="text-align: center;">Why the 2026 Chevrolet Colorado Is a Strong Choice for Middle Tennessee Drivers</h2>
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Chevrolet Colorado combines 310 horsepower, 430 lb-ft of torque, up to 7,700 pounds of towing capability, available four-wheel drive, a standard 11.3-inch touchscreen, and available Trail Boss and ZR2 off-road configurations in a midsize truck.</p>
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto; margin-top: 16px;">The 2026 Toyota Tacoma offers an available i-FORCE MAX hybrid powertrain with higher maximum output. The 2026 Chevrolet Colorado tows up to 7,700 pounds, 1,200 pounds more than the 2026 Toyota Tacoma, and includes a larger standard touchscreen at 11.3 inches compared to the Tacoma's 8-inch standard display.</p>
+
+			<p style="max-width: 900px; margin-left: auto; margin-right: auto; margin-top: 16px;">Visit Nick Mayer Chevrolet Lewisburg to compare available 2026 Chevrolet Colorado models and schedule a test drive.</p>
+			<div style="margin-top: 32px;" class="hero-buttons">
+				<a href="https://www.nickmayerchevroletgmcoflewisburg.com/searchnew.aspx?ModelAndTrim=Colorado" class="nm-btn">View Inventory</a>
+				<a href="https://www.nickmayerchevroletgmcoflewisburg.com/contactus.aspx" class="nm-btn">Contact Us</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-container">
+				<details>
+					<summary>Is the 2026 Chevrolet Colorado a good midsize truck for Middle Tennessee?</summary>
+					<div class="faq-answer">
+
+						<p>The 2026 Chevrolet Colorado offers midsize truck dimensions, 310 horsepower from its 2.7L TurboMax engine, available four-wheel drive, and up to 7,700 pounds of towing capability for commuting, work, and recreation.</p>
+					</div>
+				</details>
+				<details>
+					<summary>How much can the 2026 Chevrolet Colorado tow?</summary>
+					<div class="faq-answer">
+
+						<p>The 2026 Chevrolet Colorado can tow up to 7,700 pounds when properly equipped.</p>
+					</div>
+				</details>
+				<details>
+					<summary>Does the 2026 Chevrolet Colorado offer four-wheel drive?</summary>
+					<div class="faq-answer">
+
+						<p>The 2026 Chevrolet Colorado offers available four-wheel drive.</p>
+					</div>
+				</details>
+				<details>
+					<summary>Which has more maximum towing, the 2026 Chevrolet Colorado or the 2026 Toyota Tacoma?</summary>
+					<div class="faq-answer">
+
+						<p>The 2026 Chevrolet Colorado tows up to 7,700 pounds. The 2026 Toyota Tacoma tows up to 6,500 pounds. The 2026 Chevrolet Colorado provides 1,200 pounds more maximum towing capacity.</p>
+					</div>
+				</details>
+				<details style="border-bottom: none;">
+					<summary>Where can I test-drive a 2026 Chevrolet Colorado in Lewisburg?</summary>
+					<div class="faq-answer">
+
+						<p>Nick Mayer Chevrolet Lewisburg is located at 861 N. Ellington Pkwy, Lewisburg, TN 37091. Nick Mayer Chevrolet Lewisburg serves drivers from Lewisburg, Columbia, Spring Hill, Shelbyville, Chapel Hill, and surrounding Middle Tennessee communities.</p>
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.732824076636!2d-86.78687452377618!3d35.46140834201751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8863a3a0e0329283%3A0x36480219bdd9abf9!2sNick%20Mayer%20Chevrolet%20of%20Lewisburg!5e0!3m2!1sen!2sus!4v1783083534350!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
