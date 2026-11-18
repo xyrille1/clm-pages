@@ -1,0 +1,970 @@
+<!-- ============================================================
+     SCHEMA 1: LocalBusiness / AutoDealer
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness", "WebPage"],
+  "@id": "https://www.nickmayerfordwest.com/#business",
+  "name": "Nick Mayer Ford West",
+  "legalName": "Nick Mayer Ford Avon Lake",
+  "description": "Nick Mayer Ford Avon Lake is a Ford dealer in Avon Lake, OH. We specialize in new Ford, used cars, service, and financing.",
+  "url": "https://www.nickmayerfordwest.com/",
+  "telephone": "+1-440-961-5090",
+  "priceRange": "$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "image": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33450 Lake Road",
+    "addressLocality": "Avon Lake",
+    "addressRegion": "OH",
+    "postalCode": "44012",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.505043,
+    "longitude": -82.047958
+  },
+  "hasMap": "https://maps.google.com/maps?q=Nick%20Mayer%20Ford%20West%20Avon%20Lake",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Avon Lake"},
+    {"@type": "City", "name": "Cleveland"},
+    {"@type": "City", "name": "Mentor"},
+    {"@type": "City", "name": "Solon"},
+    {"@type": "City", "name": "Euclid"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/nickmayerfordwest"
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 2: Organization
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.nickmayerfordwest.com/#organization",
+  "name": "Nick Mayer Ford Avon Lake",
+  "url": "https://www.nickmayerfordwest.com/",
+  "logo": "https://www.nickmayerfordwest.com/static/dealer-21583/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-440-961-5090",
+    "areaServed": "OH",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33450 Lake Road",
+    "addressLocality": "Avon Lake",
+    "addressRegion": "OH",
+    "postalCode": "44012",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 3: Vehicle Listing - Car
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "@id": "https://www.nickmayerfordwest.com/#ford-escape",
+  "name": "2026 Ford Escape",
+  "description": "The 2026 Ford Escape offers a broad selection of gas and hybrid powertrains, flexible cargo space, and multiple ways to configure the SUV for different driving needs.",
+  "url": "https://www.nickmayerfordwest.com/2026-ford-escape-vs-2026-honda-cr-v.html",
+  "image": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "model": "Escape",
+  "modelDate": "2026",
+  "bodyType": "SUV",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ford"
+  },
+  "driveWheelConfiguration": ["FWD", "AWD"],
+  "vehicleEngine": [
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gas",
+      "name": "2.0-liter EcoBoost",
+      "enginePower": {
+         "@type": "QuantitativeValue",
+         "value": "250",
+         "unitCode": "BHP"
+      }
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Hybrid",
+      "name": "Hybrid Powertrain"
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Plug-In Hybrid",
+      "name": "Plug-In Hybrid Powertrain"
+    }
+  ],
+  "numberOfDoors": 4,
+  "seatingCapacity": 5
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 4: Product (Model-Line Level — No Unit-Level Facts)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.nickmayerfordwest.com/#escape-inventory",
+  "name": "New 2026 Ford Escape Models",
+  "description": "Explore the full selection of new 2026 Ford Escape models at Nick Mayer Ford West.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "image": [
+    "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920"
+  ],
+  "category": "New Vehicles"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 5: BreadcrumbList
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.nickmayerfordwest.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "New Vehicles",
+      "item": "https://www.nickmayerfordwest.com/searchnew.aspx"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ford",
+      "item": "https://www.nickmayerfordwest.com/searchnew.aspx?Make=Ford"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "2026 Ford Escape vs 2026 Honda CR-V",
+      "item": "https://www.nickmayerfordwest.com/2026-ford-escape-vs-2026-honda-cr-v.html"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 6: ImageObject (Hero Image)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": "https://www.nickmayerfordwest.com/#hero-image",
+  "name": "2026 Ford Escape vs 2026 Honda CR-V at Nick Mayer Ford West",
+  "description": "The 2026 Ford Escape displayed by Nick Mayer Ford West serving Avon Lake and Northeast Ohio.",
+  "url": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "contentUrl": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "encodingFormat": "image/webp",
+  "representativeOfPage": true,
+  "creditText": "Ford Motor Company",
+  "creator": {
+    "@type": "Organization",
+    "name": "Ford Motor Company",
+    "url": "https://www.ford.com/"
+  },
+  "license": "https://www.ford.com/",
+  "copyrightNotice": "© Ford Motor Company"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 8: FAQPage
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the 2026 Ford Escape a good compact SUV for Northeast Ohio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Available all-wheel drive, multiple powertrain options, flexible seating, and advanced technology make the Escape well suited to commuting and changing Ohio driving conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the 2026 Ford Escape offer a hybrid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The 2026 Escape is available with hybrid and plug-in hybrid powertrains."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which has more power, the Ford Escape or Honda CR-V?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The available 2.0-liter EcoBoost® engine in the Ford Escape produces up to 250 horsepower, while the CR-V Hybrid produces up to 204 horsepower."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Ford Escape have all-wheel drive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All-wheel drive is available on select 2026 Ford Escape configurations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which has more cargo space, the Ford Escape or Honda CR-V?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Honda CR-V offers greater maximum cargo capacity, while the Escape provides a sliding second-row seat that helps drivers adjust passenger and cargo space."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I test-drive a 2026 Ford Escape near Avon Lake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nick Mayer Ford West serves drivers from Avon Lake, Westlake, Bay Village, Rocky River, North Olmsted, North Ridgeville, Lorain, Elyria, and surrounding Northeast Ohio communities."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+        /*
+          CRITICAL FIX: 
+          Many dealership CMS platforms wrap injected content in container divs 
+          that have max-widths (like .container) or side padding.
+          To ensure #nm-seo-page breaks out of those constraints and goes full-width,
+          we use viewport units (100vw) and negative margins. 
+          
+          Warning: if the CMS has 'overflow-x: hidden' on the body or a master wrapper, 
+          this will work perfectly. If not, it could cause horizontal scrolling. 
+          It's usually safe on modern platforms.
+        */
+        #nm-seo-page {
+            /* Applied Nick Mayer Ford West Brand Guidelines */
+            --brand-primary: #0c3470; /* Navy - Primary */
+            --brand-secondary: #257aa7; /* Steel blue - Secondary Outline */
+            --brand-accent: #feb245; /* Amber - CTA Accent */
+            --brand-accent-hover: #ff9f15; /* Amber - Hover */
+            --text-main: #252525; /* Body text */
+            --text-light: #636363; /* Muted text */
+            --bg-light: #f2f2f2; /* Surface grey */
+            --white: #ffffff;
+            --border: #c9c9c9; /* Divider grey */
+            
+            /* Full Width Reset */
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            
+            font-family: Inherit;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        /* The inner container constraints the actual content so it's readable */
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+            width: 100%; /* Ensure sections take full width */
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+            width: 100%; /* Ensure background spans full width */
+        }
+
+        #nm-seo-page .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch; /* Guaranteed equal height rows */
+            }
+        }
+
+        /* Forced font-weights based on brand guidelines policy */
+        #nm-seo-page h1, 
+        #nm-seo-page h2, 
+        #nm-seo-page h3, 
+        #nm-seo-page h4, 
+        #nm-seo-page h5, 
+        #nm-seo-page h6 {
+            font-family: inherit;
+            font-weight: normal !important;
+        }
+
+        #nm-seo-page h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 35px);
+            color: var(--text-main);
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page h3 {
+            font-size: 22px;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+            font-family: inherit;
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 460px; 
+            object-fit: cover; 
+            border-radius: 10px; /* Aligned to brand guidelines */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            /* APPLIED FIX: Bumped mobile min-height to 600px and padding to 140px */
+            min-height: 600px;
+            padding: 140px 24px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.assets.ford.com/adobe/assets/urn:aaid:aem:e308e33c-5d26-456d-8da6-382f3c50dbd5/as/26_FRD_ESP_46623_plt_crgr.webp?max-quality=75&crop-names=1_16x7&width=1920') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Gradient scrim adjusted from brand guidelines */
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)); 
+            z-index: 1;
+        }
+
+        @media (max-width: 991px) {
+            #nm-seo-page .hero-title-section::after {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+            }
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 /* APPLIED FIX: Bumped desktop min-height to 750px and padding to 200px */
+                 min-height: 750px;
+                 padding: 200px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        /* Primary CTA Buttons */
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            font-family: inherit;
+            background-color: var(--cta-color);
+            color: #000000;
+            padding: 10px 30px;
+            border-radius: 25px; /* Full pill standard */
+            font-size: 18px;
+            font-weight: normal !important;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--cta-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--brand-accent-hover); 
+            color: #000000;
+            border-color: var(--brand-accent-hover);
+        }
+
+        #nm-seo-page .table-responsive {
+            width: 100%;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            #nm-seo-page .table-responsive::after {
+                content: 'Swipe to compare \2192';
+                display: block;
+                text-align: center;
+                font-size: 13px;
+                color: var(--text-light);
+                padding: 8px 0 0 0;
+            }
+        }
+
+        #nm-seo-page .comparison-table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            background-color: var(--white);
+        }
+
+        #nm-seo-page .comparison-table th, 
+        #nm-seo-page .comparison-table td {
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        #nm-seo-page .comparison-table th {
+            background-color: var(--brand-primary);
+            color: var(--white);
+            font-weight: bold; /* Table headers allowed to be bold */
+            vertical-align: middle;
+        }
+
+        #nm-seo-page .comparison-table th:first-child {
+            text-align: left;
+            font-size: 22px;
+            font-family: inherit;
+            font-weight: normal !important;
+        }
+
+        #nm-seo-page .comparison-table td:first-child {
+            font-weight: bold;
+            text-align: left;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            width: 25%;
+        }
+
+        #nm-seo-page .comparison-table td:nth-child(2) {
+            color: var(--text-main);
+        }
+        
+        #nm-seo-page .comp-box {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent; /* Prepare for outline hover */
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        #nm-seo-page .comp-box.lincoln:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-box.competitor:hover {
+            border-color: var(--brand-secondary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-img {
+            width: 100%;
+            height: 200px;
+            min-height: 200px; /* Maintains equal layout structure even if image URL is blocked/broken */
+            object-fit: cover;
+            border-radius: 10px; /* Aligned to brand guidelines */
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+            background-color: var(--border); /* Gray background if image fails */
+            color: var(--text-light); /* Font color for broken image alt text */
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        #nm-seo-page .comp-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Pushes content down to keep cards even if content varies */
+        }
+
+        #nm-seo-page .comp-box ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+            font-family: inherit;
+        }
+
+        #nm-seo-page .comp-box.lincoln ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-primary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .comp-box.competitor ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-secondary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-family: inherit;
+            font-weight: normal !important;
+            color: var(--text-main);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--brand-primary);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+</style>
+
+<article id="nm-seo-page">
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Ford Escape vs. 2026 Honda CR-V</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Pre-Order Now</a>
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">The 2026 Ford Escape and the 2026 Honda CR-V are two popular compact SUVs for drivers who want practical passenger space, efficient powertrains, available all-wheel drive, and everyday versatility. While both models are designed for commuting, family transportation, and weekend travel, the Ford Escape offers a broad selection of gas and hybrid powertrains, flexible cargo space, and multiple ways to configure the SUV for different driving needs.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-size: 19px;">Nick Mayer Ford West proudly serves Avon Lake, Westlake, Bay Village, Rocky River, North Olmsted, North Ridgeville, Lorain, Elyria, and surrounding Northeast Ohio communities.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Ford Escape vs. 2026 Honda CR-V Comparison</h2>
+            
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>2026 Ford Escape</th>
+                            <th>2026 Honda CR-V</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Powertrain Choices</td>
+                            <td>Gas, Hybrid, Plug-In Hybrid</td>
+                            <td>Gas, Hybrid</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Horsepower</td>
+                            <td>Up to 250 hp</td>
+                            <td>Up to 204 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Available AWD</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Cargo Capacity</td>
+                            <td>Up to 65.4 cu. ft.</td>
+                            <td>Up to 76.5 cu. ft.</td>
+                        </tr>
+                        <tr>
+                            <td>Seating Capacity</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Hybrid Availability</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Plug-In Hybrid Availability</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Hands-Free Driving</td>
+                            <td>Available BlueCruise on select configurations</td>
+                            <td>Honda Sensing® technologies</td>
+                        </tr>
+                        <tr>
+                            <td>Infotainment</td>
+                            <td>Available 13.2-inch touchscreen</td>
+                            <td>Available 9-inch touchscreen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center;">Ford Escape Offers Flexible Performance for Northeast Ohio Driving</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Whether you're commuting along I-90, traveling between Avon Lake and Cleveland, or heading toward Lake Erie for a weekend trip, the Escape offers multiple powertrain options to match different driving priorities.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:dca2871b-8a7f-4fc0-938a-f6c1ee621ce1/as/26_FRD_ESP_46630_plt_rprd_v2.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford Escape Performance" class="comp-img" loading="lazy">
+                    <h3>Ford Escape highlights:</h3>
+                    <ul>
+                        <li>Available 2.0-liter EcoBoost® engine producing 250 horsepower.</li>
+                        <li>Available hybrid powertrain.</li>
+                        <li>Available plug-in hybrid powertrain.</li>
+                        <li>Available all-wheel drive.</li>
+                        <li>Select configurations offer up to 3,500 pounds of towing capability.</li>
+                        <li>Available advanced driver-assistance technology.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/CR-V/Feature-Blades/Performance/Performance_01_L.jpg?sc_lang=en" alt="2026 Honda CR-V Performance" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Honda CR-V highlights:</h3>
+                    <ul>
+                        <li>Available 1.5-liter turbocharged engine.</li>
+                        <li>Available two-motor hybrid powertrain producing up to 204 horsepower.</li>
+                        <li>Available all-wheel drive.</li>
+                        <li>Hybrid models emphasize efficiency and smooth everyday performance.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto; font-style: italic;">The Escape gives shoppers the ability to choose among gas, hybrid, and plug-in hybrid powertrains, making it easier to select a configuration based on commuting, efficiency, or performance priorities.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Ford Escape Gives Avon Lake Families Everyday Interior Flexibility</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The Escape provides comfortable seating for five passengers and a versatile cabin designed for commuting, errands, family activities, and road trips.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:c280fe76-5c9e-49d5-bd7b-81bd05c6e188/as/2025_Escape_STLine_INT_A01.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="2026 Ford Escape Interior" class="comp-img" loading="lazy">
+                    <h3>Escape interior highlights:</h3>
+                    <ul>
+                        <li>Seating for five passengers.</li>
+                        <li>Up to 65.4 cubic feet of maximum cargo space.</li>
+                        <li>Available sliding second-row seating.</li>
+                        <li>Available heated front seats.</li>
+                        <li>Available panoramic roof.</li>
+                        <li>Flexible storage for groceries, luggage, and everyday equipment.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/CR-V/Gallery/Interior/09/Modal/MY26_CR-V_Gallery_09_1400_2x.jpg?sc_lang=en" alt="2026 Honda CR-V Interior" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Honda CR-V highlights:</h3>
+                    <ul>
+                        <li>Seating for five passengers.</li>
+                        <li>Up to 76.5 cubic feet of maximum cargo capacity.</li>
+                        <li>Spacious rear seating.</li>
+                        <li>Available leather-trimmed seating.</li>
+                        <li>Available power tailgate.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">Both SUVs provide practical interiors for everyday life. The Escape's sliding rear seat adds useful flexibility when drivers need to balance passenger room with cargo capacity.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center;">Ford Escape Technology Supports Connected Daily Driving</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The Escape combines digital connectivity with driver-assistance technology designed to make daily travel more convenient.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:5babac16-7c0c-4c8c-949e-f8d7c9f6944d/as/25_FRD_ESP_46100_stln_elt.webp?max-quality=75&crop-names=1_21x9&width=1920" alt="2026 Ford Escape Technology" class="comp-img" loading="lazy">
+                    <h3>Escape technology highlights:</h3>
+                    <ul>
+                        <li>Available 13.2-inch center touchscreen.</li>
+                        <li>Available 12.3-inch digital instrument display.</li>
+                        <li>Wireless Apple CarPlay® and Android Auto™.</li>
+                        <li>FordPass® Connect.</li>
+                        <li>Available 360-Degree Camera.</li>
+                        <li>Available Ford Co-Pilot360® technology.</li>
+                        <li>Available BlueCruise on select Ford configurations.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/CR-V/Feature-Blades/Technology/Connectivity/Technology_02_L.jpg?sc_lang=en" alt="2026 Honda CR-V Technology" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Honda CR-V highlights:</h3>
+                    <ul>
+                        <li>The CR-V offers wireless smartphone integration, available Google built-in services, and Honda Sensing® safety technologies.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">For drivers who want a larger available touchscreen and a wider range of available digital features, the Escape provides a technology-focused experience.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Nick Mayer Ford West Supports SUV Owners Throughout Northeast Ohio</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Nick Mayer Ford West provides a complete ownership experience for drivers searching for a new Ford Escape near Avon Lake and surrounding communities.</p>
+            
+            <div class="content-grid two-col">
+                <div style="order: 2;">
+                    <h3>Ownership benefits include:</h3>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-light);">
+                        <li>New Ford Escape inventory.</li>
+                        <li>Financing and lease assistance.</li>
+                        <li>Trade-in evaluations.</li>
+                        <li>Certified Ford service.</li>
+                        <li>Factory-trained technicians.</li>
+                        <li>Genuine Ford Parts and Accessories.</li>
+                        <li>Service specials and maintenance support.</li>
+                    </ul>
+                    
+                </div>
+                
+                <div style="order: 1;">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:ed6b3976-4f13-41ee-b110-19b577469df7/as/26_FRD_ESP_46641_plt_vpbl.webp?max-quality=75&crop-names=1_16x7&width=1920" alt="Nick Mayer Ford West Dealership Experience" class="nm-img-fluid" loading="lazy">
+                </div>
+                
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">Located at 33450 Lake Road in Avon Lake, Nick Mayer Ford West serves drivers throughout Avon Lake, Westlake, Bay Village, Rocky River, North Olmsted, North Ridgeville, Lorain, Elyria, and nearby Northeast Ohio communities.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Dealership Perspective</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; font-style: italic; font-size: 19px;">"Our team helps Northeast Ohio drivers compare compact SUVs based on how they actually use them every day. Buyers who want flexible powertrain choices, available all-wheel drive, practical technology, and a comfortable cabin appreciate the versatility the Ford Escape brings to the segment." — Nick Mayer Ford West Sales Team</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Why the 2026 Ford Escape Stands Out for Northeast Ohio Drivers</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Ford Escape combines gas, hybrid, and plug-in hybrid powertrain choices with available all-wheel drive, flexible seating, advanced connectivity, and available Ford driver-assistance technology. The Honda CR-V offers strong efficiency, spacious seating, and a proven compact SUV formula. For shoppers who want more powertrain flexibility and the option of plug-in hybrid ownership, the Escape provides a compelling choice for commuting, family transportation, and everyday travel throughout Northeast Ohio.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; margin-top: 16px;">Visit Nick Mayer Ford West to compare Ford Escape models, explore available features, and schedule your 2026 Ford Escape test drive.</p>
+            <p style="display: none;"></p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Pre-Order Now</a>
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Is the 2026 Ford Escape a good compact SUV for Northeast Ohio?</summary>
+                    <div class="faq-answer"><p>Yes. Available all-wheel drive, multiple powertrain options, flexible seating, and advanced technology make the Escape well suited to commuting and changing Ohio driving conditions.</p></div>
+                </details>
+                <details>
+                    <summary>Does the 2026 Ford Escape offer a hybrid?</summary>
+                    <div class="faq-answer"><p>Yes. The 2026 Escape is available with hybrid and plug-in hybrid powertrains.</p></div>
+                </details>
+                <details>
+                    <summary>Which has more power, the Ford Escape or Honda CR-V?</summary>
+                    <div class="faq-answer"><p>The available 2.0-liter EcoBoost® engine in the Ford Escape produces up to 250 horsepower, while the CR-V Hybrid produces up to 204 horsepower.</p></div>
+                </details>
+                <details>
+                    <summary>Does the Ford Escape have all-wheel drive?</summary>
+                    <div class="faq-answer"><p>Yes. All-wheel drive is available on select 2026 Ford Escape configurations.</p></div>
+                </details>
+                <details>
+                    <summary>Which has more cargo space, the Ford Escape or Honda CR-V?</summary>
+                    <div class="faq-answer"><p>The Honda CR-V offers greater maximum cargo capacity, while the Escape provides a sliding second-row seat that helps drivers adjust passenger and cargo space.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can I test-drive a 2026 Ford Escape near Avon Lake?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Ford West serves drivers from Avon Lake, Westlake, Bay Village, Rocky River, North Olmsted, North Ridgeville, Lorain, Elyria, and surrounding Northeast Ohio communities.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.9849974757815!2d-82.04948095088511!3d41.50492502813338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830855d8946d6a9%3A0xe58e1c421e503299!2sNick%20Mayer%20Ford%20Avon%20Lake!5e0!3m2!1sen!2sus!4v1783161069046!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>

@@ -1,0 +1,955 @@
+<!-- ============================================================
+     SCHEMA 1: LocalBusiness / AutoDealer
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness", "WebPage"],
+  "@id": "https://www.nickmayerfordwest.com/#business",
+  "name": "Nick Mayer Ford West",
+  "legalName": "Nick Mayer Ford Avon Lake",
+  "description": "Nick Mayer Ford Avon Lake is a Ford dealer in Avon Lake, OH. We specialize in new Ford, used cars, service, and financing.",
+  "url": "https://www.nickmayerfordwest.com/",
+  "telephone": "+1-440-961-5090",
+  "priceRange": "$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "image": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33450 Lake Road",
+    "addressLocality": "Avon Lake",
+    "addressRegion": "OH",
+    "postalCode": "44012",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.505043,
+    "longitude": -82.047958
+  },
+  "hasMap": "https://maps.google.com/maps?q=Nick%20Mayer%20Ford%20West%20Avon%20Lake",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Thursday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Avon Lake"},
+    {"@type": "City", "name": "Cleveland"},
+    {"@type": "City", "name": "Mentor"},
+    {"@type": "City", "name": "Solon"},
+    {"@type": "City", "name": "Euclid"}
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 2: Organization
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.nickmayerfordwest.com/#organization",
+  "name": "Nick Mayer Ford Avon Lake",
+  "url": "https://www.nickmayerfordwest.com/",
+  "logo": "https://www.nickmayerfordwest.com/static/dealer-21583/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+1-440-961-5090",
+    "areaServed": "OH",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33450 Lake Road",
+    "addressLocality": "Avon Lake",
+    "addressRegion": "OH",
+    "postalCode": "44012",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 3: Vehicle Listing - Car
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Car",
+  "@id": "https://www.nickmayerfordwest.com/#ford-f-350",
+  "name": "2026 Ford F-350 Super Duty",
+  "description": "The 2026 Ford F-350 Super Duty and the 2026 Chevrolet Silverado 3500 HD are built for drivers who need serious towing, hauling, and job-site capability.",
+  "url": "https://www.nickmayerfordwest.com/2026-ford-f350-vs-chevrolet-silverado-3500.html",
+  "image": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "model": "F-350 Super Duty",
+  "modelDate": "2026",
+  "bodyType": "Pickup Truck",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ford"
+  },
+  "driveWheelConfiguration": ["4x2", "4x4"],
+  "vehicleEngine": [
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Diesel",
+      "name": "6.7L High-Output Power Stroke® V8",
+      "enginePower": {
+         "@type": "QuantitativeValue",
+         "value": "500",
+         "unitCode": "BHP"
+      },
+      "torque": {
+         "@type": "QuantitativeValue",
+         "value": "1200",
+         "unitText": "lb-ft"
+      }
+    },
+    {
+      "@type": "EngineSpecification",
+      "engineType": "Gas",
+      "name": "6.8L or 7.3L V8"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 4: Product (Model-Line Level — No Unit-Level Facts)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.nickmayerfordwest.com/#f350-inventory",
+  "name": "New 2026 Ford F-350 Super Duty Models",
+  "description": "Explore the full selection of new 2026 Ford F-350 Super Duty models at Nick Mayer Ford West.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ford"
+  },
+  "image": [
+    "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920"
+  ],
+  "category": "New Vehicles"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 5: BreadcrumbList
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.nickmayerfordwest.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "New Vehicles",
+      "item": "https://www.nickmayerfordwest.com/searchnew.aspx"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ford",
+      "item": "https://www.nickmayerfordwest.com/searchnew.aspx?Make=Ford"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "2026 Ford F-350 Super Duty vs 2026 Chevrolet Silverado 3500 HD",
+      "item": "https://www.nickmayerfordwest.com/2026-ford-f350-vs-chevrolet-silverado-3500.html"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 6: ImageObject (Hero Image)
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": "https://www.nickmayerfordwest.com/#hero-image",
+  "name": "2026 Ford F-350 Super Duty vs 2026 Chevrolet Silverado 3500 HD at Nick Mayer Ford West",
+  "description": "The 2026 Ford F-350 Super Duty displayed by Nick Mayer Ford West serving Avon Lake and Northeast Ohio.",
+  "url": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "contentUrl": "https://www.assets.ford.com/adobe/assets/urn:aaid:aem:1cb5fba0-9728-4217-8a57-b4b89544a0ad/as/26_FRD_ESP_46621_stln_elit_rprd.webp?max-quality=75&crop-names=1_16x7&width=1920",
+  "encodingFormat": "image/webp",
+  "representativeOfPage": true,
+  "creditText": "Ford Motor Company",
+  "creator": {
+    "@type": "Organization",
+    "name": "Ford Motor Company",
+    "url": "https://www.ford.com/"
+  },
+  "license": "https://www.ford.com/",
+  "copyrightNotice": "© Ford Motor Company"
+}
+</script>
+
+<!-- ============================================================
+     SCHEMA 8: FAQPage
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the 2026 Ford F-350 Super Duty a good truck for heavy-duty work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Its available diesel power, high towing capacity, strong payload capability, and multiple cab and drivetrain configurations make it suitable for commercial, agricultural, recreational, and personal use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much can the 2026 Ford F-350 Super Duty tow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When properly equipped, the F-350 Super Duty offers up to 40,000 pounds of maximum available gooseneck towing capacity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much torque does the 2026 Ford F-350 Super Duty offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The available 6.7-liter High-Output Power Stroke® V8 Turbo Diesel produces up to 1,200 lb-ft of torque."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the F-350 compare with the Silverado 3500 HD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The F-350 offers greater maximum available towing capacity and greater available diesel torque, while both trucks provide advanced trailering technology and heavy-duty configurations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I test-drive a 2026 Ford F-350 Super Duty near Avon Lake, OH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nick Mayer Ford West serves truck shoppers in Avon Lake, Cleveland, Mentor, Solon, Euclid, Westlake, Rocky River, North Olmsted, and surrounding Northeast Ohio communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose the Ford F-350 Super Duty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The F-350 Super Duty is a strong choice for buyers who need maximum towing capability, high payload capacity, available diesel power, and advanced technology for demanding work and recreation."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+        /*
+          CRITICAL FIX: 
+          Many dealership CMS platforms wrap injected content in container divs 
+          that have max-widths (like .container) or side padding.
+          To ensure #nm-seo-page breaks out of those constraints and goes full-width,
+          we use viewport units (100vw) and negative margins. 
+          
+          Warning: if the CMS has 'overflow-x: hidden' on the body or a master wrapper, 
+          this will work perfectly. If not, it could cause horizontal scrolling. 
+          It's usually safe on modern platforms.
+        */
+        @import url("https://use.typekit.net/gpc7ewp.css");
+
+        #nm-seo-page {
+            --brand-primary: #0c3470; /* Nick Mayer Ford West Primary */
+            --brand-secondary: #114aa0; /* Primary Hover */
+            --cta-color: #feb245; /* Accent/CTA Amber */
+            --cta-hover: #ff9f15; /* Accent/CTA Hover */
+            --cta-background: #257aa7; /* Secondary steel blue */
+            --text-main: #252525; /* Standard black/dark grey text */
+            --text-light: #636363; /* Muted text */
+            --bg-light: #f7f7f7; /* Surface off-white */
+            --white: #FFFFFF;
+            --border: #c9c9c9; /* Divider grey */
+            
+            /* Full Width Reset */
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            
+            font-family: inherit; /* Inherit from CMS or parent */
+            color: var(--text-main);
+            line-height: 20px; /* Rigid brand rule */
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        /* The inner container constraints the actual content so it's readable */
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 50px 0; /* Updated closely to section vertical rhythm rules */
+            border-bottom: 1px solid var(--border);
+            width: 100%; /* Ensure sections take full width */
+        }
+
+        @media (max-width: 991px) {
+            #nm-seo-page section {
+                padding: 35px 0;
+            }
+        }
+        @media (max-width: 767px) {
+            #nm-seo-page section {
+                padding: 30px 0;
+            }
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+            width: 100%; /* Ensure background spans full width */
+        }
+
+        #nm-seo-page .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: stretch; /* Guaranteed equal height rows */
+            }
+        }
+
+        #nm-seo-page h1 {
+            font-family: inherit;
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: normal !important; /* Brand guideline weight override */
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        #nm-seo-page h2 {
+            font-family: inherit;
+            font-size: clamp(28px, 4vw, 35px);
+            color: var(--text-main);
+            font-weight: normal !important; /* Brand guideline weight override */
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page h3 {
+            font-family: inherit;
+            font-size: 24px;
+            color: var(--text-main);
+            font-weight: normal !important; /* Brand guideline weight override */
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 18px;
+            line-height: 20px; /* Specific body standard */
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 10px; /* Brand guideline standard */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 600px; /* Increased from 500px */
+            padding: 140px 24px; /* Increased padding from 120px */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%; /* Force full width */
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('#MISCPATH#2026_Ford_F-350_Super_Duty/hero__1_.webp') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 750px; /* Increased from 650px */
+                 padding: 200px 24px; /* Increased padding from 160px */
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        /* Button standard matching brand guidelines for .btn-cta */
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            font-family: inherit;
+            background-color: var(--cta-color);
+            color: #000000;
+            padding: 10px 30px;
+            border-radius: 25px; /* Full pill standard */
+            font-size: 18px;
+            font-weight: normal !important;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--cta-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--cta-hover); 
+            color: #000000;
+            border-color: var(--cta-hover);
+        }
+
+        #nm-seo-page .table-responsive {
+            width: 100%;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            #nm-seo-page .table-responsive::after {
+                content: 'Swipe to compare \2192';
+                display: block;
+                text-align: center;
+                font-size: 13px;
+                color: var(--text-light);
+                padding: 8px 0 0 0;
+            }
+        }
+
+        #nm-seo-page .comparison-table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            background-color: var(--white);
+        }
+
+        #nm-seo-page .comparison-table th, 
+        #nm-seo-page .comparison-table td {
+            padding: 20px 24px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        #nm-seo-page .comparison-table th {
+            font-family: inherit;
+            background-color: var(--brand-primary);
+            color: var(--white);
+            font-weight: normal !important;
+            vertical-align: middle;
+        }
+
+        #nm-seo-page .comparison-table th:first-child {
+            text-align: left;
+            font-size: 22px;
+        }
+
+        #nm-seo-page .comparison-table td:first-child {
+            font-weight: bold !important; /* Note: Strong is forced bold */
+            text-align: left;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            width: 25%;
+        }
+
+        #nm-seo-page .comparison-table td:nth-child(2) {
+            color: var(--text-main);
+        }
+        
+        #nm-seo-page .comp-box {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 0; /* Standardized to 0px like panels and wells per guideline */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent; 
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        #nm-seo-page .comp-box.lincoln:hover {
+            border-color: var(--brand-primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-box.competitor:hover {
+            border-color: var(--brand-secondary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: scale(1.03);
+        }
+
+        #nm-seo-page .comp-img {
+            width: 100%;
+            height: 200px;
+            min-height: 200px;
+            object-fit: cover;
+            border-radius: 10px; /* Guideline radius */
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+            background-color: var(--border);
+            color: var(--text-light); 
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        #nm-seo-page .comp-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; 
+        }
+
+        #nm-seo-page .comp-box ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 16px;
+            color: var(--text-light);
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        #nm-seo-page .comp-box.lincoln ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-primary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .comp-box.competitor ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            color: var(--brand-secondary);
+            font-weight: bold;
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-family: inherit;
+            font-weight: normal !important;
+            color: var(--text-main);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--cta-color);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 18px;
+        }
+</style>
+
+<article id="nm-seo-page">
+
+    <header class="hero-title-section">
+        <div class="container">
+            <h1>2026 Ford F-350 Super Duty vs.<br> 2026 Chevrolet Silverado 3500 HD</h1>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Pre-Order Now</a>
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Ford F-350 Super Duty and the 2026 Chevrolet Silverado 3500 HD are built for drivers who need serious towing, hauling, and job-site capability. Both heavy-duty pickups offer powerful diesel engines, advanced trailering technology, and configurations designed for demanding work. For buyers who prioritize maximum available towing, payload capability, diesel torque, and towing-focused technology, the 2026 Ford F-350 Super Duty delivers an especially strong combination of capability and versatility.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Nick Mayer Ford West proudly serves Avon Lake, Cleveland, Mentor, Solon, Euclid, and surrounding Northeast Ohio communities.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">2026 Ford F-350 Super Duty vs. 2026 Chevrolet Silverado 3500 HD Comparison</h2>
+            
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>2026 Ford F-350 Super Duty</th>
+                            <th>2026 Chevrolet Silverado 3500 HD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Available Diesel Engine</td>
+                            <td>6.7L High-Output Power Stroke® V8</td>
+                            <td>6.6L Duramax® Turbo-Diesel V8</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Diesel Horsepower</td>
+                            <td>500 hp</td>
+                            <td>470 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Diesel Torque</td>
+                            <td>1,200 lb-ft</td>
+                            <td>975 lb-ft</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Available Towing</td>
+                            <td>38,000 lbs.</td>
+                            <td>36,000 lbs.</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Available Payload</td>
+                            <td>8,000 lbs.</td>
+                            <td>Configuration dependent</td>
+                        </tr>
+                        <tr>
+                            <td>Gas Engine</td>
+                            <td>6.8L or 7.3L V8</td>
+                            <td>6.6L V8</td>
+                        </tr>
+                        <tr>
+                            <td>Transmission</td>
+                            <td>10-Speed Automatic</td>
+                            <td>10-Speed Allison® Automatic</td>
+                        </tr>
+                        <tr>
+                            <td>Drivetrain</td>
+                            <td>4x2 or 4x4</td>
+                            <td>2WD or 4WD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center;">Ford F-350 Super Duty Delivers Maximum Heavy-Duty Capability Across Northeast Ohio</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Whether you're towing construction equipment through Avon Lake, hauling materials to a Cleveland job site, or pulling a large recreational trailer across Ohio, the F-350 Super Duty provides the power and strength required for demanding work.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="#MISCPATH#2026_Ford_F-350_Super_Duty/Power_2026_Ford_F-350_Super_Duty.webp" alt="Ford F-350 Super Duty highlights" class="comp-img" loading="lazy">
+                    <h3>Ford F-350 Super Duty highlights:</h3>
+                    <ul>
+                        <li>Available 6.7-liter High-Output Power Stroke® V8 Turbo Diesel.</li>
+                        <li>Up to 500 horsepower.</li>
+                        <li>Up to 1,200 lb-ft of diesel torque.</li>
+                        <li>Up to 38 pounds of maximum available gooseneck towing.</li>
+                        <li>Up to 35,000 pounds of maximum available fifth-wheel towing.</li>
+                        <li>Up to 30,000 pounds of maximum available conventional towing.</li>
+                        <li>Up to 8,000 pounds of maximum available payload.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/trucks/2026-silverado-hd/trailering-towing/v2/2026-slhd-towing-01-v2.png?imwidth=1920" alt="Chevrolet Silverado 3500 HD highlights" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Chevrolet Silverado 3500 HD highlights:</h3>
+                    <ul>
+                        <li>Available 6.6-liter Duramax® Turbo-Diesel V8.</li>
+                        <li>470 horsepower and 975 lb-ft of torque.</li>
+                        <li>Up to 36,000 pounds of maximum available diesel towing.</li>
+                        <li>Available 6.6-liter V8 gasoline engine.</li>
+                        <li>Available Allison® 10-speed automatic transmission.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">Ford's Super Duty lineup gives buyers impressive flexibility, with multiple engine choices, cab configurations, drivetrain options, and towing setups designed for everything from commercial work to heavy recreational towing.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Ford F-350 Super Duty Provides Confident Towing for Work and Recreation</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">The F-350 Super Duty is designed around the demands of drivers who regularly move heavy trailers, equipment, and cargo. Its available diesel power combines with advanced towing technology to help make challenging towing jobs more manageable.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="#MISCPATH#2026_Ford_F-350_Super_Duty/Towing.webp" alt="F-350 towing features" class="comp-img" loading="lazy">
+                    <h3>F-350 towing features:</h3>
+                    <ul>
+                        <li>High-Output Power Stroke® diesel engine.</li>
+                        <li>Available dual-rear-wheel configuration.</li>
+                        <li>Pro Trailer Backup Assist™.</li>
+                        <li>Pro Trailer Hitch Assist™.</li>
+                        <li>Tow/Haul drive mode.</li>
+                        <li>Integrated trailer brake controller.</li>
+                        <li>Available fifth-wheel and gooseneck towing equipment.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/trucks/2026-silverado-hd/trail-boss/v2/2026-slhd-trailboss-01-v2.png?imwidth=1920" alt="Silverado 3500 HD towing features" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Silverado 3500 HD towing features:</h3>
+                    <ul>
+                        <li>Duramax® diesel performance.</li>
+                        <li>Available dual-rear-wheel configuration.</li>
+                        <li>Integrated trailer brake controller.</li>
+                        <li>In-vehicle trailering app.</li>
+                        <li>Available Transparent Trailer View.</li>
+                        <li>Multiple camera views for trailer monitoring.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">For buyers who need maximum available towing capability, the F-350 reaches a 40,000-pound gooseneck rating when properly equipped, giving it a significant capability advantage for the heaviest towing applications.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="text-align: center;">Ford F-350 Super Duty Technology Makes Heavy-Duty Driving Easier</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Heavy-duty capability is only part of the ownership experience. The F-350 also provides technology designed to simplify towing, improve visibility, and support drivers during demanding workdays.</p>
+            
+            <div class="content-grid two-col">
+                <div class="comp-box lincoln">
+                    <img src="#MISCPATH#2026_Ford_F-350_Super_Duty/Technology_2026_Ford_F-350_Super_Duty.webp" alt="F-350 technology highlights" class="comp-img" loading="lazy">
+                    <h3>F-350 technology highlights:</h3>
+                    <ul>
+                        <li>Available Ford SYNC® infotainment technology.</li>
+                        <li>Wireless smartphone connectivity.</li>
+                        <li>Available large touchscreen displays.</li>
+                        <li>Pro Trailer Backup Assist™.</li>
+                        <li>Pro Trailer Hitch Assist™.</li>
+                        <li>Available 360-degree camera technology.</li>
+                        <li>Ford Co-Pilot360® driver-assistance features.</li>
+                        <li>Available Ford connectivity services.</li>
+                    </ul>
+                </div>
+                <div class="comp-box competitor">
+                    <img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/CR-V/Feature-Blades/Interior/Overview/Interior_01_L.jpg?sc_lang=en" alt="Silverado 3500 HD technology highlights" class="comp-img" loading="lazy">
+                    <h3 style="color: var(--text-light);">Silverado 3500 HD technology highlights:</h3>
+                    <ul>
+                        <li>Available advanced camera systems.</li>
+                        <li>Up to eight available cameras.</li>
+                        <li>Up to 14 available camera views.</li>
+                        <li>In-vehicle trailering app.</li>
+                        <li>Hitch View.</li>
+                        <li>Bed View.</li>
+                        <li>Transparent Trailer View.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; max-width: 900px; margin: 40px auto 0 auto;">The F-350 brings together heavy-duty capability and a broad selection of towing technologies, helping drivers manage trailers, equipment, and cargo with greater confidence.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2 style="text-align: center;">Nick Mayer Ford West Supports Heavy-Duty Truck Owners in Northeast Ohio</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 40px auto;">Nick Mayer Ford West helps truck shoppers compare Super Duty configurations, explore available towing equipment, value trade-ins, and find a Ford F-350 that matches their work or recreational needs.</p>
+            
+            <div class="content-grid two-col">
+                <div style="order: 2;">
+                    <h3>Ownership benefits include:</h3>
+                    <ul style="list-style: disc; padding-left: 20px; color: var(--text-light);">
+                        <li>Extensive Ford Super Duty inventory.</li>
+                        <li>Financing options for qualified buyers.</li>
+                        <li>Trade-in assistance.</li>
+                        <li>Factory-trained Ford service technicians.</li>
+                        <li>Genuine Ford Parts and Accessories.</li>
+                        <li>Commercial truck expertise.</li>
+                        <li>Personalized customer support.</li>
+                    </ul>
+                    <p style="margin-top: 16px;">Located in Avon Lake, Nick Mayer Ford West serves drivers from Cleveland, Mentor, Solon, Euclid, Westlake, Rocky River, North Olmsted, and surrounding Northeast Ohio communities.</p>
+                </div>
+                <div style="order: 1;">
+                    <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:21c48b5b-99bc-4495-bb0b-6040b5a9740b/as/27_FRD_SD_F350_Lariat_MarshGray_01_v4_Diesel_v1.webp?max-quality=75&crop-names=1_16x9&width=1920" alt="Nick Mayer Ford West Dealership Experience" class="nm-img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Dealership Perspective</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">“Our team works with contractors, business owners, farmers, and recreational truck buyers who need dependable heavy-duty capability. The Ford F-350 Super Duty gives customers the power, towing technology, and configuration flexibility to take on demanding jobs with confidence.” — Nick Mayer Ford West Team</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 style="text-align: center;">Why the 2026 Ford F-350 Super Duty Stands Out for Northeast Ohio Drivers</h2>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2026 Ford F-350 Super Duty combines available 500-horsepower diesel performance, up to 1,200 lb-ft of torque, up to 38,000 pounds of maximum available gooseneck towing, and advanced trailer technology into one highly capable heavy-duty pickup.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; margin-top: 16px;">The Chevrolet Silverado 3500 HD also offers strong Duramax® diesel performance and extensive trailering technology, while the F-350 gives buyers greater maximum available towing, greater available diesel torque, and a broader capability advantage for the most demanding towing applications.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto; margin-top: 16px;">Visit Nick Mayer Ford West to compare available F-350 Super Duty configurations, explore towing options, value your trade, and schedule a test drive.</p>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Pre-Order Now</a>
+                <a href="https://www.nickmayerfordwest.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Is the 2026 Ford F-350 Super Duty a good truck for heavy-duty work?</summary>
+                    <div class="faq-answer"><p>Yes. Its available diesel power, high towing capacity, strong payload capability, and multiple cab and drivetrain configurations make it suitable for commercial, agricultural, recreational, and personal use.</p></div>
+                </details>
+                <details>
+                    <summary>How much can the 2026 Ford F-350 Super Duty tow?</summary>
+                    <div class="faq-answer"><p>When properly equipped, the F-350 Super Duty offers up to 40,000 pounds of maximum available gooseneck towing capacity.</p></div>
+                </details>
+                <details>
+                    <summary>How much torque does the 2026 Ford F-350 Super Duty offer?</summary>
+                    <div class="faq-answer"><p>The available 6.7-liter High-Output Power Stroke® V8 Turbo Diesel produces up to 1,200 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>How does the F-350 compare with the Silverado 3500 HD?</summary>
+                    <div class="faq-answer"><p>The F-350 offers greater maximum available towing capacity and greater available diesel torque, while both trucks provide advanced trailering technology and heavy-duty configurations.</p></div>
+                </details>
+                <details>
+                    <summary>Where can I test-drive a 2026 Ford F-350 Super Duty in Avon Lake, OH?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Ford West serves truck shoppers in Avon Lake, Cleveland, Mentor, Solon, Euclid, Westlake, Rocky River, North Olmsted, and surrounding Northeast Ohio communities.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Why choose the Ford F-350 Super Duty?</summary>
+                    <div class="faq-answer"><p>The F-350 Super Duty is a strong choice for buyers who need maximum towing capability, high payload capacity, available diesel power, and advanced technology for demanding work and recreation.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.9849974757815!2d-82.04948095088511!3d41.50492502813338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830855d8946d6a9%3A0xe58e1c421e503299!2sNick%20Mayer%20Ford%20Avon%20Lake!5e0!3m2!1sen!2sus!4v1783161069046!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
