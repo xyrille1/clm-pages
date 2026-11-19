@@ -1,0 +1,770 @@
+<article id="nm-seo-page">
+
+    <!-- ============================================================
+         SCHEMA 1: LocalBusiness / AutoDealer
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["AutoDealer", "LocalBusiness"],
+        "@id": "https://www.nickmayerford.com/#business",
+        "name": "Nick Mayer Ford Mayfield",
+        "legalName": "Nick Mayer Ford",
+        "description": "The 2027 Ford Expedition MAX Active combines a 3.5L EcoBoost® V6 with 400 horsepower, 480 lb-ft of torque, and a 10-speed automatic transmission. The extended MAX body provides additional passenger and cargo capacity, while available 4x4 capability and towing equipment support work, family transportation, recreation, and longer trips.",
+        "url": "https://www.nickmayerford.com",
+        "telephone": "440-697-3590",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Financing",
+        "image": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/sle-slt/exterior/my26-sierra-1500-pro-exterior-header-3000x1000-26PGSRLD99119.jpg?imwidth=1920",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "6200 Mayfield Road",
+          "addressLocality": "Mayfield Heights",
+          "addressRegion": "OH",
+          "postalCode": "44124",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Mayfield Heights"},
+          {"@type": "City", "name": "Cleveland"}
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 2: Organization
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.nickmayerford.com/#organization",
+        "name": "Nick Mayer Ford Mayfield",
+        "url": "https://www.nickmayerford.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "440-697-3590",
+          "areaServed": "OH",
+          "availableLanguage": "English"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "6200 Mayfield Road",
+          "addressLocality": "Mayfield Heights",
+          "addressRegion": "OH",
+          "postalCode": "44124",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 3: Vehicle Listing - Car
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "@id": "https://www.nickmayerford.com/#ford-expedition-max-active",
+        "name": "2027 Ford Expedition MAX Active",
+        "description": "The 2027 Ford Expedition MAX Active combines a 3.5L EcoBoost® V6 with 400 horsepower, 480 lb-ft of torque, and a 10-speed automatic transmission.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "model": "Expedition MAX Active",
+        "modelDate": "2027",
+        "bodyType": "SUV",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Ford"
+        },
+        "driveWheelConfiguration": ["4x2", "4x4"],
+        "vehicleTransmission": ["10-speed automatic"],
+        "vehicleEngine": [
+          {
+            "@type": "EngineSpecification",
+            "engineType": "Gasoline",
+            "name": "3.5L EcoBoost® V6",
+            "enginePower": {
+               "@type": "QuantitativeValue",
+               "value": "400",
+               "unitCode": "BHP"
+            },
+            "torque": {
+               "@type": "QuantitativeValue",
+               "value": "480",
+               "unitCode": "FOT"
+            }
+          }
+        ],
+        "numberOfDoors": 4,
+        "seatingCapacity": 8,
+        "fuelType": "Gasoline"
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 4: Product + Offer (Dealership Inventory as Product)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://www.nickmayerford.com/#ford-expedition-max-active-inventory",
+        "name": "New 2027 Ford Expedition MAX Active Models",
+        "description": "The 2027 Ford Expedition MAX Active combines a 3.5L EcoBoost® V6 with 400 horsepower, 480 lb-ft of torque, and a 10-speed automatic transmission.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Ford"
+        },
+        "image": [
+          "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/sle-slt/exterior/my26-sierra-1500-pro-exterior-header-3000x1000-26PGSRLD99119.jpg?imwidth=1920"
+        ],
+        "category": "New Vehicles",
+        "offers": {
+          "@type": "AggregateOffer",
+          "offerCount": 1,
+          "lowPrice": "75520",
+          "highPrice": "75520",
+          "priceCurrency": "USD",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "2026 Ford Expedition Max Active",
+              "price": "75520",
+              "priceCurrency": "USD",
+              "sku": "F60552",
+              "itemOffered": {
+                "@type": "Car",
+                "vehicleIdentificationNumber": "1FMUK1J89TEA11199"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 5: BreadcrumbList
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nickmayerford.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "New Vehicles",
+            "item": "https://www.nickmayerford.com/searchnew.aspx"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ford",
+            "item": "https://www.nickmayerford.com/searchnew.aspx?Make=Ford"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2027 Ford Expedition MAX Active",
+            "item": "https://www.nickmayerford.com/searchnew.aspx?Make=Ford&ModelAndTrim=Expedition"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 6: ImageObject (Hero Image)
+    ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "@id": "https://www.nickmayerford.com/#ford-expedition-max-active-hero-image",
+        "name": "2027 Ford Expedition MAX Active at Nick Mayer Ford Mayfield",
+        "description": "The 2027 Ford Expedition MAX Active displayed at Nick Mayer Ford Mayfield in Mayfield Heights, OH.",
+        "url": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/sle-slt/exterior/my26-sierra-1500-pro-exterior-header-3000x1000-26PGSRLD99119.jpg?imwidth=1920",
+        "contentUrl": "https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/sle-slt/exterior/my26-sierra-1500-pro-exterior-header-3000x1000-26PGSRLD99119.jpg?imwidth=1920",
+        "representativeOfPage": true,
+        "creator": {
+          "@type": "Organization",
+          "name": "Nick Mayer Ford Mayfield",
+          "url": "https://www.nickmayerford.com"
+        }
+      }
+    </script>
+
+    <!-- ============================================================
+         SCHEMA 8: FAQPage
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much horsepower does the 2027 Expedition MAX Active have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 3.5L EcoBoost® V6 produces 400 horsepower."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much torque does it produce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The engine produces 480 lb-ft of torque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can it tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Properly equipped 4x4 models can tow up to 9,000 pounds with the Heavy-Duty Trailer Tow Package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many passengers can it seat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The three-row configuration can seat up to eight passengers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much cargo space does it have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The MAX provides up to 123.1 cubic feet of maximum cargo capacity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can Mayfield Heights drivers explore the Expedition MAX Active?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nick Mayer Ford Mayfield can help you explore available Expedition MAX models, compare equipment, and arrange a test drive."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+
+        #nm-seo-page {
+            --brand-primary: #0c3470;
+            --brand-secondary: #777777;
+            --btn-bg: #257AA7;
+            --btn-hover: #0c3470;
+            --text-main: #333333;
+            --text-light: #333333;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 1200px;
+            
+            font-family: 'Lato', Arial, Helvetica Neue, sans-serif;
+            color: var(--text-main);
+            line-height: 1.7;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        a {
+  color: inherit;
+  text-decoration: none; /* Optional: removes the underline */
+}
+
+        #nm-seo-page h2, #nm-seo-page .hero-title {
+            font-family: 'Ford Antenna', sans-serif;
+        }
+
+        #nm-seo-page *, #nm-seo-page *::before, #nm-seo-page *::after {
+            box-sizing: border-box;
+        }
+
+        #nm-seo-page .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        #nm-seo-page section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page section:last-child {
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section {
+            background-color: var(--bg-light);
+            border-bottom: none;
+        }
+
+        #nm-seo-page .bg-light-section,
+        #nm-seo-page .hero-title-section,
+        #nm-seo-page > iframe {
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        }
+
+        #nm-seo-page .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > div {
+            width: 100%;
+        }
+
+        #nm-seo-page .content-grid > *:not(div) {
+            display: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .content-grid.two-col {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #nm-seo-page .content-grid.two-col > div {
+                width: calc(50% - 24px);
+                flex: 0 0 calc(50% - 24px);
+            }
+        }
+
+        #nm-seo-page .hero-title {
+            font-size: clamp(36px, 5vw, 52px);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        #nm-seo-page h2 {
+            font-size: clamp(28px, 4vw, 25px);
+            color: var(--brand-primary);
+            font-weight: 700;
+            margin: 0 0 24px 0;
+            line-height: 1.3;
+        }
+
+        #nm-seo-page p {
+            margin: 0 0 16px 0;
+            font-size: 17px;
+            color: var(--text-light);
+        }
+
+        #nm-seo-page .nm-img-fluid {
+            width: 100%;
+            height: auto; 
+            max-height: 400px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        #nm-seo-page .hero-title-section {
+            position: relative;
+            background-color: var(--brand-primary);
+            min-height: 560px;
+            padding: 100px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        #nm-seo-page .hero-title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('#MISCPATH#2027_Ford_Expedition_MAX_Active/2027_Ford_Expedition_MAX_Active.png') center center / cover no-repeat;
+            z-index: 0;
+        }
+
+        #nm-seo-page .hero-title-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        #nm-seo-page .hero-title-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (min-width: 992px) {
+             #nm-seo-page .hero-title-section {
+                 min-height: 660px;
+                 padding: 140px 24px;
+             }
+        }
+
+        #nm-seo-page .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        #nm-seo-page .nm-btn {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--btn-bg);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nm-seo-page .nm-btn:hover {
+            background-color: var(--btn-hover);
+            color: var(--white);
+            border-color: var(--btn-hover);
+        }
+
+        #nm-seo-page ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+        }
+
+        #nm-seo-page .key-facts-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            #nm-seo-page .key-facts-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        #nm-seo-page .key-facts-list li {
+            padding: 24px 32px;
+            background: var(--white);
+            border: none;
+            border-left: 5px solid var(--btn-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-main);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        #nm-seo-page .key-facts-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-left-color: var(--btn-hover);
+        }
+
+        #nm-seo-page blockquote {
+            margin: 24px 0;
+            padding: 32px;
+            background: var(--bg-light);
+            border-left: 6px solid var(--brand-primary);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--brand-primary);
+        }
+
+        #nm-seo-page .faq-container {
+            margin-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        #nm-seo-page details {
+            border-bottom: 1px solid var(--border);
+        }
+
+        #nm-seo-page summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--brand-primary);
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.2s ease;
+        }
+
+        #nm-seo-page summary::-webkit-details-marker {
+            display: none;
+        }
+
+        #nm-seo-page summary::after {
+            content: "+";
+            font-size: 28px;
+            font-weight: 300;
+            color: var(--btn-bg);
+            transition: transform 0.3s ease;
+            margin-left: 16px;
+            line-height: 1;
+        }
+
+        #nm-seo-page details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        #nm-seo-page .faq-answer {
+            padding: 0 40px 24px 0;
+        }
+
+        #nm-seo-page .faq-answer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+
+    <header class="hero-title-section">
+        <div class="container">
+            <div class="hero-title">2027 Ford Expedition MAX Active in <br>Mayfield Heights, OH</div>
+            <div class="hero-buttons">
+                <a href="https://www.nickmayerford.com/searchnew.aspx?Make=Ford&yearrange=2026-2026&ModelAndTrim=Expedition%20Max:Active" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerford.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">The 2027 Ford Expedition MAX Active combines a 3.5L EcoBoost® V6 with 400 horsepower, 480 lb-ft of torque, and a 10-speed automatic transmission. The extended MAX body provides additional passenger and cargo capacity, while available 4x4 capability and towing equipment support work, family transportation, recreation, and longer trips.</p>
+            <p style="max-width: 900px; margin-left: auto; margin-right: auto;">For drivers around Mayfield Heights, Cleveland, Beachwood, Lyndhurst, Mentor, and Solon, Nick Mayer Ford Mayfield provides a local place to explore available Expedition models, compare equipment, arrange a test drive, and maintain your Ford.</p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ford Expedition MAX Active Key Facts</h2>
+            <ul class="key-facts-list">
+                <li>The 3.5L EcoBoost® V6 produces 400 horsepower.</li>
+                <li>The 3.5L EcoBoost® V6 delivers 480 lb-ft of torque.</li>
+                <li>The 10-speed automatic transmission manages power delivery.</li>
+                <li>The available 4x4 system expands drivetrain capability.</li>
+                <li>The three-row cabin seats up to eight passengers.</li>
+                <li>The extended MAX body provides up to 123.1 cubic feet of cargo capacity.</li>
+                <li>The 4x2 configuration provides up to 6,300 pounds of towing capacity.</li>
+                <li>The 4x4 configuration provides up to 9,000 pounds of towing capacity when properly equipped.</li>
+                <li>The 4x2 configuration achieves 16 city / 23 highway MPG.</li>
+                <li>The 4x4 configuration achieves 15 city / 22 highway MPG.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2027 Ford Expedition MAX Active Pairs EcoBoost® Power With Towing Capability</h2>
+                <p>The 3.5L EcoBoost® V6 produces 400 horsepower and 480 lb-ft of torque.</p>
+                <p>A 10-speed automatic transmission manages power through the available 4x2 or 4x4 drivetrains. Properly equipped 4x4 models can tow up to 9,000 pounds with the Heavy-Duty Trailer Tow Package.</p>
+            </div>
+            <div>
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:b8d730cd-af9c-40e0-9333-19ba10a58a02/as/27_FRD_EPD_TREM_FRDNSUVT0015_RSF_PB_5827_04_01_E_RGB.webp?max-quality=75&crop-names=1_21x9&width=1920" alt="2027 Ford Expedition MAX Active Performance" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ford Expedition MAX Active Performance Highlights</h2>
+            <ul class="key-facts-list">
+                <li>3.5L EcoBoost® V6</li>
+                <li>400 horsepower</li>
+                <li>480 lb-ft of torque</li>
+                <li>10-speed automatic transmission</li>
+                <li>4x2 drivetrain</li>
+                <li>Available 4x4</li>
+                <li>Available Heavy-Duty Trailer Tow Package</li>
+                <li>Up to 9,000 pounds of maximum available towing capacity</li>
+            </ul>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div style="order: 2;">
+                <h2>2027 Ford Expedition MAX Active Expands Passenger and Cargo Space</h2>
+                <p>The extended MAX body provides 37.4 cubic feet behind the third row, 84.5 cubic feet behind the second row, and 123.1 cubic feet behind the first row. The three-row cabin can accommodate up to eight passengers.</p>
+                <p>The additional space can serve a contractor carrying equipment to a job in Cleveland, a healthcare professional commuting through Beachwood, or a family transporting sports equipment, groceries, luggage, and camping supplies. Trips toward Lake Erie and local parks can also make use of the available cargo area.</p>
+            </div>
+            <div style="order: 1;">
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:c714bfce-b64c-4d8a-90b5-373183e1f101/as/27_FRD_EPD_PLT_ULT_PKG_64315.webp?max-quality=75&crop-names=1_21x9&width=1920" alt="2027 Ford Expedition MAX Active Configuration" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>2027 Ford Expedition MAX Active Interior Highlights</h2>
+            <ul class="key-facts-list">
+                <li>Seating for up to eight</li>
+                <li>37.4 cubic feet behind the third row</li>
+                <li>84.5 cubic feet behind the second row</li>
+                <li>123.1 cubic feet behind the first row</li>
+                <li>40/20/40 second-row seating</li>
+                <li>60/40 PowerFold® third-row seating</li>
+                <li>Available Flex Powered Console</li>
+                <li>Multifunction Ford Split Gate</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container content-grid two-col">
+            <div>
+                <h2>2027 Ford Expedition MAX Active Connects Passengers With Digital Technology</h2>
+                <p>Ford equips the Expedition with a 24-inch panoramic display and 13.2-inch center display.</p>
+                <p>Ford Digital Experience provides the central connected interface, while available BlueCruise® provides hands-free highway driving assistance on compatible roads.</p>
+            </div>
+            <div>
+                <img src="https://www.assets.ford.com/adobe/assets/urn:aaid:aem:f62ed8c3-eae4-4edd-9a8e-33bb41a3fe8c/as/27_FRD_EPD_R7A0426-1.webp?max-quality=75&crop-names=1_21x9&width=1920" alt="2027 Ford Expedition MAX Active Technology" class="nm-img-fluid" width="1920" height="960" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+        <div class="container">
+            <h2>2027 Ford Expedition MAX Active Technology Highlights</h2>
+            <ul class="key-facts-list">
+                <li>24-inch panoramic display</li>
+                <li>13.2-inch center display</li>
+                <li>Ford Digital Experience</li>
+                <li>Wireless Apple CarPlay®</li>
+                <li>Wireless Android Auto™</li>
+                <li>Available BlueCruise®</li>
+                <li>Ford Co-Pilot360® driver-assistance technology</li>
+                <li>Available premium audio system</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-section">
+    <div class="container">
+        <h2>What Do Automotive Experts Say About the 2027 Ford Expedition?</h2>
+        <p>Car and Driver highlights the Expedition's twin-turbo V6, spacious interior, towing capability, and long-distance usability in its evaluation.</p>
+        <blockquote>
+            "expansive interior, mighty towing capability"
+        </blockquote>
+        <cite>Source: <a href="https://www.caranddriver.com/ford/expedition-2027">Car and Driver: 2027 Ford Expedition Review</a></cite>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2></h2>
+        <p>MotorTrend's 2027 Expedition review covers the Expedition MAX range and specifically lists the MAX Active 4x2 and 4x4 configurations. Its evaluation discusses the Expedition's twin-turbo V6, towing capability, spacious cabin, and long-distance driving characteristics.</p>
+        <blockquote>
+            "punchy V-6 performance"
+        </blockquote>
+        <cite>Source: <a href="https://www.motortrend.com/cars/ford/expedition/">MotorTrend: 2027 Ford Expedition / Expedition Max Review</a></cite>
+    </div>
+</section>
+
+    <section class="bg-light-section">
+            <div class="container" style="text-align: center;">
+                <h2>We Help Mayfield Heights Drivers Explore the 2027 Ford Expedition MAX Active</h2>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">At Nick Mayer Ford Mayfield, we help you compare the 2027 Ford Expedition MAX Active according to towing requirements, passenger capacity, cargo space, drivetrain, technology, and daily driving needs. Our dealership is located on Mayfield Road in Mayfield Heights.</p>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">We can help you explore available Expedition models, arrange a test drive, discuss financing and trade-in options, and provide Ford service and parts support. We serve drivers using the vehicle for commuting, professional travel, family transportation, youth sports, shopping, recreation, and weekend trips throughout Northeast Ohio.</p>
+                <div class="hero-buttons">
+                <a href="https://www.nickmayerford.com/searchnew.aspx?Make=Ford&yearrange=2026-2026&ModelAndTrim=Expedition%20Max:Active" class="nm-btn">View Inventory</a>
+                <a href="https://www.nickmayerford.com/contactus.aspx" class="nm-btn">Contact Us</a>
+            </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Frequently Asked Questions About the 2027 Ford Expedition MAX Active</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>How much horsepower does the 2027 Expedition MAX Active have?</summary>
+                    <div class="faq-answer"><p>The 3.5L EcoBoost® V6 produces 400 horsepower.</p></div>
+                </details>
+                <details>
+                    <summary>How much torque does it produce?</summary>
+                    <div class="faq-answer"><p>The engine produces 480 lb-ft of torque.</p></div>
+                </details>
+                <details>
+                    <summary>How much can it tow?</summary>
+                    <div class="faq-answer"><p>Properly equipped 4x4 models can tow up to 9,000 pounds with the Heavy-Duty Trailer Tow Package.</p></div>
+                </details>
+                <details>
+                    <summary>How many passengers can it seat?</summary>
+                    <div class="faq-answer"><p>The three-row configuration can seat up to eight passengers.</p></div>
+                </details>
+                <details>
+                    <summary>How much cargo space does it have?</summary>
+                    <div class="faq-answer"><p>The MAX provides up to 123.1 cubic feet of maximum cargo capacity.</p></div>
+                </details>
+                <details style="border-bottom: none;">
+                    <summary>Where can Mayfield Heights drivers explore the Expedition MAX Active?</summary>
+                    <div class="faq-answer"><p>Nick Mayer Ford Mayfield can help you explore available Expedition MAX models, compare equipment, and arrange a test drive.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.302468661879!2d-81.45778422355505!3d41.51938838779653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883103d933367211%3A0xf86daab7427cefcd!2sNick%20Mayer%20Ford!5e0!3m2!1sen!2sus!4v1789996454846!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</article>
